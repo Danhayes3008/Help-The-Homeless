@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'homepage',
     'contact',
     'about',
+    'contrabutions',
 ]
 
 MIDDLEWARE = [
