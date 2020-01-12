@@ -20,6 +20,7 @@ from accounts import urls as urls_accounts
 from contact import urls as urls_contact
 from about import urls as urls_about
 from contrabutions import urls as urls_donation
+from cart import urls as urls_cart
 
 urlpatterns = [
     url(r'^$', index, name='index'),
@@ -27,5 +28,6 @@ urlpatterns = [
     url(r'^accounts/', include(urls_accounts)),
     url(r'^contact/', include(urls_contact)),
     url(r'^about_us/', include(urls_about)),
-    url(r'^contrabution/', include(urls_donation))
+    url(r'^contrabution/', include(urls_donation)),
+    url(r'^cart', include(urls_cart))
 ]
