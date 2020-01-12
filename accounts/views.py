@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from users.forms import LoginForm, RegistrationForm, UserForm, ProfileForm
+from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm
 
 # This def creates the login capability and uses the login form from the forms.py file
 
