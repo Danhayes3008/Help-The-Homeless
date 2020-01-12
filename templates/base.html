@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Help the Homless</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
-    {% comment %} <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
     {% comment %} <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"> {% endcomment %}
     {% comment %} <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-core.min.js"></script> {% endcomment %}
     {% comment %} <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-pie.min.js"></script> {% endcomment %}
@@ -48,8 +48,8 @@
                     <li><a href="{% url 'login' %}">Log In</a></li>
                     {% endif %}
                     {% comment %} <li><a href="{% url 'donation' %}">Projects</a></li>
-                    <li><a href="{% url 'about' %}">About us</a></li>
-                    <li><a href="{% url 'contact' %}">Contact us</a></li> {% endcomment %}
+                    <li><a href="{% url 'about' %}">About us</a></li> {% endcomment %}
+                    <li><a href="{% url 'contact' %}">Contact us</a></li>
                 </ul>
             </div>
         </div>
