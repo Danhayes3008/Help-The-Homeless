@@ -17,9 +17,9 @@ class donate(models.Model):
         return "{0}-{1}-{2}".format(self.id, self.date, self.full_name)
         
 class DonateLineItem(models.Model):
-    donate = models.ForeignKey(Donate, null=False)
+    donate = models.ForeignKey(donate, null=False)
     donation = models.ForeignKey(Donations, null=False)
-    quantity = models.IntegerField(blank=False)
+    amount = models.IntegerField(blank=False)
     
     def __str__(self):
-        return "{0} {1} @ {2}".format(self.quantity, self.donation.name, self.donation.price)
+        return "{0} {1} @ {2}".format(self.amount, self.donation.name, self.donation.price)
