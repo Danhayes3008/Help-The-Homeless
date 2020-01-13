@@ -7,3 +7,5 @@ from django.conf import settings
 from django.utils import timezone
 from contrabutions.models import Donations
 import stripe
+
+stripe.api_key = settings.STRIPE_KEY
