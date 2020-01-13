@@ -2,13 +2,13 @@ from django.shortcuts import render, get_object_or_404,     reverse, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms  import MakePaymentForm, DonateForm
-from .models import OrderLineItem
+from .models import DonateLineItem
 from django.conf import settings 
 from django.utils import timezone
 from contrabutions.models import Donations
 import stripe
 
-stripe.api_key = settings.STRIPE_KEY
+stripe.api_key = settings.STRIPE_SECRET
 
 @login_required()
 def payment (request):
@@ -39,5 +39,20 @@ def payment (request):
                     description = request.user.email,
                     card = payment_form.cleaned_data['stripe_id'],
                 )
-            exept stripe.error.CardError:
+            except stripe.error.CardError:
                 messages.error(request, "Sorry, your car was Declined!")
+                
+            if customer.paid:
+                messages.error(request, "You have successfully Paid!")
+                request.session['cart'] = {}
+                return redirect(reverse('donations'))
+            else:
+                messages.error(request, "Unable to take payment")
+        else:
+            print(payment_form.errors)
+            messages.error(request, "We were unable to take payment with that card!")
+    else:
+        payment_form = MakePaymentForm()
+        donate_form = DonateForm()
+        
+    return render(request, "payment.html", {'donate_form': donate_form, 'payment_form': payment_form, 'publishable': settings.STRIPE_PUBLISHABLE})
