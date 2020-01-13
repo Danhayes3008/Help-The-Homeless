@@ -1,5 +1,5 @@
 from django import forms
-from.models import Donate
+from.models import donate
 
 class MakePaymentForm(forms.Form):
     MONTH_CHOICE = [(i, i) for i in range(1, 12)]
@@ -13,5 +13,5 @@ class MakePaymentForm(forms.Form):
     
 class DonateForm(forms.ModelForm):
     class Meta:
-        model = Donate
+        model = donate
         fields = ('full_name', 'phone_number', 'country', 'postcode', 'town_or_city', 'streetadress1', 'streetaddress2', 'county')
