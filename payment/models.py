@@ -16,7 +16,7 @@ class donate(models.Model):
     def __str__(self):
         return "{0}-{1}-{2}".format(self.id, self.date, self.full_name)
         
-class OrderLineItem(models.Model):
+class DonateLineItem(models.Model):
     donate = models.ForeignKey(Donate, null=False)
     donation = models.ForeignKey(Donations, null=False)
     quantity = models.IntegerField(blank=False)
