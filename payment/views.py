@@ -20,3 +20,14 @@ def payment (request):
             donate = donate_form.save(commit=False)
             donate.date = timezone.now()
             donate.save()
+            
+            cart = request.session.get('cart', {})
+            total = 0
+            for id, amount in cart.items():
+                total += amount * donations.price
+                donate_line_item = DonateLineItem(
+                    donate = donate,
+                    donations = donations,
+                    amount = amount,
+                )
+            donate_line_item.save()
