@@ -24,10 +24,20 @@ def payment (request):
             cart = request.session.get('cart', {})
             total = 0
             for id, amount in cart.items():
-                total += amount * donations.price
+                total += amount * donations.minDonation
                 donate_line_item = DonateLineItem(
                     donate = donate,
                     donations = donations,
                     amount = amount,
                 )
             donate_line_item.save()
+            
+            try:
+                customer = stripe.Charge.create(
+                    amount = int(total * 100),
+                    currency = "EUR",
+                    description = request.user.email,
+                    card = payment_form.cleaned_data['stripe_id'],
+                )
+            exept stripe.error.CardError:
+                messages.error(request, "Sorry, your car was Declined!")
