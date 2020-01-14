@@ -24,11 +24,12 @@ def payment (request):
             cart = request.session.get('cart', {})
             total = 0
             for id, amount in cart.items():
-                total += amount * donations.minDonation
+                donations = get_object_or_404(Donations, pk=id)
+                total += amount * donations.donation
                 donate_line_item = DonateLineItem(
                     donate = donate,
                     donations = donations,
-                    amount = amount,
+                    amount = amount
                 )
             donate_line_item.save()
             
@@ -45,10 +46,12 @@ def payment (request):
             if customer.paid:
                 messages.error(request, "You have successfully Paid!")
                 request.session['cart'] = {}
-                return redirect(reverse('donations'))
+                return redirect(reverse('donation'))
             else:
                 messages.error(request, "Unable to take payment")
         else:
+            print(donate_form.is_valid)
+            print(payment_form.is_valid)
             print(payment_form.errors)
             messages.error(request, "We were unable to take payment with that card!")
     else:
