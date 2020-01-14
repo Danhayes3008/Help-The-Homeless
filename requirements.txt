@@ -7,5 +7,5 @@ olefile==0.46
 Pillow==6.2.0
 pytz==2019.3
 requests==2.22.0
-stripe==2.41.1
+stripe==1.70.0
 urllib3==1.25.7
