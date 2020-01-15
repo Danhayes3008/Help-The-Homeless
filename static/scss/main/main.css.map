@@ -1,10 +1,11 @@
 {
     "version": 3,
-    "mappings": "AEAA,AAAA,SAAS,CAAA;EACL,gBAAgB,EAAE,aAAa;EAC/B,YAAY,EAAE,GAAG;CACpB;;AAED,AAAA,IAAI,GAAC,EAAE,GAAC,CAAC,AAAA,MAAM,CAAA;EACX,gBAAgB,EAAE,WAAW;EAC7B,KAAK,EAAE,OAAO;CACjB;;AAED,AAAA,IAAI,GAAC,EAAE,GAAC,CAAC,CAAA;EACL,KAAK,EAAE,KAAK;CACf;;AAID,AAAA,GAAG,CAAA;EACC,KAAK,EAAE,GAAG;CACb",
+    "mappings": "AEAA,AAAA,SAAS,CAAA;EACL,gBAAgB,EAAE,aAAa;EAC/B,YAAY,EAAE,GAAG;CACpB;;AAED,AAAA,IAAI,GAAC,EAAE,GAAC,CAAC,AAAA,MAAM,CAAA;EACX,gBAAgB,EAAE,WAAW;EAC7B,KAAK,EAAE,OAAO;CACjB;;AAED,AAAA,IAAI,GAAC,EAAE,GAAC,CAAC,CAAA;EACL,KAAK,EAAE,KAAK;CACf;;ACZD,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,SAAS;EAC3B,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,KAAK;CAChB",
     "sources": [
         "main.scss",
         "../variables/media-queries/media-queries.scss",
-        "../components/navbar/navbar.scss"
+        "../components/navbar/navbar.scss",
+        "../components/index/index.scss"
     ],
     "names": [],
     "file": "main.css"

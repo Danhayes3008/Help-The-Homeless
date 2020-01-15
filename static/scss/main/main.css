@@ -12,7 +12,9 @@
   color: white;
 }
 
-.nb {
-  color: red;
+.box {
+  background-color: burlywood;
+  margin-left: 80px;
+  height: 450px;
 }
 /*# sourceMappingURL=main.css.map */
