@@ -1,0 +1,4 @@
+// this section imports all the variables to the scss so that they can be used in the components section of the scss to style out the site
+@import "../variables/media-queries/media-queries.scss";
+// this is the section were all the styling is done
+@import "../components/navbar/navbar.scss";
