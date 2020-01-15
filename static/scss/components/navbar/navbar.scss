@@ -1,7 +1,13 @@
 .navbar-1{
     background-color: darkslategray;
-  }
-  
-.nb{
-    color: red;
+    margin-right: 0px;
+}
+
+.nav>li>a:hover{
+    background-color: transparent;
+    color: #2fa4e7;
+}
+
+.nav>li>a{
+    color: white;
 }
