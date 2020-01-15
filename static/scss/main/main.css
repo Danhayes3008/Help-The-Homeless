@@ -1,5 +1,15 @@
 .navbar-1 {
   background-color: darkslategray;
+  margin-right: 0px;
+}
+
+.nav > li > a:hover {
+  background-color: transparent;
+  color: #2fa4e7;
+}
+
+.nav > li > a {
+  color: white;
 }
 
 .nb {
