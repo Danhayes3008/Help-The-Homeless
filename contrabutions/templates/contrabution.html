@@ -4,7 +4,7 @@
 <div>
     {% for product in donations %}
         <div>
-        {{ product.name }}
+        <p class="text-center">{{ product.name }}</p>
             <form class="donation" method="post" action="{% url 'amount_to_donate' product.id %}">
             {% csrf_token %}
                 <div class="input-group">
