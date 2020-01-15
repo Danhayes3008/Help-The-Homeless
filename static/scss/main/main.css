@@ -35,4 +35,14 @@
   padding-left: 35px;
   /* border-radius: 50%; */
 }
+
+.height1 {
+  height: 500px;
+  background-color: burlywood;
+}
+
+.height2 {
+  height: 600px;
+  background-color: gray;
+}
 /*# sourceMappingURL=main.css.map */
