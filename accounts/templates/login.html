@@ -7,14 +7,14 @@
 {% block page_heading %}Home{% endblock %}
 
 {% block content %}
-<div class="login">
+<div class="login jumbotron">
     <form method="POST">
         {% csrf_token %}
         {{ login_form | as_bootstrap }}
         <button type="submit" class="btn button btn-default btn-success">Login</button>
         <h4 class="text-center">Or</h4>
-        <a href="{% url 'register' %}" class="btn btn-default btn-success">Sign up</a>
+        <a href="{% url 'register' %}" class="btn btn-default btn-success signup">Sign up</a>
     </form>
-    <p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+    <p class="resetPass"><a href="{% url 'password_reset' %}">Reset Password</a></p>
 </div>
 {% endblock %}
