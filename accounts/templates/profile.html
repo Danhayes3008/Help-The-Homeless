@@ -11,7 +11,7 @@
 {% if request.user.is_authenticated %}
 <div class="row row-flex user jumbotron ">
     <div class="col-md-12">
-        <h3>{{ user.username }}</h3>
+        <h3 class="text-center">{{ user.username }}</h3>
         <img src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
     </div>
     <div class="col-md-6">
