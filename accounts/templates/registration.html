@@ -7,8 +7,10 @@
 {% block page_heading %}Home{% endblock %}
 
 {% block content %}
-<form method="POST">
+<div class="row row-flex register jumbotron col-md-12">
+    <form method="POST">
     {% csrf_token %} {{ registration_form | as_bootstrap }}
     <button type="submit" >submit</button>
-</form>
+    </form>
+</div>
 {% endblock %}
