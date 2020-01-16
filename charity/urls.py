@@ -22,6 +22,8 @@ from about import urls as urls_about
 from contrabutions import urls as urls_donation
 from cart import urls as urls_cart
 from payment import urls as urls_payment
+from django.views import static
+from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^$', index, name='index'),
@@ -31,5 +33,6 @@ urlpatterns = [
     url(r'^about_us/', include(urls_about)),
     url(r'^contrabution/', include(urls_donation)),
     url(r'^cart/', include(urls_cart)),
-    url(r'^payment/', include(urls_payment))
+    url(r'^payment/', include(urls_payment)),
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]
