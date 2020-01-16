@@ -9,31 +9,35 @@
 
 {% block content %}
 {% if request.user.is_authenticated %}
-<div class="col-md-12">
-    <h3>{{ user.username }}</h3>
-    <img src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
-</div>
-<div class="col-md-6">
-    <div>
-        <a href="#">Change Password</a>
+<div class="row row-flex user jumbotron ">
+    <div class="col-md-12">
+        <h3>{{ user.username }}</h3>
+        <img src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
     </div>
-    <div>
-        <a href="#">Change username</a>
+    <div class="col-md-6">
+        <div>
+            <a href="#">Change Password</a>
+        </div>
+        <div>
+            <a href="#">Change username</a>
+        </div>
+        <div>
+            <a href="#">Change e-mail</a>
+        </div>
+        <div>
+            <a href="{% url 'update' %}">update Profile</a>
+        </div>
     </div>
-    <div>
-        <a href="#">Change e-mail</a>
+    <div class="col-md-6">
+        <ul>
+            <li><strong>username: </strong>{{ user.username }}</li>
+            <li><strong>Name: </strong>{{ request.user.profile.name }}</li>
+            <li><strong>Gender: </strong>{{ request.user.profile.gender }}</li>
+            <li><strong>birthday: </strong>{{ request.user.profile.birthday }}</li>
+            <li><strong>nationality: </strong>{{ request.user.profile.nationality }}</li>
+            <li><strong>E-mail: </strong>{{ request.user.email }}</li>
+        </ul>
     </div>
-    <div>
-        <a href="{% url 'update' %}">update Profile</a>
-    </div>
-</div>
-<div class="col-md-6">
-    <p><strong>username: </strong>{{ user.username }}</p>
-    <p><strong>Name: </strong>{{ request.user.profile.name }}</p>
-    <p><strong>Gender: </strong>{{ request.user.profile.gender }}</p>
-    <p><strong>birthday: </strong>{{ request.user.profile.birthday }}</p>
-    <p><strong>nationality: </strong>{{ request.user.profile.nationality }}</p>
-    {% comment %} <p><strong>E-mail: </strong>{{ request.user.email }}</p> {% endcomment %}
 </div>
 {% endif %}
 {% endblock %}
