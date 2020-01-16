@@ -12,8 +12,9 @@
 <div class="row row-flex user jumbotron ">
     <div class="col-md-12">
         <h3 class="text-center">{{ user.username }}</h3>
-        <img src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
+        <img class="pro-pic" src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
     </div>
+    <hr>
     <div class="col-md-6">
         <div>
             <a href="#">Change Password</a>
