@@ -2,6 +2,7 @@
 {% load staticfiles %}
 
 {% block content %}
+<div class="row row-flex about jumbotron col-md-12">
     <script src="{% static 'JS/charts.js' %}"></script>
     <h3>About Us</h3>
     <p>Here at Help the Homeless, we aim to help lower the amount of people living on the streets, each year more and more young and old people are forced to live in terrable
@@ -14,4 +15,5 @@
     </div>
     <script src="{% static 'JS/barchart.js' %}"></script>
     <div id="bar" style="width: 50%; height: 100%"></div>
+</div>
 {% endblock %}
