@@ -52,10 +52,10 @@
             <th>Full Name</th> 
             <th>amount</th>
         </tr>
-        {% for donate in payments %}
+        {% for donations in doanted %}
         <tr>
-            <td scope="row">{{ donate.amount }}</td>
-            <td>xxx</td>
+            <td scope="row">{{ donations.date }}</td>
+            <td>{{ donations.date }}</td>
             <td>xxx</td>
         </tr>
         {% endfor %}
