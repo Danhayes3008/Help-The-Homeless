@@ -103,5 +103,7 @@
 .pro-pic {
   margin-left: 40%;
   border: 1px solid grey;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */
