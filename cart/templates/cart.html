@@ -8,7 +8,7 @@
         <form method="post" action="{% url 'adjust_donation' items.id %}">
         {% csrf_token %}
             <div class="input-group">
-            <input name="amount" type="number" min="1" max="10000" class="form-control" placeholder="amount">
+            <input name="amount" type="number" min="1" max="999999" class="form-control" placeholder="amount">
             <span class="input-group-btn">
                 <button class="btn btn-success" type="submit">Add</button>
             </span>
