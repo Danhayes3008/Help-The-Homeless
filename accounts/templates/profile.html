@@ -43,4 +43,22 @@
     </div>
 </div>
 {% endif %}
+<div class=" row row-flex jumbotron col-md-12">
+        <table class="table table-striped">
+            <h3>Your donation history</h3>
+            <hr>            
+        <tr>
+            <th>Date</th>
+            <th>Full Name</th> 
+            <th>amount</th>
+        </tr>
+        {% for donate in payments %}
+        <tr>
+            <td scope="row">{{ donate.amount }}</td>
+            <td>xxx</td>
+            <td>xxx</td>
+        </tr>
+        {% endfor %}
+        </table>  
+</div>
 {% endblock %}
