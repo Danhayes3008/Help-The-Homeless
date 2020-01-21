@@ -3,7 +3,7 @@ from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm
-from payment.models import DonateLineItem
+from payment.models import DonateLineItem, donate
 
 # This def creates the login capability and uses the login form from the forms.py file
 
@@ -59,13 +59,11 @@ def registration(request):
     return render(request, 'registration.html', {"registration_form": registration_form})
 def profile(request):
     user = User.objects.get(email=request.user.email)
-    return render(request, 'profile.html', {"profile": user})
+    donated = donate.objects.all()
+    return render(request, 'profile.html', {"profile": user}, {"donate": donated})
 def update(request):
     return render(request, 'update.html')
 
-def history(request):
-    donated = DonateLineItem.objects.all()
-    return render(request, 'profile.html', {"donate": DonateLineItem})
 
 @login_required
 # @transaction.atomic
