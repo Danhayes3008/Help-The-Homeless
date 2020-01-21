@@ -52,13 +52,16 @@
             <th>Full Name</th> 
             <th>amount</th>
         </tr>
-        {% for donations in doanted %}
+        {% for d in donated %}
         <tr>
-            <td scope="row">{{ donations.date }}</td>
-            <td>{{ donations.date }}</td>
-            <td>xxx</td>
+            <td scope="row">{{ d.date }}</td>
+            <td><p>{{ d.country }}</p></td>
+            <td>{{ d.amount }}</td>
         </tr>
         {% endfor %}
-        </table>  
+        </table>
+        {% for d in Donation %}
+            {{ d.full_name }}
+        {% endfor %}
 </div>
 {% endblock %}
