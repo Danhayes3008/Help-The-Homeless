@@ -22,4 +22,4 @@ class DonateLineItem(models.Model):
     amount = models.IntegerField(blank=False)
     
     def __str__(self):
-        return "{0} {1} @ {2}".format(self.amount, self.donations.name, self.donations.donation)
+        return "{0} {1} @ {2}".format(self.amount, self.donate.full_name, self.donations.name, self.donations.donation)
