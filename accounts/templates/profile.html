@@ -42,26 +42,23 @@
         </ul>
     </div>
 </div>
-{% endif %}
 <div class=" row row-flex jumbotron col-md-12">
         <table class="table table-striped">
-            <h3>Your donation history</h3>
+            <h3>Donation istory</h3>
             <hr>            
         <tr>
             <th>Date</th>
             <th>Full Name</th> 
             <th>amount</th>
         </tr>
-        {% for d in donated %}
+        {% for don in donated %}
         <tr>
-            <td scope="row">{{ d.date }}</td>
-            <td><p>{{ d.country }}</p></td>
-            <td>{{ d.amount }}</td>
+            <td>{{ don.date }}</td>
+            <td>{{ don.full_name }}</td>
+            <td>{{ don.amount }}</td>
         </tr>
         {% endfor %}
         </table>
-        {% for d in Donation %}
-            {{ d.full_name }}
-        {% endfor %}
 </div>
+{% endif %}
 {% endblock %}
