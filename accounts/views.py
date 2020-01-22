@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm
 from payment.models import DonateLineItem, donate
+from contrabutions.models import Donations
 
 # This def creates the login capability and uses the login form from the forms.py file
 
@@ -59,8 +60,13 @@ def registration(request):
     return render(request, 'registration.html', {"registration_form": registration_form})
 def profile(request):
     user = User.objects.get(email=request.user.email)
-    donated = donate.objects.all()
-    return render(request, 'profile.html', {"profile": user}, {"donate": donated})
+    username = User.objects.get(username=request.user.username)
+    print(username)
+    donated = donate.objects.filter(full_name=username)
+    print(donate)
+    donations = DonateLineItem.objects.filter(amount=donated)
+    print(donations)
+    return render(request, 'profile.html', {"profile": user, "donated": donated, "donations": donations})
 def update(request):
     return render(request, 'update.html')
 
