@@ -28,7 +28,7 @@
 </div>
 
 <form role="form" method="post" id="payment-form" action="{% url 'payment' %}">
-    <legend>Payment Details</legend>
+    <legend class="text-center">Payment Details</legend>
 
     <div id="credit-card-errors" style="display: none;">
         <div id="alert-message block-message error" id="stripe-error-message"></div>
@@ -38,7 +38,7 @@
         {{ donate_form | as_bootstrap }}
     </div>
 
-    <legend>Card Details</legend>
+    <legend class="text-center">Card Details</legend>
 
     <div class="form-group col-md-12">
         {{ payment_form | as_bootstrap }}
