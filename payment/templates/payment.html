@@ -26,27 +26,28 @@
         </div>
     {% endfor %}
 </div>
+<div class="row flex-row jumbotron">
+    <form role="form" method="post" id="payment-form" action="{% url 'payment' %}">
+        <legend class="text-center">Shipping Details</legend>
 
-<form role="form" method="post" id="payment-form" action="{% url 'payment' %}">
-    <legend class="text-center">Payment Details</legend>
+        <div id="credit-card-errors" style="display: none;">
+            <div id="alert-message block-message error" id="stripe-error-message"></div>
+        </div>
 
-    <div id="credit-card-errors" style="display: none;">
-        <div id="alert-message block-message error" id="stripe-error-message"></div>
-    </div>
+        <div class="form-group col-md-12 payment">
+            {{ donate_form | as_bootstrap }}
+        </div>
 
-    <div class="form-group col-md-12">
-        {{ donate_form | as_bootstrap }}
-    </div>
+        <legend class="text-center payment">Card Details</legend>
 
-    <legend class="text-center">Card Details</legend>
+        <div class="form-group col-md-12 payment">
+            {{ payment_form | as_bootstrap }}
+        </div>
 
-    <div class="form-group col-md-12">
-        {{ payment_form | as_bootstrap }}
-    </div>
-
-    {% csrf_token %}
-    <div class="form-group col-md-12">
-        <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
-    </div>
-</form>
+        {% csrf_token %}
+        <div class="form-group col-md-12">
+            <input class=" btn btn-primary" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+        </div>
+    </form>
+</div>
 {% endblock %}
