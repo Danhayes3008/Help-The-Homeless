@@ -5,7 +5,7 @@
     {% if project_count > 0 %}
         {% for items in cart_items %}
             <p>{{ items.donations.name }}</p>
-            <p>{{ items.amount }}</p>
+            <p><i class="fa fa-gbp"></i>{{ items.amount }}</p>
             <form method="post" action="{% url 'adjust_donation' items.id %}">
             {% csrf_token %}
                 <div class="input-group">
