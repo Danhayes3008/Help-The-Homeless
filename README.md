@@ -9,3 +9,5 @@ that i had in the last one.
 contrabutions:
 
 I managed to get some of the donation history section of the profile page working by following the code another student posted on the slack channels. If it wasnt for slack user r_andy79 i wouldnt have gotten this working so soon.
+
+Anna_ci on slack channels helped me get my site working on heroku. With her help i was able to get heroku to work in the terminal on visual studio code were i am doing my project.
