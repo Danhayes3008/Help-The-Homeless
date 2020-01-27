@@ -5,16 +5,9 @@ body {
     font-family: Arial;
     padding-top: 100px;
     color: black;
-    background-image: url('images/images1.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url("../images/city-street.jpg");
     background-size: cover;
-    image-rendering: -im-crisp-edges;
-    -webkit-transform: scale(0.999);
-    transform: scale(0.999);
-    
 }
-
 h2{
     color: white;
 }
