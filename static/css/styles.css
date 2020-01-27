@@ -5,14 +5,15 @@ body {
     font-family: Arial;
     padding-top: 100px;
     color: black;
+    background-image: url('images1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    image-rendering: -im-crisp-edges;
+    -webkit-transform: scale(0.999);
+    transform: scale(0.999);
+    
 }
-#bg {position: fixed; top: 0; left: 0;}
-    .bgwidth{
-        width: 100%;
-        image-rendering: -moz-crisp-edges;
-        image-rendering: auto;
-    }
-    .bgheight{ height: 100%; }
 
 h2{
     color: white;
