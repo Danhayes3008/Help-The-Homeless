@@ -70,29 +70,30 @@
 }
 
 .login {
-  width: 40%;
-  margin-left: 30%;
+  width: 30%;
+  margin-left: 35%;
   border: solid 0.5px;
 }
 
 .button {
-  margin-left: 45%;
+  margin-left: 40%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#336af5), color-stop(60%, #2b55c2), to(#1d3d8c));
   background-image: linear-gradient(#336af5, #2b55c2 60%, #1d3d8c);
 }
 
 .signup {
-  margin-left: 44%;
-}
-
-.resetPass {
-  margin-left: 41%;
+  margin-left: 38%;
 }
 
 .reset {
   color: #040d91;
   text-decoration: none;
+  text-align: center !important;
   font-weight: bold;
+}
+
+.resetPass {
+  width: 100%;
 }
 
 .register {
@@ -128,5 +129,25 @@
   text-align: center !important;
   margin-bottom: 0px !important;
   padding-top: 0px !important;
+}
+
+.contact {
+  background-color: transparent;
+}
+
+.map {
+  border: solid 0.5px !important;
+}
+
+.map-padding {
+  padding-left: 4%;
+}
+
+.address {
+  background-color: lightgrey;
+  text-align: center;
+  height: 305px;
+  margin-left: 13%;
+  border: solid 0.5px;
 }
 /*# sourceMappingURL=main.css.map */
