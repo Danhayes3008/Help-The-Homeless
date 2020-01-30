@@ -6,6 +6,9 @@ body {
     padding-top: 100px;
     color: black;
     background-image: url("../images/city-street.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
 }
 h2{
