@@ -49,3 +49,13 @@ class RegistrationForm(UserCreationForm):
             raise ValidationError("Passwords must match")
         
         return password2
+    
+class updateUserForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['username', 'first_name', 'last_name', 'email']
+        
+class updateProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['image']
