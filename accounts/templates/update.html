@@ -6,8 +6,8 @@
 <h3>Update</h3>
 <form method="POST">
   {% csrf_token %}
-  {{ user_form.as_p }}
-  {{ profile_form.as_p }}
+  {{ u_form | as_bootstrap }}
+  {{ p_form | as_bootstrap }}
   <button type="submit">Save changes</button>
 </form>
 {% endblock %}
