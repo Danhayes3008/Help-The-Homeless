@@ -57,7 +57,8 @@ def registration(request):
                 messages.error(request, "Something went wrong, please try again")
     else:
         registration_form = RegistrationForm()
-    return render(request, 'registration.html', {"registration_form": registration_form})
+    return render(request, 'registration.html',
+                  {"registration_form": registration_form})
 def profile(request):
     user = User.objects.get(email=request.user.email)
     username = User.objects.get(username=request.user.username)
@@ -66,13 +67,27 @@ def profile(request):
     print(donate)
     donations = DonateLineItem.objects.filter(amount=donated)
     print(donations)
-    return render(request, 'profile.html', {"profile": user, "donated": donated, "donations": donations})
+    return render(request, 'profile.html', {"profile": user,
+                                            "donated": donated,
+                                            "donations": donations})
 
 @login_required
 # @transaction.atomic
 def update_profile(request):
-    u_form = updateUserForm()
-    p_form = updateProfileForm()
+    if request.method == 'POST':
+        u_form = updateUserForm(request.POST,
+                                instance=request.user)
+        p_form = updateProfileForm(request.POST,
+                                   request.FILES,
+                                   instance=request.user.profile)
+        if u_form.is_valid() and p_form.is_valid():
+            u_form.save()
+            p_form.save()
+            messages.success(request, "Your Profile Has Been Updated")
+            return redirect('profile')
+    else:
+        u_form = updateUserForm(instance=request.user)
+        p_form = updateProfileForm(instance=request.user.profile)
     
     context = {
         'u_form': u_form,
