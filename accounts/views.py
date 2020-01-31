@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
-from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm
+from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm, updateProfileForm, updateUserForm
 from payment.models import DonateLineItem, donate
 from contrabutions.models import Donations
 
@@ -67,27 +67,28 @@ def profile(request):
     donations = DonateLineItem.objects.filter(amount=donated)
     print(donations)
     return render(request, 'profile.html', {"profile": user, "donated": donated, "donations": donations})
-def update(request):
-    return render(request, 'update.html')
-
 
 @login_required
 # @transaction.atomic
 def update_profile(request):
-    if request.method == 'POST':
-        user_form = UserForm(request.POST, instance=request.user)
-        profile_form = ProfileForm(request.POST, instance=request.user.profile)
-        if user_form.is_valid() and profile_form.is_valid():
-            user_form.save()
-            profile_form.save()
-            messages.success(request, ('Your profile was successfully updated!'))
-            return redirect('profile.html')
-        else:
-            messages.error(request, ('Please correct the error below.'))
-    else:
-        user_form = UserForm(instance=request.user)
-        profile_form = ProfileForm(instance=request.user.profile)
-    return render(request, 'profile.html', {
-        'user_form': user_form,
-        'profile_form': profile_form
-    })
+    u_form = updateUserForm()
+    p_form = updateProfileForm()
+    
+    context = {
+        'u_form': u_form,
+        'p_form': p_form
+    }
+    return render(request, 'update.html', context)
+    
+def delete_user(request, id):
+    obj = get_object_or_404(User, id=id)
+    #POST request
+    if request.method == "POST":
+        #confirming deletion
+        obj.delete()
+        return redirect('index.html')
+    context = {
+        "object": obj
+    }
+    return render(request,"profile.html", context)
+    
