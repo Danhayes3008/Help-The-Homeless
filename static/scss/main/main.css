@@ -20,6 +20,10 @@
   color: white;
 }
 
+.footer {
+  background-color: grey;
+}
+
 .box {
   background-color: burlywood;
   margin-left: 80px;
