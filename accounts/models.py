@@ -1,29 +1,19 @@
 from django.db import models
 from django.contrib.auth.models import User
-from PIL import Image
 from django.db.models.signals import post_save
 from django.dispatch import receiver
+from test.dtracedata import instance
 
 class Profile(models.Model):
     name = models.CharField(max_length=250, blank=True)
     gender = models.CharField(max_length=6, blank=True)
     nationality = models.CharField(max_length=100, blank=True)
     birthday=models.DateField(auto_now=False, null=True, blank=True)
-    image = models.ImageField(upload_to='images', blank=True)
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, default=None)
+    image = models.ImageField(upload_to='images', null=True, blank=True)
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.user.username
-    
-    def save(self):
-        super().save()
-        
-        img = Image.open(self.image.path)
-        
-        if img.height > 225 or img.width > 225:
-            output_size = (225, 225)
-            img.thumbnail(output_size)
-            img.save(self.image.path)
     
 @receiver(post_save, sender=User)
 def create_or_update_user_profile (sender, instance, created, **kwargs):
