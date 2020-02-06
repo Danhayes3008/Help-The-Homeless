@@ -69,6 +69,11 @@
   border: solid 1px;
 }
 
+.updateButton {
+  text-align: center;
+  background-color: blue !important;
+}
+
 .donation {
   width: 50%;
   margin-left: 25%;
