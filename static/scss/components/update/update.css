@@ -3,4 +3,9 @@
   margin-left: 25%;
   border: solid 1px;
 }
+
+.updateButton {
+  text-align: center;
+  background-color: blue !important;
+}
 /*# sourceMappingURL=update.css.map */
