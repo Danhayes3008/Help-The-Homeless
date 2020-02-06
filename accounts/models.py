@@ -8,7 +8,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=250, blank=True)
     gender = models.CharField(max_length=6, blank=True)
     nationality = models.CharField(max_length=100, blank=True)
-    birthday=models.DateField(auto_now=False, null=True, blank=True)
+    birthday = models.DateField(auto_now=False, null=True, blank=True)
     image = models.ImageField(upload_to='images', null=True, blank=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
@@ -18,6 +18,6 @@ class Profile(models.Model):
 @receiver(post_save, sender=User)
 def create_or_update_user_profile (sender, instance, created, **kwargs):
     if created:
-        Profile.objects.create(user=instance)
-    instance.profile.save()
+        Profile.objects.get_or_create(user=instance)
+        instance.profile.save()
 
