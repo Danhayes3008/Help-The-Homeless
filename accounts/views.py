@@ -66,7 +66,6 @@ def profile(request):
     donated = donate.objects.filter(full_name=username)
     print(donate)
     donations = DonateLineItem.objects.filter(amount=donated)
-    print(donations)
     return render(request, 'profile.html', {"profile": user,
                                             "donated": donated,
                                             "donations": donations})
