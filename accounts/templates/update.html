@@ -3,13 +3,13 @@
 {% load bootstrap_tags %}
 
 {% block content %}
-<div>
-<h3>Update</h3>
-<form method="POST">
-  {% csrf_token %}
-  {{ u_form | as_bootstrap }}
-  {{ p_form | as_bootstrap }}
-  <button type="submit">Save changes</button>
-</form>
+<div class="row row-flex update jumbotron">
+  <h3>Update</h3>
+  <form method="POST">
+    {% csrf_token %}
+    {{ u_form | as_bootstrap }}
+    {{ p_form | as_bootstrap }}
+    <button type="submit">Save changes</button>
+  </form>
 </div>
 {% endblock %}
