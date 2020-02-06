@@ -22,8 +22,8 @@ def login(request):
             if user:
                 auth.login(user=user, request=request)
                 return redirect(reverse('index'))
-            else:
-                login_form.add_error(None, "Incorrect username or password, please try again.")
+        else:
+            login_form.add_error(None, "Incorrect username or password, please try again.")
     else:
         login_form = LoginForm()
     return render(request, 'login.html', {'login_form': login_form})
@@ -59,6 +59,7 @@ def registration(request):
         registration_form = RegistrationForm()
     return render(request, 'registration.html',
                   {"registration_form": registration_form})
+@login_required
 def profile(request):
     user = User.objects.get(email=request.user.email)
     username = User.objects.get(username=request.user.username)
