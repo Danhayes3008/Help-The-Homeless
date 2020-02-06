@@ -63,6 +63,12 @@
   background-color: gray;
 }
 
+.update {
+  width: 50%;
+  margin-left: 25%;
+  border: solid 1px;
+}
+
 .donation {
   width: 50%;
   margin-left: 25%;
