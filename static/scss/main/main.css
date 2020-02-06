@@ -101,6 +101,17 @@
   padding-top: 20px;
 }
 
+.trainingImg {
+  width: 500px;
+  height: 250px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.trainingText {
+  padding-top: 20px;
+}
+
 .login {
   width: 30%;
   margin-left: 35%;
