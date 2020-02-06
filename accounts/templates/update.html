@@ -5,11 +5,11 @@
 {% block content %}
 <div class="row row-flex update jumbotron">
   <h3>Update</h3>
-  <form method="POST">
+  <form class="text-center" method="POST">
     {% csrf_token %}
     {{ u_form | as_bootstrap }}
     {{ p_form | as_bootstrap }}
-    <button class="updateButton" type="submit">Save changes</button>
+    <button class="btn updateButton btn-default btn-success" type="submit">Save changes</button>
   </form>
 </div>
 {% endblock %}
