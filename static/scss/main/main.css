@@ -76,15 +76,29 @@
 }
 
 .donation {
-  width: 50%;
-  margin-left: 25%;
+  width: 75%;
+  margin-left: 14.5%;
   background-color: #ccc9c9;
   margin-bottom: 5%;
+  border: solid 1px;
+}
+
+.hr1 {
+  width: 20px;
 }
 
 .projects {
-  width: 75%;
-  margin-left: 12.5%;
+  padding-bottom: 20px;
+}
+
+.genSupport {
+  width: 470px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.supportText {
+  padding-top: 20px;
 }
 
 .login {
