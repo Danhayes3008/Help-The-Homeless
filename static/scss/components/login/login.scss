@@ -3,6 +3,12 @@
   margin-left: 35%;
   border: solid 0.5px;
   background-color: #ccc9c9;
+  margin-bottom: 7%;
+  margin-top: 2%;
+  @include tab{
+    width: 40%;
+    margin-left: 30%;
+  }
 }
 
 .button {
