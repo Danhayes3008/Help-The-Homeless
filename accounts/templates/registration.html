@@ -12,7 +12,7 @@
     <p class="note">Create a free account now to start donating to our cause</p>
     <form class="text-center" method="POST">
     {% csrf_token %} {{ registration_form | as_bootstrap }}
-    <button type="submit" >submit</button>
+    <button class="btn submitButton btn-default btn-success" type="submit" >submit</button>
     </form>
 </div>
 {% endblock %}
