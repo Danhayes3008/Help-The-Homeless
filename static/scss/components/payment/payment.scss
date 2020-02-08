@@ -3,6 +3,10 @@
     margin-left: 25%;
     border: solid 0.5px;
     background-color: #ccc9c9;
+    @include computer {
+        width: 40%;
+        margin-left: 30%;
+      }
 }
 
 .payment-jumbotron{
@@ -11,6 +15,10 @@
     width: 50%;
     margin-left: 25%;
     background-color: transparent;
+    @include computer {
+        width: 30%;
+        margin-left: 35%;
+      }
 }
 
 .payment-panel{
