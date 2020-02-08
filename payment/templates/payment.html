@@ -26,23 +26,16 @@
         </div>
     {% endfor %}
 </div>
-<div class="row flex-row payment-jumbotron jumbotron">
-    <form role="form" method="post" id="payment-form" action="{% url 'payment' %}">
+<div class="row flex-row payment payment-jumbotron jumbotron">
+    <form class="text-center" role="form" method="post" id="payment-form" action="{% url 'payment' %}">
         <legend class="text-center">Shipping Details</legend>
 
         <div id="credit-card-errors" style="display: none;">
             <div id="alert-message block-message error" id="stripe-error-message"></div>
         </div>
-
-        <div class="form-group col-md-12 payment">
             {{ donate_form | as_bootstrap }}
-        </div>
-
-        <legend class="text-center payment">Card Details</legend>
-
-        <div class="form-group col-md-12 payment">
+            <legend class="text-center">Card Details</legend>
             {{ payment_form | as_bootstrap }}
-        </div>
 
         {% csrf_token %}
         <div class="form-group col-md-12">
