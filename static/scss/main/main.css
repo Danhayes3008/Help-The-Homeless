@@ -195,12 +195,26 @@
   background-color: #ccc9c9;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .payment {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
 .payment-jumbotron {
   padding-top: 0px !important;
   padding-bottom: 0px;
   width: 50%;
   margin-left: 25%;
   background-color: transparent;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .payment-jumbotron {
+    width: 30%;
+    margin-left: 35%;
+  }
 }
 
 .payment-panel {
