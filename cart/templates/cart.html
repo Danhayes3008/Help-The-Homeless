@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="row row-flex cart jumbotron">
-    <p>For every donation made a certificate is sent to show your contribution to our cause. Any donation over £100,000.00 you will recive a top doner placque</p>
-    <h3>Donate</h3>
+    <p class="text-center">For every donation made a certificate is sent to show your contribution to our cause. Any donation over £100,000.00 you will recive a top doner placque</p>
+    <hr class="hr1">
     {% if project_count > 0 %}
+    <h3 class="text-center">Donate</h3>
         {% for items in cart_items %}
-            <p>{{ items.donations.name }}</p>
-            <p><i class="fa fa-gbp"></i>{{ items.amount }}</p>
+            {% comment %} <p>{{ items.donations.name }}</p> {% endcomment %}
+            <p class="text-center"><i class="fa fa-gbp"></i>{{ items.amount }}</p>
             <form class="text-center" method="post" action="{% url 'adjust_donation' items.id %}">
             {% csrf_token %}
                 <div class="input-group">
@@ -19,7 +20,7 @@
             </form>
         {% endfor %}
     {% elif project_count < 1 %}
-        <p>Sorry there is nothing in the cart</p>
+        <p class="text-center">Sorry there is nothing in the cart</p>
     {% endif %}
 </div>
 {% endblock %}
