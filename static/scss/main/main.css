@@ -247,9 +247,16 @@
 .cart {
   width: 50%;
   margin-left: 25%;
-  margin-top: 6%;
+  margin-top: 8.6%;
   margin-bottom: 9.6%;
   border: solid 0.5px;
   background-color: #ccc9c9;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cart {
+    width: 40%;
+    margin-left: 30%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
