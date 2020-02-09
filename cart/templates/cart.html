@@ -6,7 +6,7 @@
         {% for items in cart_items %}
             <p>{{ items.donations.name }}</p>
             <p><i class="fa fa-gbp"></i>{{ items.amount }}</p>
-            <form method="post" action="{% url 'adjust_donation' items.id %}">
+            <form class="text-center" method="post" action="{% url 'adjust_donation' items.id %}">
             {% csrf_token %}
                 <div class="input-group">
                 <input name="amount" type="number" min="1" max="999999" class="form-control" placeholder="amount">
@@ -14,8 +14,8 @@
                     <button class="btn btn-success" type="submit">Add</button>
                 </span>
             </div>
-            </form>
             <a href="{% url 'payment' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Donate</a>
+            </form>
         {% endfor %}
     {% elif project_count < 1 %}
         <p>Sorry there is nothing in the cart</p>
