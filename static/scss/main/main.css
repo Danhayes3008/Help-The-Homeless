@@ -269,4 +269,20 @@
 .total {
   color: black;
 }
+
+.about {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 8.6%;
+  margin-bottom: 9.6%;
+  border: solid 0.5px;
+  background-color: #ccc9c9;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
