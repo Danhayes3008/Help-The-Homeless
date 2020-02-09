@@ -35,6 +35,16 @@ hr {
     padding-top: 20px;
 }
 
+li{
+    list-style: none;
+    text-align: center;
+    color: black;
+}
+
+ul{
+    padding-left: 0px;
+}
+
 .container{
     margin-right: 0px;
     margin-left: 0px;
