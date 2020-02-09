@@ -14,4 +14,4 @@ class MakePaymentForm(forms.Form):
 class DonateForm(forms.ModelForm):
     class Meta:
         model = donate
-        fields = ('phone_number', 'country', 'postcode', 'town_or_city', 'streetadress1', 'streetaddress2', 'county')
+        fields = ('street_address_1', 'street_address_2', 'town_or_city','county', 'postcode', 'country')
