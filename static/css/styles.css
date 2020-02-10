@@ -12,7 +12,11 @@ body {
     background-size: cover;
 }
 h2{
-    color: white;
+    color: black;
+}
+
+.row{
+    width: 100%;
 }
 
 hr { 
