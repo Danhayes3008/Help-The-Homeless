@@ -8,6 +8,7 @@
   height: 150px;
   padding-left: 20px;
   /* border-radius: 100%; */
+  @inc;
 }
 
 .img-1 {

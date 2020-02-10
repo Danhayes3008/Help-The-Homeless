@@ -2,12 +2,18 @@
     background-color: #ccc9c9;
     margin-left: 80px;
     height: 450px;
+    @include computer{
+        margin-left: 60px;
+    }
 }
 
 .img{
     height: 150px;
     padding-left: 20px;
     /* border-radius: 100%; */
+    @include computer{
+        height: 100px;
+    }
 }
 .img-1{
     height: 200px;
@@ -18,11 +24,17 @@
     height: 150px;
     padding-left: 10px;
     /* border-radius: 50%; */
+    @include computer{
+        height: 100px;
+    }
 }
 .img-3{
     height: 150px;
     padding-left: 35px;
     /* border-radius: 50%; */
+    @include computer{
+        height: 100px;
+    }
 }
 .i-text1{
     padding-top: 5%;
