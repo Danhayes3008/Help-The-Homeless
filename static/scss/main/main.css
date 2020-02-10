@@ -89,7 +89,7 @@
   background-color: #ccc9c9;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 731px) and (max-width: 991px) {
   .height1 {
     width: 50%;
     margin-left: 25%;
