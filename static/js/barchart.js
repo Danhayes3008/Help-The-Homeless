@@ -4,11 +4,11 @@ anychart.onDocumentReady(function() {
     var data = {
         header: ["Name", "Death toll"],
         rows: [
-          ["1995", 3951],
-          ["2000", 4587],
-          ["2005", 5174],
-          ["2010", 5922],
-          ["2015", 6718]
+          ["1995", 36951],
+          ["2000", 47587],
+          ["2005", 51174],
+          ["2010", 56922],
+          ["2015", 62718]
     ]};
 
     // create the chart
@@ -18,7 +18,7 @@ anychart.onDocumentReady(function() {
     chart.data(data);
 
     // set the chart title
-    chart.title("The deadliest earthquakes in the XXth century");
+    chart.title("Total made homeless between 1995-2015");
 
     // draw
     chart.container("bar");
