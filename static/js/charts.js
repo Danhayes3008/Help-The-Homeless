@@ -2,8 +2,8 @@ anychart.onDocumentReady(function() {
 
     // set the data
     var data = [
-        {x: "Total Population", value: 823126},
-        {x: "Homeless", value: 6718}
+        {x: "Total Population", value: 61823126},
+        {x: "Homeless", value: 62718}
     ];
   
     // create the chart
