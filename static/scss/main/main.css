@@ -25,7 +25,7 @@
 }
 
 .box {
-  background-color: burlywood;
+  background-color: #ccc9c9;
   margin-left: 80px;
   height: 450px;
 }
@@ -34,6 +34,11 @@
   height: 150px;
   padding-left: 20px;
   /* border-radius: 100%; */
+}
+
+.img-1 {
+  height: 200px;
+  padding-top: 10px;
 }
 
 .img-2 {
@@ -49,18 +54,20 @@
 }
 
 .i-text1 {
-  margin-left: 300px;
-  padding-top: 100px;
+  padding-top: 5%;
 }
 
 .height1 {
-  height: 500px;
-  background-color: burlywood;
+  height: 350px;
+  width: 75%;
+  margin-left: 12.5%;
+  padding-top: 15px;
+  background-color: #ccc9c9;
 }
 
 .height2 {
   height: 600px;
-  background-color: gray;
+  background-color: transparent;
 }
 
 .update {
