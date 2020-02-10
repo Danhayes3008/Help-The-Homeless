@@ -36,6 +36,14 @@
   }
 }
 
+@media (min-width: 731px) and (max-width: 991px) {
+  .box {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+  }
+}
+
 .img {
   height: 150px;
   padding-left: 20px;
