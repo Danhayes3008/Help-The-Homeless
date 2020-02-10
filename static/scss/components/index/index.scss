@@ -5,6 +5,11 @@
     @include computer{
         margin-left: 60px;
     }
+    @include tab{
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 10px;
+    }
 }
 
 .img{
