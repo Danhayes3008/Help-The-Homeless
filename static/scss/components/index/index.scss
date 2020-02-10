@@ -46,7 +46,11 @@
     margin-left: 12.5%;
     padding-top: 15px;
     background-color: #ccc9c9;
-    @include computer{
+    // @include computer{
+    //     width: 50%;
+    //     margin-left: 25%;
+    // }
+    @include tab{
         width: 50%;
         margin-left: 25%;
     }
