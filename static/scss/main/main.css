@@ -109,6 +109,19 @@
   background-color: transparent;
 }
 
+.index-3 {
+  height: 250px;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-bottom: 10%;
+  padding-top: 15px;
+  background-color: #ccc9c9;
+}
+
+.title {
+  padding-top: 3%;
+}
+
 .update {
   width: 30%;
   margin-left: 35%;
