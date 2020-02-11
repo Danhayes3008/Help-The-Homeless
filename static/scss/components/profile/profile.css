@@ -4,4 +4,24 @@
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
+.profile {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 75%;
+  margin-left: 12.5%;
+  padding-top: 15px;
+  background-color: #ccc9c9;
+}
+
+.profile-2 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 75%;
+  margin-left: 12.5%;
+  padding-top: 15px;
+  background-color: #ccc9c9;
+}
 /*# sourceMappingURL=profile.css.map */
