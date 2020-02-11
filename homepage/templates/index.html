@@ -11,7 +11,24 @@
         <div class="col-md-6 i-text1">
             <p>Thousands of people at risk of dying whilst living on the streets every year. The time to act is now!</p>
         </div>
-    </div> 
+    </div>
+    <div>
+        {% for product in donations %}
+            <div class="index-3">
+                <h3 class="text-center title">Donate now to improve someone's life!</h3>
+                <p class="text-center">Every day someone die's from living on the street's due to bad conditions, if we don't act now many more would be at risk.</p>
+                <form class="donation" method="post" action="{% url 'amount_to_donate' product.id %}">
+                {% csrf_token %}
+                    <div class="input-group">
+                        <input name="amount" type="number" min="1" max="999999" class="form-control" placeholder="amount">
+                        <span class="input-group-btn">
+                            <button class="btn btn-success" type="submit">Add</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
     <div class="jumbotron  height2">
         <h2 class="text-center">Our Goals</h2>
         <div class="col-md-3 col-sm-12 box">
@@ -33,22 +50,5 @@
             we help support them until they are able to support themselves financially.</p>
         </div>
     </div>
-    <div>
-        {% for product in donations %}
-            <div class="height1">
-                <h3 class="text-center">Donate now to improve someone's life!</h3>
-                <p>Every day someone die's from living on the street's due to bad conditions, if we don't act now many more would be at risk.</p>
-                <form class="donation" method="post" action="{% url 'amount_to_donate' product.id %}">
-                {% csrf_token %}
-                    <div class="input-group">
-                        <input name="amount" type="number" min="1" max="999999" class="form-control" placeholder="amount">
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="submit">Add</button>
-                        </span>
-                    </div>
-                </form>
-            </div>
-        {% endfor %}
-    </div>
-</div>
+</div> 
 {% endblock %}
