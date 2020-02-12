@@ -241,7 +241,7 @@
 }
 
 .pro-pic {
-  margin-left: 40%;
+  margin-left: 37%;
   border: 1px solid grey;
   border-radius: 50%;
   margin-bottom: 20px;
@@ -265,6 +265,10 @@
   margin-left: 12.5%;
   padding-top: 15px;
   background-color: #ccc9c9;
+}
+
+.table-list {
+  text-align: justify;
 }
 
 .payment {
