@@ -1,12 +1,17 @@
-.about{
+.about {
     width: 50%;
     margin-left: 25%;
     margin-top: 8.6%;
     margin-bottom: 9.6%;
     border: solid 0.5px;
     background-color: #ccc9c9;
+    @include mobile {
+      width: 80%;
+      margin-left: 10%;
+    }
     @include computer {
-        width: 50%;
-        margin-left: 25%;
-      }
-}
+      width: 50%;
+      margin-left: 25%;
+    }
+  }
+  
