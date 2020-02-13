@@ -188,6 +188,13 @@
   margin-top: 2%;
 }
 
+@media (max-width: 730px) {
+  .login {
+    width: 30%;
+    margin-left: 35%;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .login {
     width: 40%;
