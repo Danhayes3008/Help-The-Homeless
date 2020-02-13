@@ -16,6 +16,16 @@
     height: 150px;
     padding-left: 20px;
     /* border-radius: 100%; */
+    @include mobile{
+        padding-left: 10px;
+    }
+    @include mobile_horizontal{
+        padding-left: 40px;
+    }
+    @include tab{
+        height: 150px;
+        padding-left: 25%;
+    }
     @include computer{
         height: 100px;
     }
