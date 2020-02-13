@@ -5,6 +5,10 @@
     margin-bottom: 9.6%;
     border: solid 0.5px;
     background-color: #ccc9c9;
+    @include mobile{
+        width: 60%;
+        margin-left: 20%;
+    }
     @include computer {
         width: 50%;
         margin-left: 25%;
