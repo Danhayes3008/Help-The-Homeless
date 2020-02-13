@@ -3,6 +3,25 @@
     margin-left: 25%;
     border: solid 0.5px;
     background-color: #ccc9c9;
+    @include mobile{
+        width: 60%;
+        margin-left: 20%;
+    }
+    @include computer {
+        width: 40%;
+        margin-left: 30%;
+      }
+}
+
+.payment-2{
+    width: 50%;
+    margin-left: 25%;
+    border: solid 0.5px;
+    background-color: #ccc9c9;
+    @include mobile{
+        width: 80%;
+        margin-left: 10%;
+    }
     @include computer {
         width: 40%;
         margin-left: 30%;
@@ -15,6 +34,10 @@
     width: 50%;
     margin-left: 25%;
     background-color: transparent;
+    @include mobile{
+        width: 60%;
+        margin-left: 20%;
+    }
     @include computer {
         width: 100%;
         margin-left: 0%;
