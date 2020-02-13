@@ -1,16 +1,22 @@
 //This section sets the max size of the sceen.
+$mobile_vertical: 500px;
 $tablet-width: 731px;
 $desktop-width: 992px;
 $large-desktop-width: 1200px;
 
 //These are the mixins that control how the page looks on a website
 @mixin mobile{
-    @media(max-width: $tablet-width - 1px){
+    @media(max-width: $mobile_vertical - 1px){
         @content
     }
 }
-@mixin tab {
+@mixin mobile_horizontal{
+    @media(min-width: $mobile_vertical) and (max-width: $tablet-width - 1px) {
+        @content
+    }
+}
 
+@mixin tab {
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
         @content
     }
