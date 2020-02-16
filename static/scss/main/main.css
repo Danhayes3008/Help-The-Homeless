@@ -322,6 +322,38 @@
   padding-bottom: 20px;
 }
 
+.homeImg {
+  height: 150px;
+  padding-left: 20px;
+  /* border-radius: 100%; */
+}
+
+@media (max-width: 499px) {
+  .homeImg {
+    height: 100px;
+    padding-left: 25px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .homeImg {
+    padding-left: 150px;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .homeImg {
+    height: 150px;
+    padding-left: 25%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .homeImg {
+    height: 100px;
+  }
+}
+
 .genSupport {
   width: 470px;
   padding-left: 10px;
@@ -356,6 +388,13 @@
   .login {
     width: 60%;
     margin-left: 20%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .login {
+    width: 50%;
+    margin-left: 25%;
   }
 }
 
