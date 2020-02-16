@@ -1,105 +1,123 @@
-.box{
-    background-color: #ccc9c9;
-    margin-left: 80px;
-    height: fit-content;
-    @include mobile{
-        margin-left: 20px;
-        margin-top: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    @include computer{
-        margin-left: 60px;
-    }
-    @include tab{
-        width: 50%;
-        margin-left: 25%;
-        margin-bottom: 10px;
-    }
-}
-
-.img{
-    height: 150px;
-    padding-left: 20px;
-    /* border-radius: 100%; */
-    @include mobile{
-        padding-left: 20px;
-    }
-    @include mobile_horizontal{
-        padding-left: 40px;
-    }
-    @include tab{
-        height: 150px;
-        padding-left: 25%;
-    }
-    @include computer{
-        height: 100px;
-    }
-}
-.img-1{
-    height: 200px;
+.box {
+  background-color: #ccc9c9;
+  margin-left: 80px;
+  height: fit-content;
+  @include mobile {
+    margin-left: 20px;
+    margin-top: 10px;
     padding-top: 10px;
-    @include mobile{
-        height: 150px;
-        padding-left: 5px;
-    }
+    padding-bottom: 10px;
+  }
+  @include computer {
+    margin-left: 60px;
+  }
+  @include tab {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 10px;
+  }
 }
 
-.img-2{
+.img {
+  height: 150px;
+  padding-left: 20px;
+  /* border-radius: 100%; */
+  @include mobile {
+    padding-left: 20px;
+  }
+  @include mobile_horizontal {
+    padding-left: 40px;
+  }
+  @include tab {
     height: 150px;
+    padding-left: 25%;
+  }
+  @include computer {
+    height: 100px;
+  }
+}
+.img-1 {
+  height: 200px;
+  padding-top: 10px;
+  @include mobile {
+    height: 150px;
+    padding-left: 5px;
+  }
+}
+
+.img-2 {
+  height: 150px;
+  padding-left: 10px;
+  /* border-radius: 50%; */
+  @include computer {
+    height: 100px;
+  }
+}
+.img-3 {
+  height: 150px;
+  padding-left: 35px;
+  /* border-radius: 50%; */
+  @include computer {
+    height: 100px;
+  }
+}
+.i-text1 {
+  padding-top: 5%;
+}
+
+.height1 {
+  height: 350px;
+  width: 75%;
+  margin-left: 12.5%;
+  padding-top: 15px;
+  background-color: #ccc9c9;
+  @include mobile {
+    height: fit-content;
+  }
+  @include mobile_horizontal{
+      width: 60%;
+      margin-left: 20%;
+  }
+  // @include computer{
+  //     width: 50%;
+  //     margin-left: 25%;
+  // }
+  @include tab {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+.height2 {
+  height: fit-content;
+  background-color: transparent;
+  @include mobile {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+
+.index-3 {
+  height: fit-content;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-bottom: 10%;
+  padding-top: 15px;
+  background-color: #ccc9c9;
+  @include mobile {
     padding-left: 10px;
-    /* border-radius: 50%; */
-    @include computer{
-        height: 100px;
-    }
-}
-.img-3{
-    height: 150px;
-    padding-left: 35px;
-    /* border-radius: 50%; */
-    @include computer{
-        height: 100px;
-    }
-}
-.i-text1{
-    padding-top: 5%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
 }
 
-.height1{
-    height: fit-content;
-    width: 75%;
-    margin-left: 12.5%;
-    padding-top: 15px;
-    background-color: #ccc9c9;
-    // @include computer{
-    //     width: 50%;
-    //     margin-left: 25%;
-    // }
-    @include tab{
-        width: 50%;
-        margin-left: 25%;
-    }
+.index-3-text {
+  text-align: center;
+  @include mobile {
+    text-align: justify;
+  }
 }
 
-.height2{
-    height: fit-content;
-    background-color: transparent;
-}
-
-.index-3{
-    height: fit-content;
-    width: 75%;
-    margin-left: 12.5%;
-    margin-bottom: 10%;
-    padding-top: 15px;
-    background-color: #ccc9c9;
-    @include mobile{
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 10px;
-    }
-}
-
-.title{
-    padding-top: 3%;
+.title {
+  padding-top: 3%;
 }
