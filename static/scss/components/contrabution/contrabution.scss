@@ -28,7 +28,7 @@
       padding-left: 25px;
     }
     @include mobile_horizontal {
-      padding-left: 150px;
+      padding-left: 130px;
     }
     @include tab {
       height: 150px;
@@ -40,9 +40,17 @@
 }
 
 .genSupport{
-    width: 470px;
+    height: 250px;
     padding-left: 10px;
     padding-bottom: 10px;
+    @include mobile {
+        height: 100px;
+      padding-left: 25px;
+    }
+    @include mobile_horizontal{
+        height: 150px;
+        padding-left: 130px;
+    }
 }
 
 .supportText{
@@ -50,10 +58,16 @@
 }
 
 .trainingImg{
-    width: 500px;
     height: 250px;
     padding-bottom: 10px;
     padding-right: 10px;
+    @include mobile{
+        height: 150px;
+    }
+    @include mobile_horizontal{
+        height: 200px;
+        padding-left: 120px;
+    }
 }
 
 .trainingText{
