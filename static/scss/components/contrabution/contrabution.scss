@@ -4,6 +4,9 @@
     background-color: #ccc9c9;
     margin-bottom: 5%;
     border: solid 1px;
+    @include mobile{
+        margin-left: 30px;
+    }
 }
 
 .hr1{
