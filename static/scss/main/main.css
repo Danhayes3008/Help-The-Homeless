@@ -27,7 +27,18 @@
 .box {
   background-color: #ccc9c9;
   margin-left: 80px;
-  height: 450px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media (max-width: 499px) {
+  .box {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -80,6 +91,13 @@
   padding-top: 10px;
 }
 
+@media (max-width: 499px) {
+  .img-1 {
+    height: 150px;
+    padding-left: 5px;
+  }
+}
+
 .img-2 {
   height: 150px;
   padding-left: 10px;
@@ -109,7 +127,9 @@
 }
 
 .height1 {
-  height: 350px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 75%;
   margin-left: 12.5%;
   padding-top: 15px;
@@ -124,17 +144,29 @@
 }
 
 .height2 {
-  height: 600px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: transparent;
 }
 
 .index-3 {
-  height: 250px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 75%;
   margin-left: 12.5%;
   margin-bottom: 10%;
   padding-top: 15px;
   background-color: #ccc9c9;
+}
+
+@media (max-width: 499px) {
+  .index-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .title {
