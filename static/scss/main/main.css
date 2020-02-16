@@ -44,6 +44,9 @@
 @media (min-width: 500px) and (max-width: 730px) {
   .box {
     margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -69,13 +72,14 @@
 
 @media (max-width: 499px) {
   .img {
-    padding-left: 20px;
+    height: 100px;
+    padding-left: 25px;
   }
 }
 
 @media (min-width: 500px) and (max-width: 730px) {
   .img {
-    padding-left: 40px;
+    padding-left: 80px;
   }
 }
 
@@ -116,6 +120,13 @@
   /* border-radius: 50%; */
 }
 
+@media (max-width: 499px) {
+  .img-2 {
+    height: 100px;
+    padding-left: 10%;
+  }
+}
+
 @media (min-width: 500px) and (max-width: 730px) {
   .img-2 {
     padding-left: 18%;
@@ -132,6 +143,12 @@
   height: 150px;
   padding-left: 35px;
   /* border-radius: 50%; */
+}
+
+@media (max-width: 499px) {
+  .img-3 {
+    padding-left: 0px;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 730px) {
@@ -164,6 +181,7 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    margin-left: 15%;
   }
 }
 
@@ -221,6 +239,8 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    margin-bottom: 0px;
+    margin-left: 15%;
   }
 }
 
@@ -286,6 +306,12 @@
   background-color: #ccc9c9;
   margin-bottom: 5%;
   border: solid 1px;
+}
+
+@media (max-width: 499px) {
+  .donation {
+    margin-left: 30px;
+  }
 }
 
 .hr1 {
