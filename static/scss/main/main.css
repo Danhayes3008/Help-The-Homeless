@@ -41,6 +41,12 @@
   }
 }
 
+@media (min-width: 500px) and (max-width: 730px) {
+  .box {
+    margin-left: 20px;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .box {
     margin-left: 60px;
@@ -98,10 +104,22 @@
   }
 }
 
+@media (min-width: 500px) and (max-width: 730px) {
+  .img-1 {
+    padding-left: 30px;
+  }
+}
+
 .img-2 {
   height: 150px;
   padding-left: 10px;
   /* border-radius: 50%; */
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .img-2 {
+    padding-left: 18%;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -114,6 +132,13 @@
   height: 150px;
   padding-left: 35px;
   /* border-radius: 50%; */
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .img-3 {
+    height: 200px;
+    padding-left: 60px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -142,6 +167,16 @@
   }
 }
 
+@media (min-width: 500px) and (max-width: 730px) {
+  .height1 {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
 @media (min-width: 731px) and (max-width: 991px) {
   .height1 {
     width: 50%;
@@ -160,6 +195,13 @@
   .height2 {
     width: 75%;
     margin-left: 12.5%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .height2 {
+    width: 70%;
+    margin-left: 15%;
   }
 }
 
@@ -182,6 +224,13 @@
   }
 }
 
+@media (min-width: 500px) and (max-width: 730px) {
+  .index-3 {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+}
+
 .index-3-text {
   text-align: center;
 }
@@ -189,6 +238,14 @@
 @media (max-width: 499px) {
   .index-3-text {
     text-align: justify;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .index-3-text {
+    text-align: justify;
+    width: 80%;
+    padding-left: 20%;
   }
 }
 
@@ -510,6 +567,37 @@
   .about {
     width: 50%;
     margin-left: 25%;
+  }
+}
+
+.about-img {
+  height: 150px;
+  padding-left: 20px;
+  /* border-radius: 100%; */
+}
+
+@media (max-width: 499px) {
+  .about-img {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .about-img {
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .about-img {
+    height: 150px;
+    padding-left: 25%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-img {
+    height: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */
