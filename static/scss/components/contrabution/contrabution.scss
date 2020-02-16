@@ -19,6 +19,26 @@
     padding-bottom: 20px;
 }
 
+.homeImg {
+    height: 150px;
+    padding-left: 20px;
+    /* border-radius: 100%; */
+    @include mobile {
+        height: 100px;
+      padding-left: 25px;
+    }
+    @include mobile_horizontal {
+      padding-left: 150px;
+    }
+    @include tab {
+      height: 150px;
+      padding-left: 25%;
+    }
+    @include computer {
+      height: 100px;
+    }
+}
+
 .genSupport{
     width: 470px;
     padding-left: 10px;
