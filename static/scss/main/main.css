@@ -258,6 +258,8 @@
 @media (max-width: 499px) {
   .index-3-text {
     text-align: justify;
+    width: 80%;
+    padding-left: 20%;
   }
 }
 
@@ -378,6 +380,20 @@
   padding-top: 20px;
 }
 
+@media (max-width: 499px) {
+  .supportText {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .supportText {
+    text-align: justify;
+    width: 80%;
+    padding-left: 20%;
+  }
+}
+
 .trainingImg {
   height: 250px;
   padding-bottom: 10px;
@@ -399,6 +415,40 @@
 
 .trainingText {
   padding-top: 20px;
+}
+
+@media (max-width: 499px) {
+  .trainingText {
+    text-align: justify;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .trainingText {
+    text-align: justify;
+    width: 80%;
+    padding-left: 20%;
+  }
+}
+
+.homeText {
+  text-align: center;
+}
+
+@media (max-width: 499px) {
+  .homeText {
+    text-align: justify;
+    width: 80%;
+    padding-left: 20%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .homeText {
+    text-align: justify;
+    width: 80%;
+    padding-left: 20%;
+  }
 }
 
 .login {
