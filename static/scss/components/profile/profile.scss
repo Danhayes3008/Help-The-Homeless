@@ -3,6 +3,17 @@
     border: 1px solid grey;
     border-radius: 50%;
     margin-bottom: 20px;
+    @include mobile_horizontal{
+        margin-left: 25%;
+    }
+}
+
+.a{
+    color: black;
+    @include mobile_horizontal{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .profile{
@@ -22,4 +33,16 @@
 
 .table-list{
     text-align: justify;
+    @include mobile{
+        text-align: center;
+    }
+    @include mobile_horizontal{
+        text-align: center;
+    }
+}
+.profile-title{
+    text-align: justify;
+    @include mobile_horizontal{
+        text-align: center;
+    }
 }
