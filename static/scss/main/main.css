@@ -662,6 +662,22 @@
   border: solid 0.5px !important;
 }
 
+@media (max-width: 499px) {
+  .map {
+    width: 280px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .map {
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+}
+
 .map-padding {
   padding-left: 4%;
 }
@@ -672,6 +688,12 @@
   height: 305px;
   margin-left: 13%;
   border: solid 0.5px;
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .address {
+    margin-left: 5%;
+  }
 }
 
 .cart {
