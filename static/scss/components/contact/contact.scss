@@ -6,7 +6,7 @@
 .map{
     border: solid 0.5px !important;
     @include mobile{
-        width: 280px;
+        width: 300px;
         margin-top: 20px;
         margin-left: 30px;
     }
