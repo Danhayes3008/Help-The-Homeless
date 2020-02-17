@@ -1,6 +1,7 @@
 .navbar-1 {
   background-color: darkslategray;
   margin-right: 0px;
+  height: 50px;
 }
 
 .navbar-brand {
@@ -333,7 +334,7 @@
 @media (max-width: 499px) {
   .homeImg {
     height: 100px;
-    padding-left: 25px;
+    padding-left: 60px;
   }
 }
 
@@ -364,8 +365,8 @@
 
 @media (max-width: 499px) {
   .genSupport {
-    height: 100px;
-    padding-left: 25px;
+    height: 150px;
+    padding-left: 20px;
   }
 }
 
@@ -403,6 +404,7 @@
 @media (max-width: 499px) {
   .trainingImg {
     height: 150px;
+    padding-left: 45px;
   }
 }
 
