@@ -29,7 +29,7 @@
   padding-left: 20px;
   /* border-radius: 100%; */
   @include mobile {
-      height: 100px;
+    height: 100px;
     padding-left: 25px;
   }
   @include mobile_horizontal {
@@ -59,9 +59,9 @@
   height: 150px;
   padding-left: 10px;
   /* border-radius: 50%; */
-  @include mobile{
-      height: 100px;
-      padding-left: 10%;
+  @include mobile {
+    height: 100px;
+    padding-left: 10%;
   }
   @include mobile_horizontal {
     padding-left: 18%;
@@ -74,8 +74,8 @@
   height: 150px;
   padding-left: 35px;
   /* border-radius: 50%; */
-  @include mobile{
-      padding-left: 0px;
+  @include mobile {
+    padding-left: 0px;
   }
   @include mobile_horizontal {
     height: 200px;
@@ -151,6 +151,8 @@
   text-align: center;
   @include mobile {
     text-align: justify;
+    width: 80%;
+    padding-left: 20%;
   }
   @include mobile_horizontal {
     text-align: justify;
