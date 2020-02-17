@@ -438,13 +438,30 @@
 @media (max-width: 499px) {
   .homeText {
     text-align: justify;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .homeText {
+    text-align: justify;
+    width: 80%;
+    padding-left: 20%;
+  }
+}
+
+.donate-text {
+  padding: 0px;
+}
+
+@media (max-width: 499px) {
+  .donate-text {
     width: 80%;
     padding-left: 20%;
   }
 }
 
 @media (min-width: 500px) and (max-width: 730px) {
-  .homeText {
+  .donate-text {
     text-align: justify;
     width: 80%;
     padding-left: 20%;
