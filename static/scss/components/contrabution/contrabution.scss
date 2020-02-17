@@ -94,12 +94,23 @@
     text-align: center;
     @include mobile {
       text-align: justify;
-      width: 80%;
-      padding-left: 20%;
     }
     @include mobile_horizontal {
       text-align: justify;
       width: 80%;
       padding-left: 20%;
     }
+  }
+
+  .donate-text{
+      padding: 0px;
+      @include mobile{
+          width: 80%;
+          padding-left: 20%;
+      }
+      @include mobile_horizontal {
+        text-align: justify;
+        width: 80%;
+        padding-left: 20%;
+      }
   }
