@@ -6,7 +6,7 @@
     {% for product in donations %}
         <div>
         <h3 class="text-center">Donate now!</h3>
-        <p class="index-3-text">Every day someone die's from living on the street's due to bad conditions, if we don't act now many more would be at risk.</p>
+        <p class="donate-text">Every day someone die's from living on the street's due to bad conditions, if we don't act now many more would be at risk.</p>
             <form class="donation" method="post" action="{% url 'amount_to_donate' product.id %}">
             {% csrf_token %}
                 <div class="input-group">
@@ -24,7 +24,7 @@
         <h3 class="text-center">Housing</h3>
         <hr class="hr1">
         <img class="homeImg col-md-6" src="{% static 'images/homes.jpeg' %}"></img>
-        <p class="index-3-text col-md-6">The Housing project was set up to help people living on the street that require a place to stay
+        <p class="homeText col-md-6">The Housing project was set up to help people living on the street that require a place to stay
         whilst trying to get there life back on track. every home will have all the basic commodities need to provide 
         the with a comfortable living. It is out aim to provide a warm place to stay for those who need it. </p>
     </div>
@@ -34,7 +34,7 @@
         <h3 class="text-center">Training</h3>
         <hr class="hr1">
         <img class="trainingImg visible-xs" src="{% static 'images/training.jpg' %}"></img>
-        <p class="index-3-text trainingText col-md-6">It is our aim is to provide retraining, so that all those we help can find employment. Each person on the help program
+        <p class="trainingText col-md-6">It is our aim is to provide retraining, so that all those we help can find employment. Each person on the help program
         will be required to take the manditory Maths and English courses, further thraining will be available once the manditory courses are complete. By retraining those 
         that we take in we hope that this would help them reintergrate into society and begin creating many opotunities in there future.</p>
         <img class="trainingImg col-md-6 hidden-sm hidden-xs" src="{% static 'images/training.jpg' %}"></img>
@@ -45,7 +45,7 @@
         <h3 class="text-center">General support</h3>
         <hr class="hr1">
         <img class="genSupport col-md-6" src="{% static 'images/feeding.jpg' %}"></img>
-        <p class="index-3-text supportText col-md-6">The General support will be used to provide all the stuff needed to support the basic living needs such as food, clothing, medication
+        <p class="supportText col-md-6">The General support will be used to provide all the stuff needed to support the basic living needs such as food, clothing, medication
         transport funds for getting to interviews and classes for those who want to gain emplyment but dont have the skills needed for most jobs out there today.
         Unfortunatly we expect some would be unwelcoming to the idea of starting a new life with our support, in which case some of the general support funds will go 
         to providing food and blankets to those still living on the streets. We will also continue to find ways to support those who would need our help regardless of there 
