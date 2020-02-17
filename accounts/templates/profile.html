@@ -15,26 +15,26 @@
         <img class="pro-pic" src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
     </div>
     <hr>
-    <div class="col-md-6">
-        <h4>Settings</h4>
-        <div>
+    <div class="col-md-6 col-xs-6">
+        <h4 class="profile-title">Settings</h4>
+        <div class="a">
             <a href="#">Change Password</a>
         </div>
-        <div>
+        <div class="a">
             <a href="#">Change username</a>
         </div>
-        <div>
+        <div class="a">
             <a href="#">Change e-mail</a>
         </div>
-        <div>
+        <div class="a">
             <a href="{% url 'update_profile' %}">update Profile</a>
         </div>
         <div>
             {% comment %} <a href="{% url '/' %}">Delete Account</a> {% endcomment %}
         </div>
     </div>
-    <div class="col-md-6">
-        <h4>User details</h4>
+    <div class="col-md-6 col-xs-6">
+        <h4 class="profile-title ">User details</h4>
         <ul>
             <li class="table-list"><strong>username: </strong>{{ user.username }}</li>
             <li class="table-list"><strong>Name: </strong>{{ request.user.profile.name }}</li>
