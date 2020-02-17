@@ -552,6 +552,23 @@
   margin-bottom: 20px;
 }
 
+@media (min-width: 500px) and (max-width: 730px) {
+  .pro-pic {
+    margin-left: 25%;
+  }
+}
+
+.a {
+  color: black;
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .profile {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -574,6 +591,28 @@
 
 .table-list {
   text-align: justify;
+}
+
+@media (max-width: 499px) {
+  .table-list {
+    text-align: center;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .table-list {
+    text-align: center;
+  }
+}
+
+.profile-title {
+  text-align: justify;
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .profile-title {
+    text-align: center;
+  }
 }
 
 .payment {
@@ -664,7 +703,7 @@
 
 @media (max-width: 499px) {
   .map {
-    width: 280px;
+    width: 300px;
     margin-top: 20px;
     margin-left: 30px;
   }
