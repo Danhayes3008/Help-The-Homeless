@@ -5,6 +5,16 @@
 
 .map{
     border: solid 0.5px !important;
+    @include mobile{
+        width: 280px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    @include mobile_horizontal{
+        width: 600px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
 }
 
 .map-padding{
@@ -17,4 +27,7 @@
     height: 305px;
     margin-left: 13%;
     border: solid 0.5px;
+    @include mobile_horizontal{
+        margin-left: 5%;
+    }
 }
