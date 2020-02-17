@@ -1,7 +1,6 @@
 .navbar-1 {
   background-color: darkslategray;
   margin-right: 0px;
-  height: 50px;
 }
 
 .navbar-brand {
@@ -313,7 +312,7 @@
 
 @media (max-width: 499px) {
   .donation {
-    margin-left: 30px;
+    margin-left: 40px;
   }
 }
 
@@ -448,6 +447,7 @@
     text-align: justify;
     width: 80%;
     padding-left: 20%;
+    padding-top: 20px;
   }
 }
 
