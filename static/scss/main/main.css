@@ -552,6 +552,12 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 499px) {
+  .pro-pic {
+    margin-left: 0%;
+  }
+}
+
 @media (min-width: 500px) and (max-width: 730px) {
   .pro-pic {
     margin-left: 25%;
@@ -560,6 +566,13 @@
 
 .a {
   color: black;
+}
+
+@media (max-width: 499px) {
+  .a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 730px) {
@@ -607,6 +620,12 @@
 
 .profile-title {
   text-align: justify;
+}
+
+@media (max-width: 499px) {
+  .profile-title {
+    text-align: center;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 730px) {
