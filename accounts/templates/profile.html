@@ -33,7 +33,7 @@
             {% comment %} <a href="{% url '/' %}">Delete Account</a> {% endcomment %}
         </div>
     </div>
-    <div class="col-md-6 col-xs-6">
+    <div class="col-md-6 col-xs-12">
         <h4 class="profile-title ">User details</h4>
         <ul>
             <li class="table-list"><strong>username: </strong>{{ user.username }}</li>
@@ -54,7 +54,7 @@
             <th>Full Name</th> 
             <th>amount</th>
         </tr>
-        {% for don in donated %}
+        {% for don in donations %}
         <tr>
             <td>{{ don.date }}</td>
             <td>{{ don.full_name }}</td>
