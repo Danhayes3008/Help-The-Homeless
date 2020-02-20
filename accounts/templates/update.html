@@ -6,7 +6,7 @@
 <div class="row row-flex update jumbotron">
   <h3 class="text-center">Update Profile</h3>
   <hr class="hr1">
-  <form class="text-center" method="POST">
+  <form class="text-center" method="POST" enctype="multipart/form-data">
     {% csrf_token %}
     {{ u_form | as_bootstrap }}
     {{ p_form | as_bootstrap }}
