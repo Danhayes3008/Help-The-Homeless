@@ -28,7 +28,7 @@ def payment (request):
                 donations = get_object_or_404(Donations, pk=id)
                 total += amount * donations.donation
                 donate_line_item = DonateLineItem(
-                    donate = donate,
+                    full_name = donate,
                     donations = donations,
                     amount = amount
                 )
