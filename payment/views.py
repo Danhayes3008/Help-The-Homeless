@@ -28,11 +28,11 @@ def payment (request):
                 donations = get_object_or_404(Donations, pk=id)
                 total += amount * donations.donation
                 donate_line_item = DonateLineItem(
-                    full_name = donate,
+                    donate = donate,
                     donations = donations,
                     amount = amount
                 )
-            donate_line_item.save()
+                donate_line_item.save()
             
             try:
                 customer = stripe.Charge.create(
