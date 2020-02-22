@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm, UserChangeForm
 from django.contrib.auth.models import User
 from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm, updateProfileForm, updateUserForm
-from payment.models import DonateLineItem, donate
+from payment.models import DonateLineItem, Details
 from contrabutions.models import Donations
 from django.contrib.auth import update_session_auth_hash
 
@@ -64,9 +64,10 @@ def registration(request):
 @login_required
 def profile(request):
     user = User.objects.get(email=request.user.email)
+    print(user)
     username = User.objects.get(username=request.user.username)
     print(username)
-    donated = donate.objects.filter(full_name=username)
+    donated = Details.objects.filter(name=username)
     print(donated)
     donations = DonateLineItem.objects.all()
     print(donations)
