@@ -59,6 +59,13 @@
         </tr>
         {% endfor %}
         </table>
-</div>
+        {% for donation in donations %}
+        {% for lineitem in donation.donatelineitem_set.all %}
+        {{ lineitem.name }}
+        {{ lineitem.amount }}
+        ...
+        {% endfor %}
+        {% endfor %}
+    </div>
 {% endif %}
 {% endblock %}
