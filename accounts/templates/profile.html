@@ -16,18 +16,15 @@
     </div>
     <hr>
     <div class="col-md-6 col-xs-6">
-        <h4 class="profile-title">Settings</h4>
-        <div class="a">
-            <a href="#">Change Password</a>
-        </div>
-        <div class="a">
-            <a href="#">Change username</a>
-        </div>
-        <div class="a">
-            <a href="#">Change e-mail</a>
-        </div>
+        <h4 class="profile-title">Settings</h4>    
         <div class="a">
             <a href="{% url 'update_profile' %}">update Profile</a>
+        </div>
+        <div class="a">
+            <a href="{% url 'change_password' %}">Change password</a>
+        </div>
+        <div class="a">
+            <a href="#">Delete account</a>
         </div>
         <div>
             {% comment %} <a href="{% url '/' %}">Delete Account</a> {% endcomment %}
@@ -57,8 +54,8 @@
         {% for don in donations %}
         <tr>
             <td>{{ don.date }}</td>
-            <td>{{ don.full_name }}</td>
-            <td>{{ don.amount }}</td>
+            <td>{{ don.donations }}</td>
+            <td><i class="fa fa-gbp"> {{ don.amount }}</i></td>
         </tr>
         {% endfor %}
         </table>
