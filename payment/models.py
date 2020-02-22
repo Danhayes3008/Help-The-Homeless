@@ -17,9 +17,10 @@ class donate(models.Model):
         return "{0}-{1}-{2}".format(self.id, self.date, self.full_name)
         
 class DonateLineItem(models.Model):
-    full_name = models.ForeignKey(donate, null=False)
+    donate = models.ForeignKey(donate, null=False)
     donations = models.ForeignKey(Donations, null=False)
     amount = models.IntegerField(blank=False)
+    date = models.DateTimeField(auto_now_add=True, blank=True)
     
     def __str__(self):
-        return "{0} {1} @ {2}".format(self.amount, self.full_name, self.donations.name, self.donations.donation)
+        return "{0} {1} @ {2}".format(self.amount, self.donate.full_name, self.donations.name, self.donations.donation)
