@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import donate, DonateLineItem
+from .models import Details, DonateLineItem
 # Register your models here.
 
 class DonateLineAdminInline(admin.TabularInline):
@@ -8,4 +8,4 @@ class DonateLineAdminInline(admin.TabularInline):
 class DonateAdmin(admin.ModelAdmin):
     inlines = (DonateLineAdminInline, )
     
-admin.site.register(donate, DonateAdmin)
+admin.site.register(Details, DonateAdmin)
