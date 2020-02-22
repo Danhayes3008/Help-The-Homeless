@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Donations
+from .models import Donation
 
 def contrabution(request):
-    donations = Donations.objects.all()
-    return render(request, 'contrabution.html', {"donations": donations})
+    donations = Donation.objects.all()
+    return render(request, 'contrabution.html', {"donation": donations})

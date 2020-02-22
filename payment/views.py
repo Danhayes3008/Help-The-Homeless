@@ -5,7 +5,7 @@ from .forms  import MakePaymentForm, DetailsForm
 from .models import DonateLineItem
 from django.conf import settings 
 from django.utils import timezone
-from contrabutions.models import Donations
+from contrabutions.models import Donation
 import stripe
 
 stripe.api_key = settings.STRIPE_SECRET
@@ -25,11 +25,11 @@ def payment (request):
             cart = request.session.get('cart', {})
             total = 0
             for id, amount in cart.items():
-                donations = get_object_or_404(Donations, pk=id)
+                donations = get_object_or_404(Donation, pk=id)
                 total += amount * donations.donation
                 donate_line_item = request.user
                 donate_line_item = DonateLineItem(
-                    donate = donate,
+                    details = donate,
                     donations = donations,
                     amount = amount
                 )

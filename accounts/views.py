@@ -5,7 +5,6 @@ from django.contrib.auth.forms import PasswordChangeForm, UserChangeForm
 from django.contrib.auth.models import User
 from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm, updateProfileForm, updateUserForm
 from payment.models import DonateLineItem, Details
-from contrabutions.models import Donations
 from django.contrib.auth import update_session_auth_hash
 
 # This def creates the login capability and uses the login form from the forms.py file
@@ -73,7 +72,7 @@ def profile(request):
     print(donations)
     return render(request, 'profile.html', {"profile": user,
                                             "donated": donated,
-                                            "donations": donations})
+                                            "donation": donations})
 
 @login_required
 # @transaction.atomic

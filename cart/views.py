@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse
-from contrabutions.models import Donations
+from contrabutions.models import Donation
 
 # Create your views here.
 def view_donate(request):

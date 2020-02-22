@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from contrabutions.models import Donations
+from contrabutions.models import Donation
 
 # Create your views here.
 def index(request):
-    donations = Donations.objects.all()
-    return render(request, 'index.html', {"donations": donations})
+    donation = Donation.objects.all()
+    return render(request, 'index.html', {"donation": donation})
