@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import PasswordChangeForm, UserChangeForm
 from django.contrib.auth.models import User
 from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm, updateProfileForm, updateUserForm
 from payment.models import DonateLineItem, donate
 from contrabutions.models import Donations
+from django.contrib.auth import update_session_auth_hash
 
 # This def creates the login capability and uses the login form from the forms.py file
 
@@ -65,8 +67,9 @@ def profile(request):
     username = User.objects.get(username=request.user.username)
     print(username)
     donated = donate.objects.filter(full_name=username)
-    print(donate)
-    donations = DonateLineItem.objects.filter(amount=donated)
+    print(donated)
+    donations = DonateLineItem.objects.all()
+    print(donations)
     return render(request, 'profile.html', {"profile": user,
                                             "donated": donated,
                                             "donations": donations})
@@ -94,7 +97,22 @@ def update_profile(request):
         'p_form': p_form
     }
     return render(request, 'update.html', context)
-    
+
+def change_password(request):
+    if request.method == 'POST':
+        form = PasswordChangeForm(data=request.POST, user=request.user)
+        
+        if form.is_valid():
+            form.save()
+            update_session_auth_hash(request, form.user)
+            return redirect('profile')
+        
+    else:
+        form = PasswordChangeForm(user=request.user)
+        
+        args = {'form': form}
+        return render(request, 'changePassword.html', args)
+
 def delete_user(request, id):
     obj = get_object_or_404(User, id=id)
     #POST request
