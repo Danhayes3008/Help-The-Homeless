@@ -24,14 +24,14 @@ def payment (request):
             
             cart = request.session.get('cart', {})
             total = 0
-            for id, amount in cart.items():
-                donation = get_object_or_404(Donation, pk=id)
-                total += amount * donation.donation
+            for donation_id, quantity in cart.items():
+                donation = get_object_or_404(Donation, pk=donation_id)
+                total += quantity * donation.donation_amount
                 donate_line_item = request.user
                 donate_line_item = DonateLineItem(
                     details = donate,
                     donation = donation,
-                    amount = amount
+                    quantity = quantity
                 )
                 donate_line_item.save()
             

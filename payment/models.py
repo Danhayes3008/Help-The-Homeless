@@ -21,8 +21,8 @@ class Details(models.Model):
 class DonateLineItem(models.Model):
     details = models.ForeignKey(Details, related_name="lineitems")
     donation = models.ForeignKey(Donation, null=False)
-    amount = models.IntegerField(blank=False)
+    quantity = models.IntegerField(blank=False)
     date = models.DateTimeField(auto_now_add=True, blank=True)
     
     def __str__(self):
-        return "{0} {1} @ {2}".format(self.id, self.amount, self.details.name, self.donation.name, self.donation.donation)
+        return "{0} {1} @ {2}".format(self.id, self.quantity, self.details.name, self.donation.name, self.donation.donation_amount)
