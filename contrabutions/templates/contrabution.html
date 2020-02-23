@@ -3,12 +3,14 @@
 
 {% block content %}
 <div class="donation">
-    {% for product in donations %}
+    {% for donation in donations %}
+        {{ donation }}
+        {{ donation.id }}
         <div>
         <h3 class="text-center">Donate now!</h3>
         <p class="donate-text">Every day someone die's from living on the street's due to bad conditions, if we don't act now many more would be at risk.</p>
             <form class="donation" method="post" action="{% url 'amount_to_donate' donation.id %}">
-            {% csrf_token %}
+                {% csrf_token %}
                 <div class="input-group">
                     <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="quantity">
                     <span class="input-group-btn">
