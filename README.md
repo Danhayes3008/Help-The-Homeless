@@ -24,6 +24,9 @@ by far it is the best one in my current opionion for web site development. Djang
 <strong><h3>Stripe:</h3></strong>
 Stripe is a payment managing system that acts like a middle man. It is easy to set up in your project and has a built in testing feature. The testing feature comes with test card details so that you dont have to test your site using a real card. In the stripe website you can view all the information pushed through stripe through mulitple charts and lists.
 
+<strong><h3>AWS:</h3></strong>
+we used aws buckets to store the static content and media files for this project.
+
 contrabutions:
 
 <strong><h3>project restructuring:<h3></strong>
