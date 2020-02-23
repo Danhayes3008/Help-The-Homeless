@@ -1,4 +1,6 @@
 project status: <strong>work in progress</strong>
+- [ ] <strong>complete</strong>
+- [x] <strong>work in progress</strong>
 
 [![Build Status](https://travis-ci.org/Danhayes3008/project-4.svg?branch=master)](https://travis-ci.org/Danhayes3008/project-4)
 
@@ -6,6 +8,21 @@ Due to a major error i couldnt fix on my first attempt to build this project, i 
 Luckly at least half the work done can be salvaged and it is my hope that on this second attempt i will not run into the same problems
 that i had in the last one.
 
+<strong><h2>try it you're self:</h2></strong>
+-
+
+This project was made using vs code so i recomend if you wish to try out my site download the repository from my github page. To do so follow the instructions bellow:
+
+- Head over to <a href="https://github.com/Danhayes3008/project-4">my github page</a> to download the folder
+- Click on clone and download then click on download zip
+- extract the file after downloading anywhere you want
+- open the folder with vs code
+
+I recommend creating a virtual enviroment at this point to better manage the project. To do so follow these instructions:
+
+- python -m venv .env(the enviroment name)
+
+After this all that is left is to create the env.py to hold the hidden key information, get a access key for stripe, set the project up on heroku and create the aws bucket
 <strong><h2>Technologies:</h2></strong>
 
 <strong><h3>HTML:</h3></strong>
