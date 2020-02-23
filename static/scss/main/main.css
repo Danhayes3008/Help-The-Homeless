@@ -289,6 +289,13 @@
   }
 }
 
+@media (min-width: 500px) and (max-width: 730px) {
+  .update {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .update {
     width: 40%;
@@ -546,6 +553,8 @@
 }
 
 .pro-pic {
+  width: 225px;
+  height: 225px;
   margin-left: 37%;
   border: 1px solid grey;
   border-radius: 50%;

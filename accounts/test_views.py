@@ -1,4 +1,5 @@
 from django.test import TestCase
+from django.contrib.auth import SESSION_KEY
 from .views import profile, login, update_profile
 from django.contrib.auth.models import User
 
