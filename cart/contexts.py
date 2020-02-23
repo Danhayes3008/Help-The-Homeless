@@ -1,6 +1,5 @@
 from django.shortcuts import get_object_or_404
-from contrabutions.models import Donations
-
+from contrabutions.models import Donation
 def cart_contents(request):
     """
     Ensures that the cart contents are available when rendering every page
@@ -10,11 +9,11 @@ def cart_contents(request):
     
     cart_items = []
     total = 0
-    project_count = 0
-    for id, amount in cart.items():
-        donations = get_object_or_404(Donations, pk=id)
-        total += amount * donations.donation
-        project_count += amount
-        cart_items.append({'id':id, 'amount':amount, 'donations':donations})
+    donation_count = 0
+    for donation_id, quantity in cart.items():
+        donation = get_object_or_404(Donation, pk=donation_id)
+        total += quantity * donation.donation_amount
+        donation_count += quantity
+        cart_items.append({'id':id, 'quantity':quantity, 'donation':donation})
         
-    return {'cart_items': cart_items, 'total':total, 'project_count':project_count}
+    return {'cart_items': cart_items, 'total':total, 'donation_count':donation_count}
