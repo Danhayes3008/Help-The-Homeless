@@ -19,7 +19,10 @@ the use of Java Script is to give the site functionality. whilst this project ha
 
 <strong><h3>Django:</h3></strong>
 Django makes up the backbone of this project. with its well organised structure sites can be quickly built and deployed. It is one of many python extensions by
-by far it is the best one in my current opionion for web site development. Django also works well with sqlite3 to create complex databases to meet any need weither its a simble libary or a complext shop database or a social media site. 
+by far it is the best one in my current opionion for web site development. Django also works well with sqlite3 to create complex databases to meet any need weither its a simble libary or a complext shop database or a social media site.
+
+<strong><h3>Stripe:</h3></strong>
+Stripe is a payment managing system that acts like a middle man. It is easy to set up in your project and has a built in testing feature. The testing feature comes with test card details so that you dont have to test your site using a real card. In the stripe website you can view all the information pushed through stripe through mulitple charts and lists.
 
 contrabutions:
 
