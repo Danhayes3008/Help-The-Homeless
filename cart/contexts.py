@@ -14,6 +14,6 @@ def cart_contents(request):
         donation = get_object_or_404(Donation, pk=donation_id)
         total += quantity * donation.donation_amount
         donation_count += quantity
-        cart_items.append({'id':id, 'quantity':quantity, 'donation':donation})
+        cart_items.append({'id':donation_id, 'quantity':quantity, 'donation':donation})
         
     return {'cart_items': cart_items, 'total':total, 'donation_count':donation_count}
