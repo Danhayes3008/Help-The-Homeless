@@ -11,7 +11,7 @@ class TestViews(TestCase):
             self.credentials = {
             'username': 'testuser',
             'password': 'secret'}
-        User.objects.create_user(**self.credentials)
+            User.objects.create_user(**self.credentials)
         
         page = self.client.get("/accounts/login/", self.credentials, follow=True)
         self.assertEqual(page.status_code, 200)
