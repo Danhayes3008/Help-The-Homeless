@@ -3,19 +3,20 @@
 
 {% block content %}
 <div class="donation">
-    {% for item in cart_item %}
-        <p>{{ item.donation.name }}</p>
-        <h3 class="text-center total"><i class="fa fa-gbp"></i> {{ item.donation.donation_amount }}</h3>
-        <form class="text-center" method="post" action="{% url 'adjust_donation' item.id %}">
+    {% for product in donations %}
+        <div>
+        <h3 class="text-center">Donate now!</h3>
+        <p class="donate-text">Every day someone die's from living on the street's due to bad conditions, if we don't act now many more would be at risk.</p>
+            <form class="donation" method="post" action="{% url 'amount_to_donate' donation.id %}">
             {% csrf_token %}
                 <div class="input-group">
-                <input name="quantity" type="number" min="1" max="999" class="form-control" value="{{ item.quantity }}">
-                <span class="input-group-btn">
-                    <button class="btn btn-success" type="submit">Add</button>
-                </span>
-            </div>
-            <a href="{% url 'payment' %}" class="btn donate-btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Donate</a>
-        </form>
+                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="quantity">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" type="submit">Add</button>
+                    </span>
+                </div>
+            </form>
+        </div>
     {% endfor %}
 </div>
 <div class="donation row row-flex">
