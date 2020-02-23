@@ -15,7 +15,8 @@ class TestViews(TestCase):
         
         page = self.client.get("/accounts/login/", self.credentials, follow=True)
         self.assertEqual(page.status_code, 200)
-        self.assertTemplateUsed(page, "login.html")
+        response = self.client.post('/login/', **self.credentials)
+        self.assertTrue(response.context['user'].is_active)
     
     def test_get_profile_page(self):
         page = self.client.get("/accounts/profile/", self.credentials, follow=True)
