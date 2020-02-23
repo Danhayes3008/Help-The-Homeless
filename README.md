@@ -15,11 +15,11 @@ As with all other websites html, there much that can be done using the html tags
 the css is used to make the site have a more profesional and interesting look to it but it dont stop there. CSS files can be generated using SCSS coding which is more neater and structured than making a single css style file. With the SCSS you can have all the styles seperated into multiple files so that when you need to go back and change something all you have to do is search that one file of lets say 20 lines of code instead of searching over 100 lines of code. This then can be intergrated into a main file wy simply importing the scss files into another scss file to generate the css file that will hold all the styling for the site. In my opinion this is the best method to control the styling and helps prevent long hours of searching for that one line that needs tweeking.
 
 <strong><h3>JS:</h3></strong>
-the use of Java Script is to give the site functionality.
+the use of Java Script is to give the site functionality. whilst this project has not used much Java Script it is used to display information in the charts i have used and to manage to stripe payments. The charts are simple ones that use the information in the file to fill a chart imported from the anychart website, with the strip one no modifications must be done as it will prevent payments going through.
 
 <strong><h3>Django:</h3></strong>
 Django makes up the backbone of this project. with its well organised structure sites can be quickly built and deployed. It is one of many python extensions by
-by far it is the best one in my current opionion for web site development.
+by far it is the best one in my current opionion for web site development. Django also works well with sqlite3 to create complex databases to meet any need weither its a simble libary or a complext shop database or a social media site. 
 
 contrabutions:
 
