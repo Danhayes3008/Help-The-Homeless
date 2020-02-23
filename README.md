@@ -9,7 +9,7 @@ that i had in the last one.
 <strong><h2>Technologies:</h2></strong>
 
 <strong><h3>HTML:</h3></strong>
-As with all other websites html 
+As with all other websites html, there much that can be done using the html tags from making simple paragraphs to writing scripts, styles and even php coding. All that is needed is a imaginative mind toy find a way to use these features to make the site both look and run smoothly.
 
 <strong><h3>CSS:</h3></strong>
 the css is used to make the site have a more profesional and interesting look to it
@@ -23,7 +23,7 @@ by far it is the best one in my current opionion for web site development.
 
 contrabutions:
 
-<strong>project restructuring:</strong>
+<strong><h3>project restructuring:<h3></strong>
 
 Whilst trying to fix my donation history section of the profile page i was made to overhaul alot of the coding to make it all work. This was due to naming conflicts, after a few hours of working on it with a fellow student who helped me i was able to get the site working how i wanted it. The credit for this all goes to Chris Zielinski (ckz7880 on slack channels) from code institue slack chatrooms as he walked me though fixing my site step by step after i made a right mess of it. Luckly not much was needed to be fixed but a rewrite of the carts context file, some models, the forms dealing with the donation and the views that was needed to fix all this. After fixing the problems with my code i was better able to understand how we were able to filter the donations made by the user logged in. I also received help from Faidon Minas Dermesonoglou from code institue slack chatrooms. Faidon (Feddie_lead on slack channels) tried to expain the problem to me but because my code was a mess i was not able to correctly implement his advice on how to filter donations by user logged in.
 
