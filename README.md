@@ -11,11 +11,11 @@ that i had in the last one.
 <strong><h3>HTML:</h3></strong>
 As with all other websites html, there much that can be done using the html tags from making simple paragraphs to writing scripts, styles and even php coding. All that is needed is a imaginative mind toy find a way to use these features to make the site both look and run smoothly.
 
-<strong><h3>CSS:</h3></strong>
-the css is used to make the site have a more profesional and interesting look to it
+<strong><h3>CSS/SCSS:</h3></strong>
+the css is used to make the site have a more profesional and interesting look to it but it dont stop there. CSS files can be generated using SCSS coding which is more neater and structured than making a single css style file. With the SCSS you can have all the styles seperated into multiple files so that when you need to go back and change something all you have to do is search that one file of lets say 20 lines of code instead of searching over 100 lines of code. This then can be intergrated into a main file wy simply importing the scss files into another scss file to generate the css file that will hold all the styling for the site. In my opinion this is the best method to control the styling and helps prevent long hours of searching for that one line that needs tweeking.
 
 <strong><h3>JS:</h3></strong>
-the use of java script is to give the site functionality.
+the use of Java Script is to give the site functionality.
 
 <strong><h3>Django:</h3></strong>
 Django makes up the backbone of this project. with its well organised structure sites can be quickly built and deployed. It is one of many python extensions by
