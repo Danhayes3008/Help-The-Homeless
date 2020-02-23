@@ -3,15 +3,16 @@
 <div class="row row-flex cart jumbotron">
     <p class="text-center">For every donation made a certificate is sent to show your contribution to our cause. Any donation over £100,000.00 you will recive a top doner placque</p>
     <hr class="hr1">
-    {% if project_count > 0 %}
+    {% if donation_count > 0 %}
     <h3 class="text-center">Donate</h3>
-        {% for items in cart_items %}
-            {% comment %} <p>{{ items.donations.name }}</p> {% endcomment %}
-            <h3 class="text-center total"><i class="fa fa-gbp"></i> {{ items.amount }}</h3>
-            <form class="text-center" method="post" action="{% url 'adjust_donation' items.id %}">
+        {% for item in cart_items %}
+            <p>{{ items.donation.name }}</p>
+            <p>{{ items.donation. }}</p>
+            <h3 class="text-center total"><i class="fa fa-gbp"></i> {{ item.quantity }}</h3>
+            <form class="text-center" method="post" action="{% url 'adjust_donation' item.id %}">
             {% csrf_token %}
                 <div class="input-group">
-                <input name="amount" type="number" min="1" max="999999" class="form-control" placeholder="amount">
+                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="quantity">
                 <span class="input-group-btn">
                     <button class="btn btn-success" type="submit">Add</button>
                 </span>
@@ -19,7 +20,7 @@
             <a href="{% url 'payment' %}" class="btn donate-btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Donate</a>
             </form>
         {% endfor %}
-    {% elif project_count < 1 %}
+    {% else %}
         <p class="text-center">Sorry there is nothing in the cart</p>
     {% endif %}
 </div>
