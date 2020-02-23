@@ -62,18 +62,7 @@ def registration(request):
                   {"registration_form": registration_form})
 @login_required
 def profile(request):
-    user = User.objects.get(email=request.user.email)
-    print(user)
-    username = User.objects.get(username=request.user.username)
-    print(username)
-    donated = Details.objects.filter(name=username)
-    print(donated)
-    donations = DonateLineItem.objects.all()
-    print(donations)
-    return render(request, 'profile.html', {"profile": user,
-                                            "donated": donated,
-                                            "donation": donations})
-
+    return render(request, 'profile.html')
 @login_required
 # @transaction.atomic
 def update_profile(request):
