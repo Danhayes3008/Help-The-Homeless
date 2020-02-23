@@ -51,21 +51,16 @@
             <th>Full Name</th> 
             <th>amount</th>
         </tr>
-        {% for don in donations %}
         <tr>
-            <td>{{ don.date }}</td>
-            <td>{{ don.donations }}</td>
-            <td><i class="fa fa-gbp"> {{ don.amount }}</i></td>
+            {% for detail in request.user.profile.donation_details.all %}
+                {% for lineitem in detail.lineitems.all %}
+                <td>{{ donation.date }}</td>
+                <td>{{ lineitem.donation.name }}</td>
+                <td><i class="fa fa-gbp"> {{ lineitem.donation.donation_amount }}</i></td>
+                {% endfor %}
+            {% endfor %}
         </tr>
-        {% endfor %}
         </table>
-        {% for donation in donations %}
-        {% for lineitem in donation.donatelineitem_set.all %}
-        {{ lineitem.name }}
-        {{ lineitem.amount }}
-        ...
-        {% endfor %}
-        {% endfor %}
     </div>
 {% endif %}
 {% endblock %}
