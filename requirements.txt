@@ -5,6 +5,7 @@ chardet==3.0.4
 dj-database-url==0.5.0
 Django==1.11.25
 django-forms-bootstrap==3.1.0
+django-stdimage==5.0.2
 django-storages==1.7.2
 docutils==0.15.2
 gunicorn==19.7.1
@@ -13,8 +14,10 @@ idna==2.8
 jmespath==0.9.4
 olefile==0.46
 Pillow==6.2.0
+progressbar2==3.47.0
 psycopg2==2.7.3.2
 python-dateutil==2.8.1
+python-utils==2.3.0
 pytz==2019.3
 requests==2.22.0
 s3transfer==0.1.13
