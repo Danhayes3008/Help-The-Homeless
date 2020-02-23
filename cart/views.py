@@ -9,13 +9,13 @@ def view_donate(request):
 
 def amount_to_donate(request, id):
     """Add a quantity of the specified product to the cart"""
-    amount = int(request.POST.get('amount'))
+    quantity = int(request.POST.get('quantity'))
 
     cart = request.session.get('cart', {})
     if id in cart:
-        cart[id] = int(cart[id]) + amount      
+        cart[id] = int(cart[id]) + quantity      
     else:
-        cart[id] = cart.get(id, amount) 
+        cart[id] = cart.get(id, quantity) 
 
     request.session['cart'] = cart
     return redirect(reverse('donation'))
@@ -27,11 +27,11 @@ def adjust_donation(request, id):
     amount
     """
     print(request.POST)
-    amount = int(request.POST.get('amount'))
+    quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
-    if amount > 0:
-        cart[id] = amount
+    if quantity > 0:
+        cart[id] = quantity
     else:
         cart.pop(id)
     
