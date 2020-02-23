@@ -18,7 +18,7 @@ def payment (request):
         
         if details_form.is_valid() and payment_form.is_valid():
             donate = details_form.save(commit=False)
-            donate.name = request.user
+            donate.profile = request.user.profile
             donate.date = timezone.now()
             donate.save()
             
