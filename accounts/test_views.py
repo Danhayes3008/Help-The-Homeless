@@ -12,12 +12,12 @@ class TestViews(TestCase):
             'password': 'secret'}
         User.objects.create_user(**self.credentials)
         
-        page = self.client.get("/accounts/login/")
+        page = self.client.get("/accounts/login/", self.credentials, follow=True)
         self.assertEqual(page.status_code, 200)
         self.assertTemplateUsed(page, "login.html")
     
     def test_get_profile_page(self):
-        page = self.client.get("/accounts/profile/")
+        page = self.client.get("/accounts/profile/", self.credentials, follow=True)
         self.assertEqual(page.status_code, 200)
         self.assertTemplateUsed(page, "profile.html")
         
