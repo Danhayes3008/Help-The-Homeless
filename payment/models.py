@@ -1,12 +1,13 @@
 from django.db import models
 from contrabutions.models import Donation
+from accounts.models import Profile
 from django.contrib.auth.models import User
 
 # Create your models here.
 
 #This model will be used to hold all the information needed to submit donations, it will also be used to help display the users donation history
 class Details(models.Model):
-    name = models.CharField(max_length=50, blank=False)
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name="donation_details", null=True, blank=True)
     street_address_1 = models.CharField(max_length=40, blank=False)
     street_address_2 = models.CharField(max_length=40, blank=False)
     county = models.CharField(max_length=40, blank=False)
@@ -16,7 +17,7 @@ class Details(models.Model):
     date = models.DateField()
     
     def __str__(self):
-        return "{0}-{1}-{2}".format(self.id, self.date, self.name)
+        return "{0}-{1}-{2}".format(self.id, self.date, self.profile)
         
 class DonateLineItem(models.Model):
     details = models.ForeignKey(Details, related_name="lineitems")
@@ -25,4 +26,4 @@ class DonateLineItem(models.Model):
     date = models.DateTimeField(auto_now_add=True, blank=True)
     
     def __str__(self):
-        return "{0} {1} @ {2}".format(self.id, self.quantity, self.details.name, self.donation.name, self.donation.donation_amount)
+        return "{0} {1} @ {2}".format(self.id, self.quantity, self.details.profile, self.donation.name, self.donation.donation_amount)
