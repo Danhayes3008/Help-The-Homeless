@@ -1,10 +1,10 @@
 from django.test import TestCase
-from .views import profile
+from .views import profile, login
 
 
 class TestViews(TestCase):
 
-    def test_get_profile_page(self):
-        page = self.client.get("/accounts")
+    def test_get_login_page(self):
+        page = self.client.get("/")
         self.assertEqual(page.status_code, 200)
-        self.assertTemplateUsed(page, "profile.html")
+        self.assertTemplateUsed(page, "login.html")
