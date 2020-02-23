@@ -6,6 +6,21 @@ Due to a major error i couldnt fix on my first attempt to build this project, i 
 Luckly at least half the work done can be salvaged and it is my hope that on this second attempt i will not run into the same problems
 that i had in the last one.
 
+<strong><h2>Technologies:</h2></strong>
+
+<strong><h3>HTML:</h3></strong>
+As with all other websites html 
+
+<strong><h3>CSS:</h3></strong>
+the css is used to make the site have a more profesional and interesting look to it
+
+<strong><h3>JS:</h3></strong>
+the use of java script is to give the site functionality.
+
+<strong><h3>Django:</h3></strong>
+Django makes up the backbone of this project. with its well organised structure sites can be quickly built and deployed. It is one of many python extensions by
+by far it is the best one in my current opionion for web site development.
+
 contrabutions:
 
 <strong>project restructuring:</strong>
