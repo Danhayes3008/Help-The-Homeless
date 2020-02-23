@@ -1,3 +1,5 @@
+# Project 4
+
 project status: <strong>work in progress</strong>
 - [ ] <strong>complete</strong>
 - [x] <strong>work in progress</strong>
@@ -9,11 +11,25 @@ Luckly at least half the work done can be salvaged and it is my hope that on thi
 that i had in the last one. As i transfered alot of the files over from my first attempt at the project i have decided to add a link to that
 said repository called <a href="https://github.com/Danhayes3008/milestone4">milestone4</a> so that people can see how the project has improved since i started again.
 
+### Table of Contents
+to help nvigate the readme i have added this list of links to the relevent sections.
+
+ - [Site's Purpose](#Site's_Purpose)
+ - [Wireframes](#Wireframes)
+ - [future updates](#future_updates)
+ - [Try it You're Self](#TryitYou'reSelf)
+ - [Technologies](#Technologies)
+
 <strong><h2>Site's Purpose:</h2></strong>
 -
 
 This site is designed to be like a real charity's website. The idea was that it would give people information on what the charity is and what there goals are whilst also providing 
 details on how to get intouch with them or visit the office. I wanted every user to have the ability to view how much they have donated to the cause and also provide them with a certificate or a plague if they donated alot of money. I kept the site as basic as i could so that once it was finish i could add new features and imporve on other stuff before submitting it for review but it looks like I may not have the time for that so i have dont my best to give it a decent look and flow hoping the site will still be passable even with all the content I wanted to add not being included. 
+
+<strong><h2>Wireframes:</h2></strong>
+-
+
+I have tried to keep the site as close to the wireframes as I could, but the site has changed alot since they were made if there is time once the project is finished. This is the main priority for after the site is finished to make more wireframes for the pages that dont have one.
 
 <strong><h2>future updates:</h2></strong>
 -
@@ -67,6 +83,8 @@ we used aws buckets to store the static content and media files for this project
 <strong><h2>Testing:</h2></strong>
 In this project i have done both manual testing of the site and some written testing. All written tests run though the travis sight for simple testing everytime a file is published. 
 A link to the test plus a indicator displaying if the build is passing or failing has also been placed at the top of this readme file. It is my hope to provide evidance that i have a basic understanding of testing however i wont be testing everything in the project with written tests.
+
+[Back To The Top](#Project_4)
 
 <strong><h2>contrabutions:</h2></strong>
 
