@@ -6,13 +6,13 @@
     {% if donation_count > 0 %}
     <h3 class="text-center">Donate</h3>
         {% for item in cart_items %}
-            <p>{{ items.donation.name }}</p>
-            <p>{{ items.donation. }}</p>
+            <p>{{ item.donation.name }}</p>
+            <p>{{ item.donation.quantity }}</p>
             <h3 class="text-center total"><i class="fa fa-gbp"></i> {{ item.quantity }}</h3>
             <form class="text-center" method="post" action="{% url 'adjust_donation' item.id %}">
             {% csrf_token %}
                 <div class="input-group">
-                <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="quantity">
+                <input name="quantity" type="number" min="1" max="999" class="form-control" value="{{ item.quantity }}">
                 <span class="input-group-btn">
                     <button class="btn btn-success" type="submit">Add</button>
                 </span>
