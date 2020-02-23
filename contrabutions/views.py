@@ -3,4 +3,5 @@ from .models import Donation
 
 def contrabution(request):
     donations = Donation.objects.all()
-    return render(request, 'contrabution.html', {"donation": donations})
+    print(donations)
+    return render(request, 'contrabution.html', {"donations": donations})
