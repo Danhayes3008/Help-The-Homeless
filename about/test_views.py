@@ -5,6 +5,6 @@ from .views import about
 class TestViews(TestCase):
 
     def test_get_about_page(self):
-        page = self.client.get("/about/")
+        page = self.client.get("/about_us/about/")
         self.assertEqual(page.status_code, 200)
         self.assertTemplateUsed(page, "about.html")
