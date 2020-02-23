@@ -15,6 +15,17 @@ said repository called <a href="https://github.com/Danhayes3008/milestone4">mile
 This site is designed to be like a real charity's website. The idea was that it would give people information on what the charity is and what there goals are whilst also providing 
 details on how to get intouch with them or visit the office. I wanted every user to have the ability to view how much they have donated to the cause and also provide them with a certificate or a plague if they donated alot of money. I kept the site as basic as i could so that once it was finish i could add new features and imporve on other stuff before submitting it for review but it looks like I may not have the time for that so i have dont my best to give it a decent look and flow hoping the site will still be passable even with all the content I wanted to add not being included. 
 
+<strong><h2>future updates:</h2></strong>
+-
+
+- improved layout
+- total donated to the charity feature so that the public can see how much the charity has managed to raise
+- top donaters section so everyone can see who has contributed the most to the charity
+- stories from people that have had there lives changed by the charity
+- history of what the charity has done to help the homeless.
+- better donation system
+- fake adverts
+
 <strong><h2>try it you're self:</h2></strong>
 -
 
@@ -30,6 +41,7 @@ I recommend creating a virtual enviroment at this point to better manage the pro
 - python -m venv .env(the enviroment name)
 
 After this all that is left is to create the env.py to hold the hidden key information, get a access key for stripe, set the project up on heroku and create the aws bucket
+
 <strong><h2>Technologies:</h2></strong>
 -
 
@@ -57,7 +69,6 @@ In this project i have done both manual testing of the site and some written tes
 A link to the test plus a indicator displaying if the build is passing or failing has also been placed at the top of this readme file. It is my hope to provide evidance that i have a basic understanding of testing however i wont be testing everything in the project with written tests.
 
 <strong><h2>contrabutions:</h2></strong>
--
 
 <strong><h3>project restructuring:</h3></strong>
 -
