@@ -44,6 +44,10 @@ Stripe is a payment managing system that acts like a middle man. It is easy to s
 <strong><h3>AWS:</h3></strong>
 we used aws buckets to store the static content and media files for this project.
 
+<strong><h2>Testing:</h2></strong>
+In this project i have done both manual testing of the site and some written testing. All written tests run though the travis sight for simple testing everytime a file is published. 
+A link to the test plus a indicator displaying if the build is passing or failing has also been placed at the top of this readme file. It is my hope to provide evidance that i have a basic understanding of testing however i wont be testing everything in the project with written tests.
+
 contrabutions:
 
 <strong><h3>project restructuring:<h3></strong>
