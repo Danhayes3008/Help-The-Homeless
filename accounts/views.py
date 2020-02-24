@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.forms import PasswordChangeForm, UserChangeForm
+from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.models import User
 from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm, updateProfileForm, updateUserForm
 from payment.models import DonateLineItem, Details
@@ -89,18 +89,19 @@ def update_profile(request):
 
 def change_password(request):
     if request.method == 'POST':
-        form = PasswordChangeForm(data=request.POST, user=request.user)
-        
+        form = PasswordChangeForm(request.user, request.POST)
         if form.is_valid():
-            form.save()
-            update_session_auth_hash(request, form.user)
+            user = form.save()
+            update_session_auth_hash(request, user)
+            messages.success(request, ('Your password was successfully updated!'))
             return redirect('profile')
-        
+        else:
+            messages.error(request, ('Please correct the error below.'))
     else:
-        form = PasswordChangeForm(user=request.user)
-        
-        args = {'form': form}
-        return render(request, 'changePassword.html', args)
+        form = PasswordChangeForm(request.user)
+    return render(request, 'changePassword.html', {
+        'form': form
+    })
 
 def delete_user(request, id):
     obj = get_object_or_404(User, id=id)
