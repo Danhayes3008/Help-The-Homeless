@@ -14,11 +14,12 @@ said repository called <a href="https://github.com/Danhayes3008/milestone4">mile
 ### Table of Contents
 to help nvigate the readme i have added this list of links to the relevent sections.
 
- - [Site's Purpose](#Site's_Purpose)
+ - [Site's Purpose](#Site's-Purpose)
  - [Wireframes](#Wireframes)
- - [future updates](#future_updates)
- - [Try it You're Self](#TryitYou'reSelf)
+ - [future updates](#future-updates)
+ - [Try it You're Self](#Try-it-You're-Self)
  - [Technologies](#Technologies)
+ - [contrabutions](#contrabutions)
 
 <strong><h2>Site's Purpose:</h2></strong>
 -
