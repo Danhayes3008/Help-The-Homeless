@@ -1,7 +1,7 @@
 from django.conf.urls import url, include
 from django.contrib.auth import views as auth_views
 from . import views
-from accounts.views import login, logout, registration, profile, update_profile, delete_user
+from accounts.views import change_password, login, logout, profile, registration, update_profile
 from accounts import url_reset
 
 urlpatterns = [
