@@ -12,7 +12,11 @@
 <div class="row row-flex profile jumbotron ">
     <div class="col-md-12">
         <h3 class="text-center">{{ user.username }}</h3>
-        <img class="pro-pic" src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
+        {% if var.request.user.profile.image_exists %}
+            <img class="pro-pic" src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
+        {% else %}
+            <img class="pro-pic" src="{% static 'image/blankProfileImage.png' %}"></img>
+        {% endif %}
     </div>
     <hr>
     <div class="col-md-6 col-xs-6">
