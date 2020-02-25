@@ -88,11 +88,7 @@ A link to the test plus a indicator displaying if the build is passing or failin
 [Back To The Top](#Project_4)
 
 <strong><h2>contrabutions:</h2></strong>
-
-<strong><h3>project restructuring:</h3></strong>
 -
-
-Whilst trying to fix my donation history section of the profile page i was made to overhaul alot of the coding to make it all work. This was due to naming conflicts, after a few hours of working on it with a fellow student who helped me i was able to get the site working how i wanted it. The credit for this all goes to Chris Zielinski (ckz7880 on slack channels) from code institue slack chatrooms as he walked me though fixing my site step by step after i made a right mess of it. Luckly not much was needed to be fixed but a rewrite of the carts context file, some models, the forms dealing with the donation and the views that was needed to fix all this. After fixing the problems with my code i was better able to understand how we were able to filter the donations made by the user logged in. I also received help from Faidon Minas Dermesonoglou from code institue slack chatrooms. Faidon (Feddie_lead on slack channels) tried to expain the problem to me but because my code was a mess i was not able to correctly implement his advice on how to filter donations by user logged in.
 
 I managed to get some of the donation history section of the profile page working by following the code another student posted on the slack channels. If it wasnt for slack user r_andy79 i wouldnt have gotten this working so soon. This method that i was using was only working in a limited capasity but after my coding was fixed with the help of Chris Zielinski i was able to get it working correctly.
 
@@ -100,3 +96,8 @@ Anna_ci on slack channels helped me get my site working on heroku. With her help
 
 After struggling for days trying to get my background image sorted i came accross a video on youtube that helped me get it working. The video i followed to get this to work was
 <a href="https://www.youtube.com/watch?v=jW1IFBv35kE">Full Screen Background Html/Css</a> by youtuber-<a href="https://www.youtube.com/channel/UCnw4nJg3VWgXz6itvH8NkgQ">WClarkson</a>
+
+<strong><h3>project restructuring:</h3></strong>
+-
+
+Whilst trying to fix my donation history section of the profile page i was made to overhaul alot of the coding to make it all work. This was due to naming conflicts, after a few hours of working on it with a fellow student who helped me i was able to get the site working how i wanted it. The credit for this all goes to Chris Zielinski (ckz7880 on slack channels) from code institue slack chatrooms as he walked me though fixing my site step by step after i made a right mess of it. Luckly not much was needed to be fixed but a rewrite of the carts context file, some models, the forms dealing with the donation and the views that was needed to fix all this. After fixing the problems with my code i was better able to understand how we were able to filter the donations made by the user logged in. I also received help from Faidon Minas Dermesonoglou from code institue slack chatrooms. Faidon (Feddie_lead on slack channels) tried to expain the problem to me but because my code was a mess i was not able to correctly implement his advice on how to filter donations by user logged in.
