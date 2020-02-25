@@ -87,15 +87,17 @@ A link to the test plus a indicator displaying if the build is passing or failin
 
 [Back To The Top](#Project_4)
 
-<strong><h2>contrabutions:</h2></strong>
+<strong><h2>contributions:</h2></strong>
 -
 
-I managed to get some of the donation history section of the profile page working by following the code another student posted on the slack channels. If it wasnt for slack user r_andy79 i wouldnt have gotten this working so soon. This method that i was using was only working in a limited capasity but after my coding was fixed with the help of Chris Zielinski i was able to get it working correctly.
+- I managed to get some of the donation history section of the profile page working by following the code another student posted on the slack channels. If it wasnt for slack user  r_andy79 i wouldnt have gotten this working so soon. This method that i was using was only working in a limited capasity but after my coding was fixed with the help of Chris Zielinski i was able to get it working correctly.
 
-Anna_ci on slack channels helped me get my site working on heroku. With her help i was able to get heroku to work in the terminal on visual studio code were i am doing my project.
+- Anna_ci on slack channels helped me get my site working on heroku. With her help i was able to get heroku to work in the terminal on visual studio code were i am doing my project.
 
-After struggling for days trying to get my background image sorted i came accross a video on youtube that helped me get it working. The video i followed to get this to work was
+- After struggling for days trying to get my background image sorted i came accross a video on youtube that helped me get it working. The video i followed to get this to work was
 <a href="https://www.youtube.com/watch?v=jW1IFBv35kE">Full Screen Background Html/Css</a> by youtuber-<a href="https://www.youtube.com/channel/UCnw4nJg3VWgXz6itvH8NkgQ">WClarkson</a>
+
+- whilst searching for how to allow my users to change there passwords whilst logged into the site i came accross multiple methods to do so. After trying a few these methods i found one that worked from <a href="https://simpleisbetterthancomplex.com/snippets/change-password-view/" target="_blank">simpleisbetterthancomplex.com</a>. This method was simple to implament and to understand.
 
 <strong><h3>project restructuring:</h3></strong>
 -
