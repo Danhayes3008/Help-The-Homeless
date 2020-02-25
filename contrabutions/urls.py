@@ -1,6 +1,6 @@
 from django.conf.urls import url, include
-from .views import contrabution
+from .views import contribution
 
 urlpatterns = [
-    url(r'^$', contrabution, name="donation"),
+    url(r'^$', contribution, name="donation"),
 ]

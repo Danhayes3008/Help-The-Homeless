@@ -1,10 +1,10 @@
 from django.test import TestCase
-from .views import contrabution
+from .views import contribution
 
 
 class TestViews(TestCase):
 
-    def test_get_contrabution_page(self):
-        page = self.client.get("/contrabution/")
+    def test_get_contribution_page(self):
+        page = self.client.get("/contribution/")
         self.assertEqual(page.status_code, 200)
-        self.assertTemplateUsed(page, "contrabution.html")
+        self.assertTemplateUsed(page, "contribution.html")
