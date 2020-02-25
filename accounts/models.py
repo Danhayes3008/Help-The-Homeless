@@ -9,11 +9,11 @@ class Profile(models.Model):
     gender = models.CharField(max_length=6, blank=True)
     nationality = models.CharField(max_length=100, blank=True)
     birthday = models.DateField(auto_now=False, null=True, blank=True)
-    image = models.ImageField(upload_to='images', null=True, blank=True)
+    image = models.ImageField(default="blankProfileImage.png", upload_to='images', blank=True)
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
 
     def __str__(self):
-        return self.user.username
+        return f'{self.user.username} Profile'
     
 @receiver(post_save, sender=User)
 def create_or_update_user_profile (sender, instance, created, **kwargs):
