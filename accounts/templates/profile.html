@@ -12,7 +12,7 @@
 <div class="row row-flex profile jumbotron ">
     <div class="col-md-12">
         <h3 class="text-center">{{ user.username }}</h3>
-        {% if var.request.user.profile.image_exists %}
+        {% if user.profile.image %}
             <img class="pro-pic" src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
         {% else %}
             <img class="pro-pic" src="{% static 'image/blankProfileImage.png' %}"></img>
@@ -66,5 +66,7 @@
         </tr>
         </table>
     </div>
+{% else %}
+    <img class="pro-pic" src="{% static 'image/blankProfileImage.png' %}"></img>
 {% endif %}
 {% endblock %}
