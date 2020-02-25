@@ -54,6 +54,7 @@ def registration(request):
             if user:
                 auth.login(user=user, request=request)
                 messages.success(request, "Welcome to Help the Homless")
+                return redirect(reverse('index'))
         else:
             messages.error(request, "Something went wrong, please try again")
     else:
