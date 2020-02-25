@@ -27,6 +27,9 @@ to help nvigate the readme i have added this list of links to the relevent secti
 This site is designed to be like a real charity's website. The idea was that it would give people information on what the charity is and what there goals are whilst also providing 
 details on how to get intouch with them or visit the office. I wanted every user to have the ability to view how much they have donated to the cause and also provide them with a certificate or a plague if they donated alot of money. I kept the site as basic as i could so that once it was finish i could add new features and imporve on other stuff before submitting it for review but it looks like I may not have the time for that so i have dont my best to give it a decent look and flow hoping the site will still be passable even with all the content I wanted to add not being included. 
 
+<strong><h2>Deployed site:</h2></strong><a href="https://charity-project-4.herokuapp.com/" target="_blank"> Help The Homeless</a>
+-
+
 <strong><h2>Wireframes:</h2></strong>
 -
 
