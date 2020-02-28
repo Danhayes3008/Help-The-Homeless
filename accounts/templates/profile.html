@@ -27,11 +27,19 @@
         <div class="a">
             <a href="{% url 'change_password' %}">Change password</a>
         </div>
-        <div class="a">
-            <a href="#">Delete account</a>
-        </div>
         <div>
-            {% comment %} <a href="{% url '/' %}">Delete Account</a> {% endcomment %}
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Delete User Account</legend>
+                        <p>Are you sure you want to delete your account?  This will permanently delete your
+                        profile and any content you have generated.</p>
+                        {{ form }}
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-danger" type="submit">Delete Account</button>
+                </div>
+            </form>
         </div>
     </div>
     <div class="col-md-6 col-xs-12">
