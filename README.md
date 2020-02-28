@@ -102,7 +102,7 @@ A link to the test plus a indicator displaying if the build is passing or failin
 
 - whilst searching for how to allow my users to change there passwords whilst logged into the site i came accross multiple methods to do so. After trying a few these methods i found one that worked from <a href="https://simpleisbetterthancomplex.com/snippets/change-password-view/" target="_blank">simpleisbetterthancomplex.com</a>. This method was simple to implament and to understand.
 
-- whilst serching online on how to allow a user to delete there account in django i cam accross a redit post from <ahref="https://www.reddit.com/r/webdev/comments/cjfmg8/django_deleting_user_accounts/"> u/Science-Compliance </a> explaining how to do so. have have followed the instructions in the readme on how this is done and give full credit to that feature to the owner of the reddit post.
+- whilst serching online on how to allow a user to delete there account in django i cam accross a redit post from <a href="https://www.reddit.com/r/webdev/comments/cjfmg8/django_deleting_user_accounts/"> u/Science-Compliance </a> explaining how to do so. have have followed the instructions in the readme on how this is done and give full credit to that feature to the owner of the reddit post.
 
 <strong><h3>project restructuring:</h3></strong>
 -
