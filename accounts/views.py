@@ -3,7 +3,7 @@ from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.models import User
-from accounts.forms import LoginForm, RegistrationForm, UserForm, ProfileForm, updateProfileForm, updateUserForm
+from accounts.forms import LoginForm, ProfileForm, RegistrationForm, UserDeleteForm, UserForm, updateProfileForm, updateUserForm
 from payment.models import DonateLineItem, Details
 from django.contrib.auth import update_session_auth_hash
 
@@ -63,7 +63,20 @@ def registration(request):
                   {"registration_form": registration_form})
 @login_required
 def profile(request):
-    return render(request, 'profile.html')
+    if request.method == 'POST':
+        delete_form = UserDeleteForm(request.POST, instance=request.user)
+        user = request.user
+        user.delete()
+        messages.info(request, 'Your account has been deleted.')
+        return redirect('index')
+    else:
+        delete_form = UserDeleteForm(instance=request.user)
+
+    context = {
+        'delete_form': delete_form
+    }
+    return render(request, 'profile.html', context)
+
 @login_required
 # @transaction.atomic
 def update_profile(request):
@@ -103,16 +116,3 @@ def change_password(request):
     return render(request, 'changePassword.html', {
         'form': form
     })
-
-def delete_user(request, id):
-    obj = get_object_or_404(User, id=id)
-    #POST request
-    if request.method == "POST":
-        #confirming deletion
-        obj.delete()
-        return redirect('index.html')
-    context = {
-        "object": obj
-    }
-    return render(request,"profile.html", context)
-    
