@@ -777,7 +777,7 @@
   width: 50%;
   margin-left: 25%;
   margin-top: 8.6%;
-  margin-bottom: 9.6%;
+  margin-bottom: 12.5%;
   border: solid 0.5px;
   background-color: #ccc9c9;
 }
@@ -786,6 +786,14 @@
   .cart {
     width: 60%;
     margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .cart {
+    margin-top: 0px;
   }
 }
 
@@ -793,6 +801,7 @@
   .cart {
     width: 50%;
     margin-left: 25%;
+    margin-bottom: 12%;
   }
 }
 
