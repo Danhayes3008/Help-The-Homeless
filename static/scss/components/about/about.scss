@@ -1,35 +1,26 @@
 .about {
-  width: 50%;
-  margin-left: 25%;
+  width: 75%;
+  margin-left: 12.5%;
   margin-top: 8.6%;
   margin-bottom: 9.6%;
   border: solid 0.5px;
   background-color: #ccc9c9;
   @include mobile {
-    width: 80%;
+    width: 80% !important;
     margin-left: 10%;
     }
   @include computer {
-    width: 50%;
-    margin-left: 25%;
+    width: 75%;
+    margin-left: 12.5%;
     }
 }
  
 .about-img {
-  height: 150px;
-  padding-left: 20px;
+  height: 200px;
+   padding-bottom: 10px;
   /* border-radius: 100%; */
   @include mobile {
-    padding-left: 20px;
-  }
-  @include mobile_horizontal {
-    padding-left: 40px;
-  }
-  @include tab {
-    height: 150px;
-    padding-left: 25%;
-  }
-  @include computer {
-    height: 100px;
+    height: 175px;
+    padding-left: 10px;
   }
 }
