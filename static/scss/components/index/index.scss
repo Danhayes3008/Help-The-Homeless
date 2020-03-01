@@ -24,6 +24,14 @@
   }
 }
 
+.donations{
+  width:75%;
+  margin-left: 14.5%;
+  background-color: #ccc9c9;
+  margin-bottom: 5%;
+  border: solid 1px;
+}
+
 .img {
   height: 150px;
   padding-left: 20px;
@@ -90,7 +98,7 @@
 }
 
 .height1 {
-  height: 350px;
+  height: fit-content;
   width: 75%;
   margin-left: 12.5%;
   padding-top: 15px;
