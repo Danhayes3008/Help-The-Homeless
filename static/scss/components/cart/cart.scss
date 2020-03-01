@@ -2,16 +2,22 @@
   width: 50%;
   margin-left: 25%;
   margin-top: 8.6%;
-  margin-bottom: 9.6%;
+  margin-bottom: 12.5%;
   border: solid 0.5px;
   background-color: #ccc9c9;
   @include mobile {
     width: 60%;
     margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+  }
+  @include tab{
+    margin-top: 0px;
   }
   @include computer {
     width: 50%;
     margin-left: 25%;
+    margin-bottom: 12%;
   }
 }
 .donate-btn {
