@@ -55,23 +55,23 @@
     </div>
 </div>
 <div class=" row row-flex profile-2 jumbotron col-md-12">
-        <table class="table table-striped">
-            <h3>Donation history</h3>
+        <table class="table table-striped col-lg-12">
+            <h3 class="text-center">Donation history</h3>
             <hr>            
         <tr>
-            <th>Date</th>
-            <th>Donation product</th> 
-            <th>Total Amount Donated</th>
+            <th class="col-lg-4 text-center">Date</th>
+            <th class="col-lg-4 text-center">Donation product</th> 
+            <th class="col-lg-4 text-center">Total Amount Donated</th>
         </tr>
-        <tr>
-            {% for detail in request.user.profile.donation_details.all %}
-                {% for lineitem in detail.lineitems.all %}
-                <td>{{ lineitem.details.date }}</td>
-                <td>{{ lineitem.donation.name }}</td>
-                <td><i class="fa fa-gbp"> {{ lineitem.quantity }}</i></td>
-                {% endfor %}
+        {% for detail in request.user.profile.donation_details.all %}
+            {% for lineitem in detail.lineitems.all %}
+                <tr>
+                    <td class="col-lg-4 text-center">{{ lineitem.details.date }}</td>
+                    <td class="col-lg-4 text-center">{{ lineitem.donation.name }}</td>
+                    <td class="col-lg-4 text-center"><i class="fa fa-gbp"> {{ lineitem.quantity }}</i></td>
+                </tr>
             {% endfor %}
-        </tr>
+        {% endfor %}
         </table>
     </div>
 {% else %}
