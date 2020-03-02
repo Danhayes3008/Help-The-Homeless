@@ -500,6 +500,8 @@
   .login {
     width: 60%;
     margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 25%;
   }
 }
 
@@ -507,6 +509,14 @@
   .login {
     width: 50%;
     margin-left: 25%;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .login {
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 32%;
   }
 }
 
@@ -523,8 +533,20 @@
   background-image: linear-gradient(#336af5, #2b55c2 60%, #1d3d8c);
 }
 
+@media (min-width: 731px) and (max-width: 991px) {
+  .button {
+    width: 120px;
+  }
+}
+
 .signup {
   width: 70px;
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .signup {
+    width: 120px;
+  }
 }
 
 .reset {
@@ -536,6 +558,12 @@
 
 .resetPass {
   width: 100%;
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .resetPass {
+    margin-top: 5%;
+  }
 }
 
 .register {
