@@ -20,34 +20,34 @@
     </div>
     <hr>
     <div class="col-md-6 col-xs-12">
-        <h4 class="profile-title ">User details</h4>
+        <h4 class="text-center">User details</h4>
         <ul>
-            <li class="table-list"><strong>username: </strong>{{ user.username }}</li>
-            <li class="table-list"><strong>Name: </strong>{{ request.user.profile.name }}</li>
-            <li class="table-list"><strong>Gender: </strong>{{ request.user.profile.gender }}</li>
-            <li class="table-list"><strong>birthday: </strong>{{ request.user.profile.birthday }}</li>
-            <li class="table-list"><strong>nationality: </strong>{{ request.user.profile.nationality }}</li>
-            <li class="table-list"><strong>E-mail: </strong>{{ request.user.email }}</li>
+            <li class="text-center"><strong>username: </strong>{{ user.username }}</li>
+            <li class="text-center"><strong>Name: </strong>{{ request.user.profile.name }}</li>
+            <li class="text-center"><strong>Gender: </strong>{{ request.user.profile.gender }}</li>
+            <li class="text-center"><strong>birthday: </strong>{{ request.user.profile.birthday }}</li>
+            <li class="text-center"><strong>nationality: </strong>{{ request.user.profile.nationality }}</li>
+            <li class="text-center"><strong>E-mail: </strong>{{ request.user.email }}</li>
         </ul>
     </div>
-    <div class="col-md-6 col-xs-6">
-        <h4 class="profile-title">Settings</h4>    
-        <div class="a">
+    <div class="settings col-md-6 col-sm-6 col-xs-12">
+        <h4 class="text-center">Settings</h4>    
+        <div class="a text-center">
             <a href="{% url 'update_profile' %}">update Profile</a>
         </div>
-        <div class="a">
+        <div class="a text-center">
             <a href="{% url 'change_password' %}">Change password</a>
         </div>
         <div>
             <form method="POST">
                 {% csrf_token %}
-                <fieldset class="form-group">
+                <fieldset class="form-group text-center">
                     <legend class="border-bottom mb-4">Delete User Account</legend>
                         <p>Are you sure you want to delete your account?  This will permanently delete your
                         profile and any content you have generated.</p>
                         {{ form }}
                 </fieldset>
-                <div class="form-group">
+                <div class="form-group text-center">
                     <button class="btn btn-danger" type="submit">Delete Account</button>
                 </div>
             </form>
