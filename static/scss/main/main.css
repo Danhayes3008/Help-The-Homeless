@@ -583,8 +583,22 @@
   }
 }
 
+@media (min-width: 731px) and (max-width: 991px) {
+  .pro-pic {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .pro-pic {
+    margin-left: 32%;
+  }
+}
+
 .a {
   color: black;
+  text-align: center;
+  margin-bottom: 1%;
 }
 
 @media (max-width: 499px) {
@@ -621,22 +635,6 @@
   background-color: #ccc9c9;
 }
 
-.table-list {
-  text-align: justify;
-}
-
-@media (max-width: 499px) {
-  .table-list {
-    text-align: center;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 730px) {
-  .table-list {
-    text-align: center;
-  }
-}
-
 .profile-title {
   text-align: justify;
 }
@@ -650,6 +648,12 @@
 @media (min-width: 500px) and (max-width: 730px) {
   .profile-title {
     text-align: center;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .settings {
+    margin-left: 25%;
   }
 }
 
