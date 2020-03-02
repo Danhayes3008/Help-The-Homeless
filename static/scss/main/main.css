@@ -573,6 +573,21 @@
   background-color: #ccc9c9;
 }
 
+@media (max-width: 499px) {
+  .register {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .register {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 16.2%;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .register {
     width: 40%;
