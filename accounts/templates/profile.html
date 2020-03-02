@@ -60,15 +60,15 @@
             <hr>            
         <tr>
             <th>Date</th>
-            <th>Full Name</th> 
-            <th>amount</th>
+            <th>Donation product</th> 
+            <th>Total Amount Donated</th>
         </tr>
         <tr>
             {% for detail in request.user.profile.donation_details.all %}
                 {% for lineitem in detail.lineitems.all %}
-                <td>{{ donation.date }}</td>
+                <td>{{ lineitem.details.date }}</td>
                 <td>{{ lineitem.donation.name }}</td>
-                <td><i class="fa fa-gbp"> {{ lineitem.donation.donation_amount }}</i></td>
+                <td><i class="fa fa-gbp"> {{ lineitem.quantity }}</i></td>
                 {% endfor %}
             {% endfor %}
         </tr>
