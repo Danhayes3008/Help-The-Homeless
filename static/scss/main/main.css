@@ -307,8 +307,52 @@
   }
 }
 
+@media (min-width: 731px) and (max-width: 991px) {
+  .update {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .update {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
+.updatePass {
+  width: 30%;
+  margin-left: 35%;
+  border: solid 0.5px;
+  background-color: #ccc9c9;
+}
+
+@media (max-width: 499px) {
+  .updatePass {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 730px) {
+  .updatePass {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .updatePass {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 18%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .updatePass {
     width: 40%;
     margin-left: 30%;
   }
