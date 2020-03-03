@@ -11,11 +11,41 @@
     width: 50%;
     margin-left: 25%;
   }
+  @include tab{
+    width: 60%;
+    margin-left: 20%;
+  }
   @include computer {
     width: 40%;
     margin-left: 30%;
   }
 }
+
+.updatePass {
+  width: 30%;
+  margin-left: 35%;
+  border: solid 0.5px;
+  background-color: #ccc9c9;
+  @include mobile{
+    width: 60%;
+    margin-left: 20%;
+  }
+  @include mobile_horizontal{
+    width: 50%;
+    margin-left: 25%;
+  }
+  @include tab{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom:18%;
+  }
+  @include computer {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
 
 .updateButton {
   text-align: center;
