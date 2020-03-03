@@ -389,13 +389,14 @@
 .homeImg {
   height: 150px;
   padding-left: 20px;
+  margin-left: 9%;
   /* border-radius: 100%; */
 }
 
 @media (max-width: 499px) {
   .homeImg {
     height: 100px;
-    padding-left: 60px;
+    padding-left: 50px;
   }
 }
 
@@ -408,13 +409,14 @@
 @media (min-width: 731px) and (max-width: 991px) {
   .homeImg {
     height: 150px;
-    padding-left: 25%;
+    padding-left: 30%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .homeImg {
-    height: 100px;
+    height: 150px;
+    margin-bottom: 2%;
   }
 }
 
@@ -427,7 +429,7 @@
 @media (max-width: 499px) {
   .genSupport {
     height: 150px;
-    padding-left: 20px;
+    padding-left: 6px;
   }
 }
 
@@ -435,6 +437,12 @@
   .genSupport {
     height: 150px;
     padding-left: 130px;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .genSupport {
+    margin-left: 11%;
   }
 }
 
@@ -465,7 +473,7 @@
 @media (max-width: 499px) {
   .trainingImg {
     height: 150px;
-    padding-left: 45px;
+    padding-left: 30px;
   }
 }
 
@@ -476,8 +484,15 @@
   }
 }
 
+@media (min-width: 731px) and (max-width: 991px) {
+  .trainingImg {
+    margin-left: 20%;
+  }
+}
+
 .trainingText {
   padding-top: 20px;
+  margin-left: 9%;
 }
 
 @media (max-width: 499px) {
@@ -515,6 +530,7 @@
 
 .donate-text {
   padding: 0px;
+  text-align: center;
 }
 
 @media (max-width: 499px) {
@@ -898,7 +914,7 @@
 
 @media (min-width: 731px) and (max-width: 991px) {
   .address {
-    margin-left: 25%;
+    margin-left: 23%;
   }
 }
 
