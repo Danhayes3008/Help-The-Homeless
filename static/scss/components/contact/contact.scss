@@ -1,33 +1,55 @@
-.contact{
-    background-color: transparent;
-    padding-bottom: 7.5%;
+.contact {
+  background-color: transparent;
+  padding-bottom: 7.5%;
+  @include tab {
+    padding-left: 35px;
+  }
+  @include computer {
+    margin-bottom: 13%;
+  }
 }
 
-.map{
-    border: solid 0.5px !important;
-    @include mobile{
-        width: 300px;
-        margin-top: 20px;
-        margin-left: 30px;
-    }
-    @include mobile_horizontal{
-        width: 600px;
-        margin-top: 20px;
-        margin-left: 10px;
-    }
+.map {
+  border: solid 0.5px !important;
+  @include mobile {
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  @include mobile_horizontal {
+    width: 600px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
 }
 
-.map-padding{
-    padding-left: 4%;
+.map-padding {
+  padding-left: 4%;
+  @include mobile {
+    padding-left: 2%;
+  }
+  @include tab {
+    padding-left: 21.5%;
+    margin-top: 5%;
+  }
 }
 
-.address{
-    background-color: lightgrey;
-    text-align: center;
-    height: 305px;
-    margin-left: 13%;
-    border: solid 0.5px;
-    @include mobile_horizontal{
-        margin-left: 5%;
-    }
+.address {
+  background-color: lightgrey;
+  text-align: center;
+  height: 305px;
+  margin-left: 13%;
+  border: solid 0.5px;
+  @include mobile {
+    margin-left: 10%;
+  }
+  @include mobile_horizontal {
+    margin-left: 5%;
+  }
+  @include tab {
+    margin-left: 23%;
+  }
+  @include computer {
+    margin-left: 3%;
+  }
 }
