@@ -173,3 +173,25 @@
 .title {
   padding-top: 3%;
 }
+
+.storyImg {
+  width: 150px;
+  padding-left: 20px;
+  margin-left: 42%;
+  /* border-radius: 100%; */
+  @include mobile {
+    width: 100px;
+    padding-left: 50px;
+  }
+  @include mobile_horizontal {
+    padding-left: 130px;
+  }
+  @include tab {
+    width: 150px;
+    padding-left: 30%;
+  }
+  @include computer {
+    width: 150px;
+    margin-bottom: 2%;
+  }
+}
