@@ -1,7 +1,7 @@
 from django.test import TestCase
 from .views import contact
 
-
+# This test checks of the page loads or not
 class TestViews(TestCase):
 
     def test_get_contact_page(self):
