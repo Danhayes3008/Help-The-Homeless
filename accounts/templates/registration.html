@@ -1,16 +1,14 @@
 {% extends 'base.html' %}
-
 {% load bootstrap_tags %}
-
 {% block page_title %}Register Page{% endblock %}
-
 {% block page_heading %}Home{% endblock %}
-
+{% comment %} This form allows the user to create a account {% endcomment %}
 {% block content %}
 <div class="row row-flex register jumbotron col-md-12">
     <h3 class="text-center">Sign up</h3>
     <p class="note">Create a free account now to start donating to our cause</p>
     <form class="text-center" method="POST">
+    {% comment %} The csrf_token prevents injection hacking {% endcomment %}
     {% csrf_token %} {{ registration_form | as_bootstrap }}
     <button class="btn submitButton btn-default btn-success" type="submit" >submit</button>
     </form>
