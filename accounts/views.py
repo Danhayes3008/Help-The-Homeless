@@ -56,8 +56,8 @@ def registration(request):
                 auth.login(user=user, request=request)
                 messages.success(request, "Welcome to Help the Homless")
                 return redirect(reverse('index'))
-        else:
-            messages.error(request, "Something went wrong, please try again")
+            else:
+                messages.error(request, "Something went wrong, please try again")
     else:
         registration_form = RegistrationForm()
     return render(request, 'registration.html',
