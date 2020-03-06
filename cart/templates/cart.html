@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="row row-flex cart jumbotron">
-    <p class="text-center">For every donation made a certificate is sent to show your contribution to our cause. Any donation over £100,000.00 you will recive a top doner placque</p>
+    <p class="text-center">For every donation made a certificate is sent to show your contribution to our cause. Any donation over £100,000.00 you will receive a top downer plaque</p>
     <hr class="hr1">
     {% if donation_count > 0 %}
     <h3 class="text-center">Donate</h3>
@@ -20,7 +20,7 @@
             </form>
         {% endfor %}
     {% else %}
-        <p class="text-center">Sorry there is nothing in the cart</p>
+        <p class="text-center">Sorry there is nothing in the cart.</p>
     {% endif %}
 </div>
 {% endblock %}
