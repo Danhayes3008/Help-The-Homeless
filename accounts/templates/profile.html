@@ -1,17 +1,16 @@
 {% extends 'base.html' %}
 {% load static from staticfiles %}
-
 {% load bootstrap_tags %}
-
 {% block page_title %}Profile Page{% endblock %}
-
 {% block page_heading %}Home{% endblock %}
-
+{% comment %} This file holds all the coding for the information in the profile page {% endcomment %}
 {% block content %}
 {% if request.user.is_authenticated %}
 <div class="row row-flex profile jumbotron ">
+    {% comment %} This div displays the users username and profile picture {% endcomment %}
     <div class="col-md-12">
         <h3 class="text-center">{{ user.username }}</h3>
+        {% comment %} the if statement here checks if the user has a image saved in there profile and if not it displays the default image {% endcomment %}
         {% if user.profile.image %}
             <img class="pro-pic" src="{{ MEDIA_URL }}{{ request.user.profile.image }}"></img>
         {% else %}
@@ -19,6 +18,7 @@
         {% endif %}
     </div>
     <hr>
+    {% comment %} This section handles the users details as well as links to change the password, the users details and to delete there account if they wish to {% endcomment %}
     <div class="col-md-6 col-xs-12">
         <h4 class="text-center">User details</h4>
         <ul>
@@ -54,6 +54,7 @@
         </div>
     </div>
 </div>
+{% comment %} Thsi section displays all the donations the user has made {% endcomment %}
 <div class=" row row-flex profile-2 jumbotron col-md-12">
         <table class="table table-striped col-lg-12">
             <h3 class="text-center">Donation history</h3>
@@ -74,7 +75,5 @@
         {% endfor %}
         </table>
     </div>
-{% else %}
-    <img class="pro-pic" src="{% static 'image/blankProfileImage.png' %}"></img>
 {% endif %}
 {% endblock %}
