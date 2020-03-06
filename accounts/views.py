@@ -38,7 +38,7 @@ def logout(request):
     messages.success(request, "Thank you for visiting, please come again")
     return redirect(reverse('index'))
 
-# this section contains the registration def used to allow new users to register an account
+# This section contains the registration def used to allow new users to register an account
 
 def registration(request):
     if request.user.is_authenticated:
@@ -62,6 +62,7 @@ def registration(request):
         registration_form = RegistrationForm()
     return render(request, 'registration.html',
                   {"registration_form": registration_form})
+# this section renders the profile page and manages the delete user content
 @login_required
 def profile(request):
     if request.method == 'POST':
@@ -77,7 +78,7 @@ def profile(request):
         'delete_form': delete_form
     }
     return render(request, 'profile.html', context)
-
+# This section deals with the update profile ability
 @login_required
 # @transaction.atomic
 def update_profile(request):
@@ -101,7 +102,7 @@ def update_profile(request):
         'p_form': p_form
     }
     return render(request, 'update.html', context)
-
+# This section deals with the change password ability
 def change_password(request):
     if request.method == 'POST':
         form = PasswordChangeForm(request.user, request.POST)
