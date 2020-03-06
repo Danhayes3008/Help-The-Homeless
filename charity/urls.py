@@ -24,7 +24,7 @@ from cart import urls as urls_cart
 from payment import urls as urls_payment
 from django.views import static
 from .settings import MEDIA_ROOT
-
+# These are all the imported urls and one that deal with the media root
 urlpatterns = [
     url(r'^$', index, name='index'),
     url(r'^admin/', admin.site.urls),
