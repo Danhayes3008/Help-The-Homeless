@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+# This renders the contact us page.
 def contact(request):
     return render(request, "contact.html")
