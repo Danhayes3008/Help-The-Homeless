@@ -15,15 +15,13 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
     
-    def save(self, force_insert=False, force_update=False):
-        
-        super(Profile, self).save(force_insert, force_update)
-
+    def save(self, force_insert=False, force_update=False, *args, **kwargs,):        
+        super(Profile, self).save(force_insert, force_update, *args, **kwargs)
         if self.id is not None:
             previous = Profile.objects.get(id=self.id)
             if self.image and self.image != previous.image:
-                images = image.open(self.Profile.path)
-                images = images.resize((96, 96), image.ANTIALIAS)
+                images = images.open(self.Profile.path)
+                images = images.resize((225, 225), images.ANTIALIAS)
                 images.save(self.logo.path)
     
 @receiver(post_save, sender=User)
