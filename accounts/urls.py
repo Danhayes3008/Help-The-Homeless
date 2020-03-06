@@ -3,7 +3,7 @@ from django.contrib.auth import views as auth_views
 from . import views
 from accounts.views import change_password, login, logout, profile, registration, update_profile
 from accounts import url_reset
-
+# This is a list of the urls for the accounts app
 urlpatterns = [
     url(r'^login/', login, name="login"),
     url(r'^logout/', logout, name='logout'),
