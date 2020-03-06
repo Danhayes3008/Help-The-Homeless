@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% comment %} This file displays what is in the cart and allows the user to adjust it before going to the payment section {% endcomment %}
 {% block content %}
 <div class="row row-flex cart jumbotron">
     <p class="text-center">For every donation made a certificate is sent to show your contribution to our cause. Any donation over £100,000.00 you will receive a top downer plaque</p>
@@ -19,6 +20,7 @@
             <a href="{% url 'payment' %}" class="btn donate-btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span> Donate</a>
             </form>
         {% endfor %}
+        {% comment %} This else shows a message if the cart is empty {% endcomment %}
     {% else %}
         <p class="text-center">Sorry there is nothing in the cart.</p>
     {% endif %}
