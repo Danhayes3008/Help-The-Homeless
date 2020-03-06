@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
-
 {% load bootstrap_tags %}
-
 {% block page_title %}Login Page{% endblock %}
-
 {% block page_heading %}Home{% endblock %}
-
+{% comment %} This is the page that deals with the login form {% endcomment %}
 {% block content %}
 <div class="row row-flex login jumbotron col-md-12">
     <h3 class="text-center">Login</h3>
     <form class="text-center flex" method="POST">
+        {% comment %} The csrf_token prevents injection hacking {% endcomment %}
         {% csrf_token %}
         {{ login_form | as_bootstrap }}
         <button type="submit" class="btn button btn-default btn-success">Login</button>
         <h4 class="">or</h4>
+        {% comment %} This link goes to the registration page so that the user can make an account {% endcomment %}
         <a href="{% url 'register' %}" class="btn btn-default btn-success signup">Sign up</a>
     </form>
+    {% comment %} This section allows the user to have a e-mail sent out so they can reset there password if they forget there password {% endcomment %}
     <p class="text-center resetPass"><a class="reset" href="{% url 'password_reset' %}">Reset Password</a></p>
 </div>
 {% endblock %}
