@@ -3,7 +3,7 @@ from .views import profile, login, update_profile
 from django.contrib.auth.models import User
 from django.urls import reverse
 
-
+# this test checks if the login page loads or not
 class TestViews(TestCase):
 
     def test_get_login_page(self):
