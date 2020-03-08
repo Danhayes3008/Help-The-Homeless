@@ -1,7 +1,7 @@
+{% extends 'admin/base.html' %}
 {% comment %} The style tags are used in this file as i am currently learning how to style the admin pannel for django and don't have time to get a css file to correctly
 load all the styling into the file. So to work around that for now i have made seperate style tags to contain the content that will eventually go into the css file.
 {% endcomment %}
-{% extends 'admin/base.html' %}
 {% block title %}{{ title }} | Help The Homeless{% endblock %}
 {% block extrastyle %}
 {% comment %} This style tag contains all the styling for the desktop view. {% endcomment %}
@@ -29,8 +29,6 @@ load all the styling into the file. So to work around that for now i have made s
         background-color: #2f4f4f;
     }
 </style>
-{% comment %} This style tag contains all the styling for the mobile vertical view {% endcomment %}
-<style></style>
 {% endblock %}
 
 {% block branding %}
