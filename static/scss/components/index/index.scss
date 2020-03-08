@@ -32,6 +32,13 @@
   margin-top: 30%;
   border: solid 1px;
 }
+.donation1 {
+  width: 75%;
+  margin-left: 14.5%;
+  background-color: #ccc9c9;
+  margin-bottom: 5%;
+  border: solid 1px;
+}
 
 .img {
   height: 150px;
@@ -174,14 +181,21 @@
   padding-top: 3%;
 }
 
+.img-left{
+  @include mobile{
+    margin-left: 5% !important;
+  }
+}
+
 .storyImg {
   width: 150px;
   padding-left: 20px;
   margin-left: 24%;
   /* border-radius: 100%; */
   @include mobile {
-    width: 100px;
-    padding-left: 50px;
+    width: 150px;
+    // padding-left: 50px;
+    margin-left: 20%;
   }
   @include mobile_horizontal {
     padding-left: 130px;
