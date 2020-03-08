@@ -1,7 +1,7 @@
 from django.test import TestCase
 from .views import index
 
-
+# This test checks if the homepoage loads or not
 class TestViews(TestCase):
 
     def test_get_home_page(self):
