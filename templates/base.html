@@ -1,3 +1,6 @@
+{% comment %} This file is used as a template so that every html file does not have to have all this content in it. Instead it uses a block content to 
+display all the content from the page being loaded 
+{% endcomment %}
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +15,7 @@
     <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'scss/main/main.css' %}">
+    {% comment %} The anychart links allow me to use some charts from there site {% endcomment %}
     <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-core.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-pie.min.js"></script>
     <script src="https://cdn.anychart.com/releases/8.7.0/js/anychart-base.min.js"></script>
@@ -24,6 +28,7 @@
 <body>
     <nav class="navbar-masthead navbar-1 navbar-fixed-top">
         <div class="container">
+        {% comment %} This div contains the code needed to create a drop down nav menu for smaller devices {% endcomment %}
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <i class="fa fa-bars"></i>
@@ -36,12 +41,14 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    {% comment %} This if statement checks who is logged in and displays the donate nav link and profile link if the user exists {% endcomment %}
                     {% if user.is_authenticated %}
                     <li><a class="nb" href="{% url 'profile' %}">{{ user.username }}</a></li>
                     <li><a href="{% url 'logout' %}">Log Out</a></li>
                     <li>
                         <a href="{% url 'view_donate' %}">
                             Donate
+                            {% comment %} This if statement checks if there is anything in the cart and displays the total amount to be donated {% endcomment %}
                             {% if donation_count > 0 %}
                             <label class="badge badge-warning"><i class="fa fa-gbp">{{ donation_count  }}</i></label>
                             {% endif %}
@@ -57,13 +64,17 @@
             </div>
         </div>
     </nav>
+    {% comment %} This section is where all the messages are displayed {% endcomment %}
     {% if messages %}
     <div class="alert alert-success">
         <div class="messages text-center">
             {% for message in messages %} {{ message }} {% endfor %}
         </div>
     </div>
-    {% endif %}    
+    {% endif %} 
+       {% comment %} This div is where all the content from the other templates is placed. The block content looks for all the content inside the other
+        html templates and places it here
+       {% endcomment %}
     <div class="container">
         {% block content %} {% endblock %}
     </div>
