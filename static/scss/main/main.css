@@ -73,6 +73,14 @@
   border: solid 1px;
 }
 
+.donation1 {
+  width: 75%;
+  margin-left: 14.5%;
+  background-color: #ccc9c9;
+  margin-bottom: 5%;
+  border: solid 1px;
+}
+
 .img {
   height: 150px;
   padding-left: 20px;
@@ -286,6 +294,12 @@
   padding-top: 3%;
 }
 
+@media (max-width: 499px) {
+  .img-left {
+    margin-left: 5% !important;
+  }
+}
+
 .storyImg {
   width: 150px;
   padding-left: 20px;
@@ -295,8 +309,8 @@
 
 @media (max-width: 499px) {
   .storyImg {
-    width: 100px;
-    padding-left: 50px;
+    width: 150px;
+    margin-left: 20%;
   }
 }
 
