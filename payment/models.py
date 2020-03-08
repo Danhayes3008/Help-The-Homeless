@@ -18,7 +18,8 @@ class Details(models.Model):
     
     def __str__(self):
         return "{0}-{1}-{2}".format(self.id, self.date, self.profile)
-        
+
+# This model holds the list of what was paid for and the amounts 
 class DonateLineItem(models.Model):
     details = models.ForeignKey(Details, related_name="lineitems")
     donation = models.ForeignKey(Donation, null=False)
