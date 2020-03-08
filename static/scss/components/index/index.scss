@@ -29,7 +29,6 @@
   margin-left: 14.5%;
   background-color: #ccc9c9;
   margin-bottom: 5%;
-  margin-top: 30%;
   border: solid 1px;
 }
 .donation1 {
@@ -43,7 +42,6 @@
 .img {
   height: 150px;
   padding-left: 20px;
-  /* border-radius: 100%; */
   @include mobile {
     height: 100px;
     padding-left: 25px;
@@ -74,7 +72,6 @@
 .img-2 {
   height: 150px;
   padding-left: 10px;
-  /* border-radius: 50%; */
   @include mobile {
     height: 100px;
     padding-left: 10%;
@@ -89,7 +86,6 @@
 .img-3 {
   height: 150px;
   padding-left: 35px;
-  /* border-radius: 50%; */
   @include mobile {
     padding-left: 0px;
   }
@@ -120,10 +116,6 @@
     width: 60%;
     margin-left: 20%;
   }
-  // @include computer{
-  //     width: 50%;
-  //     margin-left: 25%;
-  // }
   @include tab {
     width: 50%;
     margin-left: 25%;
@@ -191,10 +183,8 @@
   width: 150px;
   padding-left: 20px;
   margin-left: 24%;
-  /* border-radius: 100%; */
   @include mobile {
     width: 150px;
-    // padding-left: 50px;
     margin-left: 20%;
   }
   @include mobile_horizontal {
