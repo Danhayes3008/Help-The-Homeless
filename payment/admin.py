@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Details, DonateLineItem
-# Register your models here.
+# These classes deal with linking the two models together and displaying them in the admin pannel.
 
 class DonateLineAdminInline(admin.TabularInline):
     model = DonateLineItem
