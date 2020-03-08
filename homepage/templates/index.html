@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static from staticfiles %}
-
+{% comment %} This file contains all the coding that is displayed on the index page {% endcomment %}
 {% block content %}
 <div class="row row-flex">
     <div class="jumbotron col-md-12 height1">
@@ -12,6 +12,7 @@
             <p class="text-justify">Thousands of people at risk of dying whilst living on the streets every year. The time to act is now!</p>
         </div>
     </div>
+    {% comment %} This form allows the user to donate money to the charity {% endcomment %}
     <div class="donations">
         {% for donation in donations %}
             <div>
@@ -29,6 +30,7 @@
             </div>
         {% endfor %}
     </div>
+    {% comment %} This section is all about the help some people got from the charity and how they became homeless {% endcomment %}
     <div class="donation box row row-flex">
         <h3 class="text-center">Stories:</h3>
         <hr class="hr1">
