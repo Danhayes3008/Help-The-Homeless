@@ -33,6 +33,7 @@
   }
   @include tab {
     height: 150px;
+    margin-left: 0%;
     padding-left: 30%;
   }
   @include computer {
@@ -89,6 +90,7 @@
 
 .trainingText {
   padding-top: 20px;
+  margin-top: 5%;
   margin-left: 9%;
   @include mobile {
     text-align: justify;
@@ -97,6 +99,11 @@
     text-align: justify;
     width: 80%;
     padding-left: 20%;
+  }
+  @include tab{
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 0%;
   }
 }
 
