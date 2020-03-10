@@ -41,10 +41,24 @@ I have tried to keep the site as close to the wire-frames as I cou
 - improved layout
 - total donated to the charity feature so that the public can see how much the charity has managed to raise
 - top donations section so everyone can see who has contributed the most to the charity
-- stories from people that have had there lives changed by the charity
+- stories from people that have had there lives changed by the charity (This has been added now)
 - history of what the charity has done to help the homeless.
 - better donation system
 - fake adverts
+
+<strong><h2>Bugs: </h2></strong>
+-
+
+ - Profile images sometimes get squashed or stretched depending on the size of the image. This will be fixed at some point by trying to resize the images on upload
+ but right now this is not something i know how to do.
+
+ - Styling is focused for just google chrome browser. When there is time i will fix this by trying to add styling for the other browsers.
+
+ - Minor styling issues for all the screen sizes, This will be fixed by refining the scss and css coding.
+
+ - The donation history currently keeps displaying all the donations for that user in one page, a pagination needs adding to fix this so that it only displays so many at one time
+
+ - The admin styling needs more work. I have only recently learned this could be done and still working on it. 
 
 <strong><h2>try it you're self:</h2></strong>
 -
