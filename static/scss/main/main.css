@@ -483,6 +483,7 @@
 @media (min-width: 731px) and (max-width: 991px) {
   .homeImg {
     height: 150px;
+    margin-left: 0%;
     padding-left: 30%;
   }
 }
@@ -580,6 +581,13 @@
     text-align: justify;
     width: 80%;
     padding-left: 20%;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 991px) {
+  .trainingText {
+    text-align: center;
+    margin-left: 0%;
   }
 }
 
