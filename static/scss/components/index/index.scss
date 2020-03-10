@@ -67,6 +67,9 @@
   @include mobile_horizontal {
     padding-left: 30px;
   }
+  @include tab{
+    margin-left: 14%;
+  }
 }
 
 .img-2 {
@@ -104,7 +107,7 @@
 .height1 {
   height: fit-content;
   width: 75%;
-  margin-left: 12.5%;
+  margin-left: 14.5%;
   padding-top: 15px;
   background-color: #ccc9c9;
   @include mobile {
@@ -117,8 +120,10 @@
     margin-left: 20%;
   }
   @include tab {
-    width: 50%;
-    margin-left: 25%;
+    margin-left: 14%;
+  }
+  @include computer{
+    margin-left: 14.5%;
   }
 }
 
@@ -173,8 +178,8 @@
   padding-top: 3%;
 }
 
-.img-left{
-  @include mobile{
+.img-left {
+  @include mobile {
     margin-left: 5% !important;
   }
 }
@@ -192,7 +197,7 @@
   }
   @include tab {
     width: 150px;
-    padding-left: 30%;
+    margin-left: 36.5%;
   }
   @include computer {
     width: 150px;
