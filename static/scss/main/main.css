@@ -129,6 +129,12 @@
   }
 }
 
+@media (min-width: 731px) and (max-width: 991px) {
+  .img-1 {
+    margin-left: 14%;
+  }
+}
+
 .img-2 {
   height: 150px;
   padding-left: 10px;
@@ -186,7 +192,7 @@
   height: -moz-fit-content;
   height: fit-content;
   width: 75%;
-  margin-left: 12.5%;
+  margin-left: 14.5%;
   padding-top: 15px;
   background-color: #ccc9c9;
 }
@@ -212,8 +218,13 @@
 
 @media (min-width: 731px) and (max-width: 991px) {
   .height1 {
-    width: 50%;
-    margin-left: 25%;
+    margin-left: 14%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .height1 {
+    margin-left: 14.5%;
   }
 }
 
@@ -318,7 +329,7 @@
 @media (min-width: 731px) and (max-width: 991px) {
   .storyImg {
     width: 150px;
-    padding-left: 30%;
+    margin-left: 36.5%;
   }
 }
 
@@ -639,6 +650,7 @@
 @media (min-width: 731px) and (max-width: 991px) {
   .login {
     width: 50%;
+    margin-top: 6%;
     margin-left: 25%;
     margin-bottom: 32%;
   }
