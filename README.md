@@ -19,7 +19,7 @@ to help navigate the readme i have added this list of links to the�
 - [Wire-frames](#Wire-frames)
 - [future updates](#future-updates)
 - [Try it You're Self](#Try-it-You're-Self)
-- [Technologies](Technologies)
+- [Technologies](#Technologies)
 - [contributions](#contributions)
 
 # Site's Purpose:
