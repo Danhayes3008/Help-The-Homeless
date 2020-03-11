@@ -2,7 +2,7 @@ anychart.onDocumentReady(function() {
  
     // set the data
     var data = {
-        header: ["Name", "Death toll"],
+        header: ["Name", "Total Homeless"],
         rows: [
           ["1995", 36951],
           ["2000", 47587],
