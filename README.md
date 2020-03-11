@@ -9,7 +9,7 @@ project status: <strong>work in progress</strong>
 Due to a major error i couldn't fix on my first attempt to build this project, i have been left with no choice but to start it again.
 Luckily at least half the work done can be salvaged and it is my hope that on this second attempt i will not run into the same problems
 that i had in the last one. As i transferred a-lot of the files over from my first attempt at the project i have decided to add a link to that
-said repository called <a href="https://github.com/Danhayes3008/milestone4">milestone4</a> so that people can see how the project has improved since i started again.
+said repository called [milestone4](https://github.com/Danhayes3008/milestone4) so that people can see how the project has improved since i started again.
 
 *Table of Contents*
 
@@ -31,7 +31,7 @@ details on how to get in-touch with them or visit the office. I wan
 <strong><h2>Deployed site:</h2></strong>
 -
 
-<a href="https://charity-project-4.herokuapp.com/" target="_blank"> Help The Homeless</a>
+[Help The Homeless](https://charity-project-4.herokuapp.com/) 
 
 <strong><h2>Wire-frames:</h2></strong>
 -
@@ -68,7 +68,7 @@ I have tried to keep the site as close to the wire-frames as I cou
 
 This project was made using vs code so i recommend if you wish to try out my site download the repository from my github page. To do so follow the instructions bellow:
 
-- Head over to <a href="https://github.com/Danhayes3008/project-4">my github page</a> to download the folder
+- Head over to [my github page](https://github.com/Danhayes3008/project-4) to download the folder
 - Click on clone and download then click on download zip
 - extract the file after downloading anywhere you want
 - open the folder with vs code
@@ -117,11 +117,11 @@ A link to the test plus a indicator displaying if the build is pass
 - Anna_ci on slack channels helped me get my site working on Heroku. With her help i was able to get Heroku to work in the terminal on visual studio code were i am doing my project.
 
 - After struggling for days trying to get my background image sorted i came across a video on YouTube that helped me get it working. The video i followed to get this to work was
-<a href="https://www.youtube.com/watch?v=jW1IFBv35kE">Full Screen Background Html/Css</a> by youtuber-<a href="https://www.youtube.com/channel/UCnw4nJg3VWgXz6itvH8NkgQ">WClarkson</a>
+[Full Screen Background Html/Css](https://www.youtube.com/watch?v=jW1IFBv35kE)</a> by youtuber - [WClarkson](https://www.youtube.com/channel/UCnw4nJg3VWgXz6itvH8NkgQ)
 
-- whilst searching for how to allow my users to change there passwords whilst logged into the site i came across multiple methods to do so. After trying a few these methods i found one that worked from <a href="https://simpleisbetterthancomplex.com/snippets/change-password-view/" target="_blank">simpleisbetterthancomplex.com</a>. This method was simple to implement and to understand.
+- whilst searching for how to allow my users to change there passwords whilst logged into the site i came across multiple methods to do so. After trying a few these methods i found one that worked from [simpleisbetterthancomplex.com](https://simpleisbetterthancomplex.com/snippets/change-password-view/). This method was simple to implement and to understand.
 
-- whilst searching online on how to allow a user to delete there account in django i cam across a reddit post from <a href="https://www.reddit.com/r/webdev/comments/cjfmg8/django_deleting_user_accounts/"> u/Science-Compliance </a> explaining how to do so. have have followed the instructions in the readme on how this is done and give full credit to that feature to the owner of the reddit post.
+- whilst searching online on how to allow a user to delete there account in django i cam across a reddit post from [u/Science-Compliance](https://www.reddit.com/r/webdev/comments/cjfmg8/django_deleting_user_accounts/) </a> explaining how to do so. have have followed the instructions in the readme on how this is done and give full credit to that feature to the owner of the reddit post.
 
 [Back To The Top](#Project_4)
 
