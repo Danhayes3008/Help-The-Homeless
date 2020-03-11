@@ -27,6 +27,12 @@ to help navigate the readme i have added this list of links to the�
 This site is designed to be like a real charity's website. The idea was that it would give people information on what the charity is and what there goals are whilst also providing 
 details on how to get in-touch with them or visit the office.I wanted every user to have the ability to view how much they have donated to the cause and also provide them with a certificate or a plague if they donated a-lot of money.I kept the site as basic as i could so that once it was finish i could add new features and improve on other stuff before submitting it for review but it looks like I may not have the time for that so i have done my best to give it a decent look and flow hoping the site will still be passable even with all the content I wanted to add not being included. 
 
+# UX:
+
+The site is designed so that people can see what the charity aims to do with the money donated and provides a simple method to donate to the charity. With using a cart system for doing the donating I have provided the users a chance to alter there donated amount before submiting the payment incase they want to donate more or less than originaly entered. The payment page has been set up so that the user has to enter there details everytime so that no card details are stored on the site. This was done to prevent there card details from being collected if the database was hacked as the database would not hold this information.
+
+The address part requires the users to enter there details everytime, This is because i have not got around to updating the profile model to include there address details so that they don't have to enter it every time. This update will be part of the better donation system that i wish to do if there was time ( or once the project has been assest ). The reason for the address details is so that the charity can post certificates to the user or a 
+
 # Deployed site:
 
 [Help The Homeless](https://charity-project-4.herokuapp.com/) 
@@ -78,28 +84,29 @@ After this all that is left is to create the env.py to hold the hi
 
 # Technologies:
 
-# HTML:
-As with all other websites html, there much that can be done using the html tags from making simple paragraphs to writing scripts, styles and even php coding. All that is needed is a imaginative mind toy find a way to use these features to make the site both look and run smoothly.
+- HTML:
+    - As with all other websites html, there much that can be done using the html tags from making simple paragraphs to writing scripts, styles and even php coding. All that is needed is a imaginative mind toy find a way to use these features to make the site both look and run smoothly.
 
-# CSS/SCSS:
-the css is used to make the site have a more professional and interesting look to it but it don’t stop there. CSS files can be generated using SCSS coding which is more neater and structured than making a single css style file. With the SCSS you can have all the styles separated into multiple files so that when you need to go back and change something all you have to do is search that one file of lets say 20 lines of code instead of searching over 100 lines of code. This then can be integrated into a main file by simply importing the scss files into another scss file to generate the css file that will hold all the styling for the site. In my opinion this is the best method to control the styling and helps prevent long hours of searching for that one line that needs tweaking.
+- CSS/SCSS:
+    - the css is used to make the site have a more professional and interesting look to it but it don’t stop there. CSS files can be generated using SCSS coding which is more neater and structured than making a single css style file. With the SCSS you can have all the styles separated into multiple files so that when you need to go back and change something all you have to do is search that one file of lets say 20 lines of code instead of searching over 100 lines of code. This then can be integrated into a main file by simply importing the scss files into another scss file to generate the css file that will hold all the styling for the site. In my opinion this is the best method to control the styling and helps prevent long hours of searching for that one line that needs tweaking.
 
-# JavaScript:
-the use of Java Script is to give the site functionality. whilst this project has not used much Java Script it is used to display information in the charts i have used and to manage to stripe payments. The charts are simple ones that use the information in the file to fill a chart imported from the any-chart website, with the strip one no modifications must be done as it will prevent payments going through.
+- JavaScript:
+    - the use of Java Script is to give the site functionality. whilst this project has not used much Java Script it is used to display information in the charts i have used and to manage to stripe payments. The charts are simple ones that use the information in the file to fill a chart imported from the any-chart website, with the strip one no modifications must be done as it will prevent payments going through.
 
-# Django:
-Django makes up the backbone of this project. with its well organized structure sites can be quickly built and deployed. It is one of many python extensions by
+- Django:
+    - Django makes up the backbone of this project. with its well organized structure sites can be quickly built and deployed. It is one of many python extensions by
 by far it is the best one in my current opinion for web site development. Django also works well with sqlite3 to create complex databases to meet any need either its a simple library or a complex shop database or a social media site.
 
-# Stripe:
-Stripe is a payment managing system that acts like a middle man. It is easy to set up in your project and has a built in testing feature. The testing feature comes with test card details so that you don’t have to test your site using a real card. In the stripe website you can view all the information pushed through stripe through multiple charts and lists.
+- Stripe:
+    - Stripe is a payment managing system that acts like a middle man. It is easy to set up in your project and has a built in testing feature. The testing feature comes with test card details so that you don’t have to test your site using a real card. In the stripe website you can view all the information pushed through stripe through multiple charts and lists.
 
-# AWS:
-we used aws buckets to store the static content and media files for this project.
+- AWS:
+    - we used aws buckets to store the static content and media files for this project.
 
 # Testing:
 In this project i have done both manual testing of the site and some written testing. All written tests run though the Travis sight for simple testing every-time a file is published. 
 A link to the test plus a indicator displaying if the build is passing or failing has also been placed at the top of this readme file. It is my hope to provide evidence that i have a basic understanding of testing however i wont be testing everything in the project with written tests.
+Due to the time restraint and not having the time to write tests for all the site's features most of the testing was done manualy whilst simple written tests were done to show I understand how to do them
 
 [Back To The Top](#Project_4)
 
