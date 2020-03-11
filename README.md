@@ -1,4 +1,4 @@
-# Project_4
+# Help The Homeless
 
 project status: <strong>work in progress</strong>
 - [ ] <strong>complete</strong>
@@ -31,15 +31,21 @@ details on how to get in-touch with them or visit the office.I wante
 
 The site is designed so that people can see what the charity aims to do with the money donated and provides a simple method to donate to the charity. With using a cart system for doing the donating I have provided the users a chance to alter there donated amount before submiting the payment incase they want to donate more or less than originaly entered. The payment page has been set up so that the user has to enter there details everytime so that no card details are stored on the site. This was done to prevent there card details from being collected if the database was hacked as the database would not hold this information.
 
-The address part requires the users to enter there details everytime, This is because i have not got around to updating the profile model to include there address details so that they don't have to enter it every time. This update will be part of the better donation system that i wish to do if there was time ( or once the project has been assest ). The reason for the address details is so that the charity can post certificates to the user or a 
+The address part requires the users to enter there details everytime, This is because i have not got around to updating the profile model to include there address details so that they don't have to enter it every time. This update will be part of the better donation system that i wish to do if there was time ( or once the project has been assest ). The reason for the address details is so that the charity can post certificates to the user or a plaque.
+
+As an account is needed for them to donate i have made a profile page so that the users can see there donations made, and change there profile details aswell as delete there accounts too.
 
 # Deployed site:
+
+You can find the deployed site with the link below.
 
 [Help The Homeless](https://charity-project-4.herokuapp.com/) 
 
 # Wire-frames:
 
-I have tried to keep the site as close to the wire-frames as I could, but the site has changed a-lot since they were made if there is time once the project is finished. This is the main priority for after the site is finished to make more wire-frames for the pages that dont have one.
+I have tried to keep the site as close to the wire-frames as I could, but the site has changed a-lot since they were made. If there is time once the project is finished I will made more for the pages that don't have a wireframe, but I don't think there will be time to do so. 
+
+You can find the wire-frames [here](https://github.com/Danhayes3008/project-4/tree/master/wireframes). The main priority for after the site is finished to make more wire-frames for the pages that dont have one.
 
 # future updates:
 
@@ -52,7 +58,7 @@ I have tried to keep the site as close to the wire-frames as I cou
 - better donation system
 - fake adverts
 
-[Back To The Top](#Project_4)
+[Back To The Top](#Help-The-Homeless)
 
 # Bugs:
 
@@ -63,7 +69,7 @@ I have tried to keep the site as close to the wire-frames as I cou
  - The donation history currently keeps displaying all the donations for that user in one page, a pagination needs adding to fix this so that it only displays so many at one time
  - The admin styling needs more work. I have only recently learned this could be done and still working on it.
 
- [Back To The Top](#Project_4) 
+ [Back To The Top](#Help-The-Homeless) 
 
 # try it you're self:
 
@@ -80,7 +86,7 @@ I recommend creating a virtual environment at this point to better ma
 
 After this all that is left is to create the env.py to hold the hidden key information, get a access key for stripe, set the project up on Heroku and create the aws bucket
 
-[Back To The Top](#Project4)
+[Back To The Top](#Help-The-Homeless)
 
 # Technologies:
 
@@ -108,7 +114,11 @@ In this project i have done both manual testing of the site and som
 A link to the test plus a indicator displaying if the build is passing or failing has also been placed at the top of this readme file. It is my hope to provide evidence that i have a basic understanding of testing however i wont be testing everything in the project with written tests.
 Due to the time restraint and not having the time to write tests for all the site's features most of the testing was done manualy whilst simple written tests were done to show I understand how to do them
 
-[Back To The Top](#Project_4)
+[Back To The Top](#Help-The-Homeless)
+
+# Credit:
+
+all code, images, information sourced from other sites and people are used for learning purposes and are not being used for comercial use. If at any time the owner of any content wishes for me to remove stuff sourced from them I will do so.
 
 # contributions:
 - I managed to get some of the donation history section of the profile page working by following the code another student posted on the slack channels. If it wasn't for slack user  r_andy79 i wouldn't have gotten this working so soon. This method that i was using was only working in a limited capacity but after my coding was fixed with the help of Chris Zielinski i was able to get it working correctly.
@@ -116,16 +126,20 @@ Due to the time restraint and not having the time to write tests for all the sit
 - Anna_ci on slack channels helped me get my site working on Heroku. With her help i was able to get Heroku to work in the terminal on visual studio code were i am doing my project.
 
 - After struggling for days trying to get my background image sorted i came across a video on YouTube that helped me get it working. The video i followed to get this to work was
-[Full Screen Background Html/Css](https://www.youtube.com/watch?v=jW1IFBv35kE)</a> by youtuber - [WClarkson](https://www.youtube.com/channel/UCnw4nJg3VWgXz6itvH8NkgQ)
+[Full Screen Background Html/Css](https://www.youtube.com/watch?v=jW1IFBv35kE)</a> by YouTuber - [WClarkson](https://www.youtube.com/channel/UCnw4nJg3VWgXz6itvH8NkgQ)
 
 - whilst searching for how to allow my users to change there passwords whilst logged into the site i came across multiple methods to do so. After trying a few these methods i found one that worked from [simpleisbetterthancomplex.com](https://simpleisbetterthancomplex.com/snippets/change-password-view/). This method was simple to implement and to understand.
 
 - whilst searching online on how to allow a user to delete there account in django i cam across a reddit post from [u/Science-Compliance](https://www.reddit.com/r/webdev/comments/cjfmg8/django_deleting_user_accounts/) </a> explaining how to do so. have have followed the instructions in the readme on how this is done and give full credit to that feature to the owner of the reddit post.
 
-[Back To The Top](#Project_4)
+[Back To The Top](#Help-The-Homeless)
 
 # project restructuring:
 
 Whilst trying to fix my donation history section of the profile page i was made to overhaul a-lot of the coding to make it all work. This was due to naming conflicts, after a few hours of working on it with a fellow student who helped me i was able to get the site working how i wanted it. The credit for this all goes to Chris Zielinski (ckz7880 on slack channels) from code institute slack chat-rooms as he walked me though fixing my site step by step after i made a right mess of it. Luckily not much was needed to be fixed but a rewrite of the carts context file, some models, the forms dealing with the donation and the views that was needed to fix all this. After fixing the problems with my code i was better able to understand how we were able to filter the donations made by the user logged in. I also received help from Faidon Minas Dermesonoglou from code institute slack chat-rooms. Faidon (Feddie_lead on slack channels) tried to explain the problem to me but because my code was a mess i was not able to correctly implement his advice on how to filter donations by user logged in.
 
-[Back To The Top](Project_4)
+[Back To The Top](#Help-The-Homeless)
+
+# Media
+
+For the images i used both google images with the search settings set to display only images that are free to use to find images i can use in my site. I also used a site that allows you to download and use images without where the owners have given permition for others to use them and not to give credit or acknowledgements for there ownership of the images. The site used was [Pixabay](https://www.pixabay.com)
