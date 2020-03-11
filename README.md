@@ -1,8 +1,8 @@
 # Help The Homeless
 
 project status: <strong>work in progress</strong>
-- [ ] <strong>complete</strong>
-- [x] <strong>work in progress</strong>
+- [x] <strong>complete</strong>
+- [ ] <strong>work in progress</strong>
 
 [![Build Status](https://travis-ci.org/Danhayes3008/project-4.svg?branch=master)](https://travis-ci.org/Danhayes3008/project-4)
 
