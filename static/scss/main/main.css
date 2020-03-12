@@ -439,14 +439,17 @@
 }
 
 .homeImg {
-  height: 150px;
+  width: 25%;
   padding-left: 20px;
   margin-left: 9%;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 @media (max-width: 499px) {
   .homeImg {
     height: 100px;
+    margin-left: 0%;
     padding-left: 50px;
   }
 }
@@ -473,7 +476,9 @@
 }
 
 .genSupport {
-  height: 250px;
+  width: 25%;
+  margin-left: 4%;
+  margin-top: 2%;
   padding-left: 10px;
   padding-bottom: 10px;
 }
@@ -500,6 +505,7 @@
 
 .supportText {
   padding-top: 20px;
+  margin-bottom: 2%;
 }
 
 @media (max-width: 499px) {
@@ -516,8 +522,14 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .supportText {
+    padding-top: 0%;
+  }
+}
+
 .trainingImg {
-  height: 250px;
+  width: 25%;
   padding-bottom: 10px;
   padding-right: 10px;
 }
@@ -544,7 +556,8 @@
 
 .trainingText {
   padding-top: 20px;
-  margin-top: 5%;
+  margin-top: 2%;
+  margin-left: 3%;
 }
 
 @media (max-width: 499px) {
@@ -579,6 +592,7 @@
 
 .homeText {
   text-align: center;
+  margin-top: 4%;
 }
 
 @media (max-width: 499px) {
