@@ -546,7 +546,6 @@
 .trainingText {
   padding-top: 20px;
   margin-top: 5%;
-  margin-left: 9%;
 }
 
 @media (max-width: 499px) {
@@ -568,6 +567,14 @@
     text-align: center;
     margin-top: 1%;
     margin-left: 0%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .trainingText {
+    margin-left: 5%;
+    margin-top: 3%;
+    padding-top: 0%;
   }
 }
 
