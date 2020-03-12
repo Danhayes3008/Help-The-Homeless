@@ -24,6 +24,15 @@
   background-color: grey;
 }
 
+.footer-link {
+  color: white;
+  font-size: 16px;
+}
+
+.fa {
+  color: black;
+}
+
 .box {
   background-color: #ccc9c9;
   margin-left: 80px;
