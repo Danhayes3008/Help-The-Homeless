@@ -65,7 +65,7 @@
     padding-left: 5px;
   }
   @include mobile_horizontal {
-    padding-left: 30px;
+    width: 240px;
   }
   @include tab {
     margin-left: 14%;
