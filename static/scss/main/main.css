@@ -125,7 +125,7 @@
 
 @media (min-width: 500px) and (max-width: 730px) {
   .img-1 {
-    padding-left: 30px;
+    width: 240px;
   }
 }
 
