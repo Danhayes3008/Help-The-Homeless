@@ -67,7 +67,7 @@
   @include mobile_horizontal {
     padding-left: 30px;
   }
-  @include tab{
+  @include tab {
     margin-left: 14%;
   }
 }
@@ -122,21 +122,8 @@
   @include tab {
     margin-left: 14%;
   }
-  @include computer{
+  @include computer {
     margin-left: 14.5%;
-  }
-}
-
-.height2 {
-  height: fit-content;
-  background-color: transparent;
-  @include mobile {
-    width: 75%;
-    margin-left: 12.5%;
-  }
-  @include mobile_horizontal {
-    width: 70%;
-    margin-left: 15%;
   }
 }
 
@@ -180,7 +167,7 @@
 
 .img-left {
   @include mobile {
-    margin-left: 5% !important;
+    margin-left: 18% !important;
   }
 }
 
@@ -193,7 +180,8 @@
     margin-left: 20%;
   }
   @include mobile_horizontal {
-    padding-left: 130px;
+    width: 150px;
+   margin-left: 27%;
   }
   @include tab {
     width: 150px;
@@ -213,8 +201,6 @@
   }
   @include mobile_horizontal {
     text-align: justify;
-    width: 80%;
-    padding-left: 20%;
     padding-top: 20px;
   }
 }
