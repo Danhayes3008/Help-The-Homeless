@@ -1,4 +1,13 @@
 .footer {
   background-color: grey;
 }
+
+.footer-link {
+  color: white;
+  font-size: 16px;
+}
+
+.fa {
+  color: black;
+}
 /*# sourceMappingURL=footer.css.map */
