@@ -13,6 +13,15 @@
         </div>
     </div>
 </div>
+{% comment %} This section explains some of what the charity will be doing {% endcomment %}
+<div class="row row-flex">
+    <div class="donation1 box row row-flex">
+        <h3 class="text-center"> We need you ! </h3>
+        <p class="storyText col-lg-12">Every pound you donate helps us to change someones live for the better. It is our goal to provide a safe and warm place for those living on the streets to stay.
+        We will also provide retraining in skills needed to get a full time job so that they can get back on there feet, aswell as provide them with daily essentials. To find
+        out more <a href="{% url 'donation' %}"> click here</a>, Every life matters so please help us support those in need by donating today. </p>
+    </div>
+</div>
     {% comment %} This form allows the user to donate money to the charity {% endcomment %}
 <div class="row row-flex">
     <div class="donations">
@@ -38,7 +47,7 @@
     <div class="donation1 box row row-flex">
         <h3 class="text-center">Stories:</h3>
         <hr class="hr1">
-    <div class="col-md-4 height2">
+    <div class="col-md-4">
         <h3 class="text-center">Amanda Simmings</h3>
         <hr class="hr1">
         <img class="storyImg img-left col-md-12" src="{% static 'image/woman-101542_640.jpg' %}"></img>
