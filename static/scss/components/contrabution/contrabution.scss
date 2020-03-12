@@ -18,11 +18,14 @@
 }
 
 .homeImg {
-  height: 150px;
+  width: 25%;
   padding-left: 20px;
   margin-left: 9%;
+  margin-bottom: 2%;
+  margin-top: 2%;
   @include mobile {
     height: 100px;
+    margin-left: 0%;
     padding-left: 50px;
   }
   @include mobile_horizontal {
@@ -40,7 +43,9 @@
 }
 
 .genSupport {
-  height: 250px;
+  width: 25%;
+  margin-left: 4%;
+  margin-top: 2%;
   padding-left: 10px;
   padding-bottom: 10px;
   @include mobile {
@@ -58,6 +63,7 @@
 
 .supportText {
   padding-top: 20px;
+  margin-bottom: 2%;
   @include mobile {
     text-align: justify;
   }
@@ -66,10 +72,13 @@
     width: 80%;
     padding-left: 20%;
   }
+  @include computer{
+    padding-top: 0%;
+  }
 }
 
 .trainingImg {
-  height: 250px;
+  width: 25%;
   padding-bottom: 10px;
   padding-right: 10px;
   @include mobile {
@@ -87,7 +96,8 @@
 
 .trainingText {
   padding-top: 20px;
-  margin-top: 5%;
+  margin-top: 2%;
+  margin-left: 3%;
   @include mobile {
     text-align: justify;
   }
@@ -109,6 +119,7 @@
 }
 .homeText {
   text-align: center;
+  margin-top: 4%;
   @include mobile {
     text-align: justify;
   }
