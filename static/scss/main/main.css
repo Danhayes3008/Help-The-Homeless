@@ -751,6 +751,13 @@
   }
 }
 
+@media (min-width: 500px) and (max-width: 730px) {
+  .register {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
 @media (min-width: 731px) and (max-width: 991px) {
   .register {
     width: 60%;
