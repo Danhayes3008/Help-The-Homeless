@@ -12,12 +12,12 @@
 .map {
   border: solid 0.5px !important;
   @include mobile {
-    width: 300px;
+    width: 95%;
     margin-top: 20px;
     margin-left: 30px;
   }
   @include mobile_horizontal {
-    width: 600px;
+    width: 100%;
     margin-top: 20px;
     margin-left: 10px;
   }
