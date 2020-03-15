@@ -6,19 +6,33 @@ load all the styling into the file. So to work around that for now i have made s
 {% block extrastyle %}
 {% comment %} This style tag contains all the styling for the desktop view. {% endcomment %}
 <style>
+    body{
+        font-size: 28px;
+    }
     #header {
         background-color: #2f4f4f;
+    }
+    label[for=id_email]{
+        font-size: 36px;
+    }
+    label[for=id_new_password1]{
+        font-size: 36px;
+    }
+    label[for=id_new_password2]{
+        font-size: 36px;
+    }
+    h1{
+        font-size: 40px;
     }
     #content{
         text-align: center;
     }
     div.breadcrumbs {
         background-color: #5b9999;
+        font-size: 24px;
     }
     form {
-        width: 50%;
-        margin-left: 25%;
-        border: solid 1px black;
+        border: solid 2px black;
     }
     .login .submit-row{
         padding: 0em 0 0 3.5em !important;
@@ -29,9 +43,18 @@ load all the styling into the file. So to work around that for now i have made s
     }
     input[type=email] {
         width: 50%;
+        text-align: center;
+        font-size: 36px;
+        border: 2px solid #333;
+    }
+    input[type=password] {
+        width: 50%;
+        text-align: center;
+        font-size: 36px;
+        border: 2px solid #333;
     }
     input[type=submit] {
-        width: 50%;
+        font-size: 33px;
         background-color: #2f4f4f;
     }
 </style>
