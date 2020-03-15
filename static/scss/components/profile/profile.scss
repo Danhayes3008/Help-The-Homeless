@@ -1,61 +1,61 @@
-.pro-pic{
-    width: 225px;
-    height: 225px;
-    margin-left: 37%;
-    border: 1px solid grey;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    @include mobile{
-        margin-left: 0%;
-    }
-    @include mobile_horizontal{
-        margin-left: 25%;
-    }
-    @include tab{
-        margin-left: 25%;
-    }
-    @include computer{
-        margin-left: 32%;
-    }
+.pro-pic {
+  width: 225px;
+  height: 225px;
+  margin-left: 37%;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  @include mobile {
+    margin-left: 0%;
+  }
+  @include mobile_horizontal {
+    margin-left: 15%;
+  }
+  @include tab {
+    margin-left: 25%;
+  }
+  @include computer {
+    margin-left: 32%;
+  }
 }
-.a{
-    color: black;
+.a {
+  color: black;
+  text-align: center;
+  margin-bottom: 1%;
+  @include mobile {
+    width: 100%;
     text-align: center;
-    margin-bottom: 1%;
-    @include mobile{
-        width: 100%;
-        text-align: center;
-    }
-    @include mobile_horizontal{
-        width: 100%;
-        text-align: center;
-    }
+  }
+  @include mobile_horizontal {
+    width: 100%;
+    text-align: center;
+  }
 }
-.profile{
-    height: fit-content;
-    width: 75%;
-    margin-left: 12.5%;
-    padding-top: 15px;
-    background-color: #ccc9c9;
+.profile {
+  height: fit-content;
+  width: 75%;
+  margin-left: 12.5%;
+  padding-top: 15px;
+  background-color: #ccc9c9;
 }
-.profile-2{
-    height: fit-content;
-    width: 75%;
-    margin-left: 12.5%;
-    padding-top: 15px;
-    background-color: #ccc9c9;
+.profile-2 {
+  height: fit-content;
+  width: 75%;
+  margin-left: 12.5%;
+  padding-top: 15px;
+  background-color: #ccc9c9;
 }
-.profile-title{
-    text-align: justify;
-    @include mobile{
-        text-align: center;
-    }
-    @include mobile_horizontal{
-        text-align: center;
-    }
+.profile-title {
+  text-align: justify;
+  @include mobile {
+    text-align: center;
+  }
+  @include mobile_horizontal {
+    text-align: center;
+  }
 }
-.settings{
-    @include tab{
-        margin-left: 25%;
-    }
+.settings {
+  @include tab {
+    margin-left: 25%;
+  }
 }
