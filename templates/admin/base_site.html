@@ -27,6 +27,16 @@ load all the styling into the file. So to work around that for now i have made s
     #content{
         text-align: center;
     }
+    #changelist-filter{
+        top: 77px !important;
+        right: 2px !important;
+    }
+    .module h2, .module caption, .inline-group h2{
+        background: #5b9999;
+    }
+    #branding{
+        float: none !important;
+    }
     div.breadcrumbs {
         background-color: #5b9999;
         font-size: 24px;
@@ -47,6 +57,12 @@ load all the styling into the file. So to work around that for now i have made s
         font-size: 36px;
         border: 2px solid #333;
     }
+    input[type=text] {
+        width: 50%;
+        text-align: center;
+        font-size: 36px;
+        border: 2px solid #333;
+    }
     input[type=password] {
         width: 50%;
         text-align: center;
@@ -56,6 +72,12 @@ load all the styling into the file. So to work around that for now i have made s
     input[type=submit] {
         font-size: 33px;
         background-color: #2f4f4f;
+    }
+    .login .submit-row{
+        margin-left: 25% !important;
+    }
+    .login .form-row #id_username, .login .form-row #id_password {
+        width: 90% !important;
     }
 </style>
 {% endblock %}
