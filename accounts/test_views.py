@@ -42,6 +42,7 @@ class TestprofilePage(BaseTest):
                 
     def test_profile_page(self):
         page = self.client.get(reverse("profile"))
+        self.assertEqual({"username": "andy"})
         self.assertEqual(page.status_code, 200)
         self.assertTemplateUsed(page, "profile.html")
 
