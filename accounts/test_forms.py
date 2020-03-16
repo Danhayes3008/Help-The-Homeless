@@ -19,7 +19,9 @@ class TestLoginForm(SimpleTestCase):
             'password': 'pass@123'
         })
         self.assertTrue(form.is_valid())
-        
+    
+    
+class TestRegistrationFrom(SimpleTestCase):    
     def test_the_registration_form(self):
         form = RegistrationForm({
             'username': 'username',
