@@ -22,19 +22,9 @@ class TestLoginForm(SimpleTestCase):
         
     def test_the_registration_form(self):
         form = RegistrationForm({
-            'username': ' ',
-            'email': ' ',
-            'password1': ' ',
-            'password2': ' '
+            'username': 'username',
+            'email': 'email',
+            'password1': 'password1',
+            'password2': 'password2'
         })
         self.assertTrue(form.is_valid())
-
-# class TestRegistrationForm(SimpleTestCase):
-#     def test_the_registration_form(self):
-#         form = RegistrationForm({
-#             'username': 'andy',
-#             'email': 'test@gmail.com',
-#             'password1': 'test1234',
-#             'password2': 'test1234'
-#         })
-#         self.assertTrue(form.is_valid())
