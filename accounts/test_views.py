@@ -13,16 +13,27 @@ class TestViews(TestCase):
         self.assertTemplateUsed(page, "login.html")
     
     
-class TestProfileViews(TestCase):
+class BaseTest(TestCase):
     def setUp(self):
-        self.user = User.objects.create(username='andy', password='pass@123', email='adndy@gmail.com')
-        self.client.login(username='andy', password='pass@123')
-        # self.client = Profile()
+        self.register_url=reverse('register')
         
-    def test_profile_page(self):
-        page = self.client.get("/accounts/profile/")
-        self.assertEqual(page.status_code, 200)
-        self.assertTemplateUsed(page, "profile.html")
+class RegisterTest(BaseTest):
+    def test_can_view_registration_page(self):
+        response=self.client.get(self.register_url)
+        self.assertEqual(response.status_code,200)
+        self.assertTemplateUsed(response, "accounts/profile.html")
+
+# class TestRegistration(TestCase):
+    # def setUp(self):
+    #     self.user = User.objects.create(username='andy', password='pass@123', email='adndy@gmail.com')
+    #     self.client.login(username='andy', password='pass@123')
+    #     return super().setUp()
+    #     # self.client = Profile()
+        
+    # def test_profile_page(self):
+    #     page = self.client.get("/accounts/profile/")
+    #     self.assertEqual(page.status_code, 200)
+    #     self.assertTemplateUsed(page, "profile.html")
 
     # def test_history(self):
     #     self.client.login(username='andy', password='pass@123')
