@@ -24,7 +24,7 @@ class RegisterTest(BaseTest):
 
 class TestprofilePage(TestCase):
     def setUp(self):
-        self.register_url=reverse('register')
+        self.register_url=reverse('profile')
         self.user ={
             'username': 'andy',
              'password': 'pass@123',
