@@ -21,7 +21,7 @@ class TestLoginForm(SimpleTestCase):
         self.assertTrue(form.is_valid())
     
     
-class TestRegistrationFrom(SimpleTestCase):    
+class TestRegistrationFrom(TestCase):    
     def test_the_registration_form(self):
         form = RegistrationForm({
             'username': 'username',
