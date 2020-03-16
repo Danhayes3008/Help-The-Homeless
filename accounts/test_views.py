@@ -13,12 +13,12 @@ class TestViews(TestCase):
         self.assertTemplateUsed(page, "login.html")
     
     
-class TestProfileViews(TestCase):
-    self.user = User.objects.create(username='andy', password='pass@123', email='adndy@gmail.com')
-    self.client = Profile()
+# class TestProfileViews(TestCase):
+#     self.user = User.objects.create(username='andy', password='pass@123', email='adndy@gmail.com')
+#     self.client = Profile()
 
-    def test_history(self):
-        self.client.login(username=self.user.username, password='pass@123')
-        # get_history function having login_required decorator
-        response = self.client.post(reverse('profile'), {'user_id': self.user.id})
-        self.assertEqual(response.status_code, 200)
+#     def test_history(self):
+#         self.client.login(username=self.user.username, password='pass@123')
+#         # get_history function having login_required decorator
+#         response = self.client.post(reverse('profile'), {'user_id': self.user.id})
+#         self.assertEqual(response.status_code, 200)
