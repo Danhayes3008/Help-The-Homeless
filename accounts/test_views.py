@@ -19,7 +19,6 @@ class TestProfileViews(TestCase):
         self.client = Profile()
         
     def test_profile_page(self):
-        self.client.login(username='andy', password='pass@123')
         page = self.client.get("/accounts/profile/")
         self.assertEqual(page.status_code, 200)
         self.assertTemplateUsed(page, "profile.html")
