@@ -54,11 +54,23 @@ class RegistrationForm(UserCreationForm):
         return password2
  # This form is used to update the user table    
 class updateUserForm(forms.ModelForm):
+    username= forms.CharField(widget= forms.TextInput
+                           (attrs={'placeholder':'username'}))
+    email= forms.CharField(widget= forms.TextInput
+                           (attrs={'placeholder':'email address'}))
     class Meta:
         model = User
         fields = ['username', 'email']
 # This form is used to update the profile table        
 class updateProfileForm(forms.ModelForm):
+    name= forms.CharField(widget= forms.TextInput
+                           (attrs={'placeholder':'name'}))
+    gender= forms.CharField(widget= forms.TextInput
+                           (attrs={'placeholder':'gender'}))
+    nationality= forms.CharField(widget= forms.TextInput
+                           (attrs={'placeholder':'nationality'}))
+    birthday= forms.CharField(widget= forms.TextInput
+                           (attrs={'placeholder':'yyyy-mm-dd'}))
     class Meta:
         model = Profile
         fields = ['name', 'image', 'gender', 'nationality', 'birthday']
