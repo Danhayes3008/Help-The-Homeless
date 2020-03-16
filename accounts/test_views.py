@@ -22,18 +22,3 @@ class RegisterTest(BaseTest):
         self.assertEqual(response.status_code,200)
         self.assertTemplateUsed(response, "registration.html")
         
-class ProfileUrl(TestCase):
-    def setUp(self):
-        self.register_url=reverse('profile')
-        self.user ={
-            'username': 'andy',
-             'password': 'pass@123',
-             'email': 'adndy@gmail.com'
-        }
-
-
-    # def test_history(self):
-    #     self.client.login(username='andy', password='pass@123')
-    #     # get_history function having login_required decorator
-    #     response = self.client.post(reverse('profile'), {'user_id': self.user.id})
-    #     self.assertEqual(response.status_code, 200)
