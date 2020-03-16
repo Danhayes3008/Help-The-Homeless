@@ -21,8 +21,8 @@ class RegisterTest(BaseTest):
         response=self.client.get(reverse("register"))
         self.assertEqual(response.status_code,200)
         self.assertTemplateUsed(response, "registration.html")
-
-class TestprofilePage(TestCase):
+        
+class ProfileUrl(TestCase):
     def setUp(self):
         self.register_url=reverse('profile')
         self.user ={
@@ -30,6 +30,15 @@ class TestprofilePage(TestCase):
              'password': 'pass@123',
              'email': 'adndy@gmail.com'
         }
+
+class TestprofilePage(BaseTest):
+    # def setUp(self):
+    #     self.register_url=reverse('profile')
+    #     self.user ={
+    #         'username': 'andy',
+    #          'password': 'pass@123',
+    #          'email': 'adndy@gmail.com'
+    #     }
                 
     def test_profile_page(self):
         page = self.client.get(reverse("profile"))
