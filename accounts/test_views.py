@@ -22,13 +22,7 @@ class RegisterTest(BaseTest):
         self.assertEqual(response.status_code,200)
         self.assertTemplateUsed(response, "registration.html")
 
-# class TestRegistration(TestCase):
-    # def setUp(self):
-    #     self.user = User.objects.create(username='andy', password='pass@123', email='adndy@gmail.com')
-    #     self.client.login(username='andy', password='pass@123')
-    #     return super().setUp()
-    #     # self.client = Profile()
-        
+# class TestprofilePage(TestCase):        
     # def test_profile_page(self):
     #     page = self.client.get("/accounts/profile/")
     #     self.assertEqual(page.status_code, 200)
