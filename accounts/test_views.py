@@ -17,7 +17,7 @@ class TestProfileViews(TestCase):
     def setUp(self):
         self.user = User.objects.create(username='andy', password='pass@123', email='adndy@gmail.com')
         self.client.login(username='andy', password='pass@123')
-        self.client = Profile()
+        # self.client = Profile()
         
     def test_profile_page(self):
         page = self.client.get("/accounts/profile/")
