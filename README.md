@@ -132,6 +132,8 @@ all code, images, information sourced from other sites and people are used for l
 
 - whilst searching online on how to allow a user to delete there account in django i cam across a reddit post from [u/Science-Compliance](https://www.reddit.com/r/webdev/comments/cjfmg8/django_deleting_user_accounts/) </a> explaining how to do so. have have followed the instructions in the readme on how this is done and give full credit to that feature to the owner of the reddit post.
 
+- During the manual testing of my site on my mobile i discovered that the update profile form sets the date backwards and the bootstrap form does not tell you of this. So i looked online and discovered at [learningaboutelectronics.com](http://www.learningaboutelectronics.com/Articles/How-to-add-a-placeholder-to-a-Django-form-field.php) that i could add placeholders to my forms using the code provided on that page.
+
 [Back To The Top](#Help-The-Homeless)
 
 # project restructuring:
