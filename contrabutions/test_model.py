@@ -7,4 +7,3 @@ class TestDonationModel(TestCase):
         name = Donation(name="test")
         name.save()
         self.assertEqual(name.name, "test")
-        self.assertFalse(name.done)
