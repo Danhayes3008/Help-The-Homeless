@@ -32,6 +32,6 @@ class RegisterTest(BaseTest):
         self.assertTemplateUsed(response, "registration.html")
         
     def test_can_register_user(self):
-        response=self.post(self.register_url,self.user,format='text/html')
+        response=self.client.post(self.register_url,self.user,format='text/html')
         self.assertEqual(response.status_code,302)
         
