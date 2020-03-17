@@ -20,7 +20,7 @@ class BaseTest(TestCase):
             'password1': 'password1',
             'password2': 'password2',
             'email': 'testemail@gmail.com',
-            'fullname': 'fullname'
+            'name': 'fullname'
             
         }
         self.register_url=reverse('register')
