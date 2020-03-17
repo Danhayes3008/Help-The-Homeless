@@ -3,6 +3,7 @@ from .views import profile, login, update_profile
 from django.contrib.auth.models import User
 from django.urls import reverse
 from accounts.models import Profile
+from accounts.forms import RegistrationForm
 
 # this test checks if the login page loads or not
 class TestViews(TestCase):
@@ -20,5 +21,6 @@ class RegisterTest(BaseTest):
     def test_can_view_registration_page(self):
         response=self.client.get(reverse("register"))
         self.assertEqual(response.status_code,200)
+        self.assertEqual(form=RegistrationForm)
         self.assertTemplateUsed(response, "registration.html")
         
