@@ -45,7 +45,7 @@ def payment (request):
                     card = payment_form.cleaned_data['stripe_id'],
                 )
             except stripe.error.CardError:
-                messages.error(request, "Sorry, your car was Declined!")
+                messages.error(request, "Sorry, your card was Declined!")
                 
             if customer.paid:
                 messages.error(request, "You have successfully Paid!")
@@ -54,12 +54,12 @@ def payment (request):
             else:
                 messages.error(request, "Unable to take payment")
         else:
-            print(details_form.is_valid)
-            print(payment_form.is_valid)
-            print(payment_form.errors)
             messages.error(request, "We were unable to take payment with that card!")
     else:
         payment_form = MakePaymentForm()
         donate_form = DetailsForm()
         
-    return render(request, "payment.html", {'donate_form': donate_form, 'payment_form': payment_form, 'publishable': settings.STRIPE_PUBLISHABLE})
+    return render(request, "payment.html", {
+        'donate_form': donate_form,
+         'payment_form': payment_form,
+          'publishable': settings.STRIPE_PUBLISHABLE})
