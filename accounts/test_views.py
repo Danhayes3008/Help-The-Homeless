@@ -50,5 +50,5 @@ class UpdateProfileTest(BaseTest):
 class ChangePasswordTest(BaseTest):
     def test_if_the_change_password_page_loads(self):
         response=self.client.get(self.change_password_url,self.user)
-        self.assertEqual(response.status_code,302 )
+        self.assertEqual(response.status_code,200 )
         
