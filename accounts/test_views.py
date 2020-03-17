@@ -23,6 +23,7 @@ class BaseTest(TestCase):
             
         }
         self.register_url=reverse('register')
+        self.profile_url=reverse('profile')
         
 class RegisterTest(BaseTest):
     def test_can_view_registration_page(self):
@@ -33,4 +34,10 @@ class RegisterTest(BaseTest):
     def test_can_register_user(self):
         response=self.client.post(self.register_url,self.user,format='text/html')
         self.assertEqual(response.status_code,200)
+        
+class ProfileTest(BaseTest):
+    def test_if_the_profile_page_loads(self):
+        response=self.client.get(self.profile_url,self.user)
+        self.assertEqual(response.status_code,200)
+        self.assertTemplateUsed(response, "profile.html")
         
