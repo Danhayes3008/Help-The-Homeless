@@ -15,11 +15,24 @@ class TestViews(TestCase):
     
 class BaseTest(TestCase):
     def setUp(self):
+        self.user={
+            'username': 'username',
+            'password1': 'password1',
+            'password2': 'password2',
+            'email': 'testemail@gmail.com',
+            'fullname': 'fullname'
+            
+        }
         self.register_url=reverse('register')
+        self.profile_url=reverse('profile')
         
 class RegisterTest(BaseTest):
     def test_can_view_registration_page(self):
         response=self.client.get(reverse("register"))
         self.assertEqual(response.status_code,200)
         self.assertTemplateUsed(response, "registration.html")
+        
+    def test_can_register_user(self):
+        response=self.post(self.register_url,self.user,format='text/html')
+        self.assertEqual(response.status_code,302)
         
