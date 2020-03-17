@@ -11,4 +11,4 @@ class TestDonationModel(TestCase):
     def test_donation_model_fail(self):
         name = Donation(name="test")
         name.save()
-        self.assertFalse(name.name, "hello")
+        self.assertFalse(name.name, "test")
