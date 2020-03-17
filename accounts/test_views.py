@@ -19,8 +19,7 @@ class BaseTest(TestCase):
             'username': 'username',
             'password1': 'password1',
             'password2': 'password2',
-            'email': 'testemail@gmail.com',
-            'name': 'name'
+            'email': 'testemail@gmail.com'
             
         }
         self.register_url=reverse('register')
@@ -33,5 +32,5 @@ class RegisterTest(BaseTest):
         
     def test_can_register_user(self):
         response=self.client.post(self.register_url,self.user,format='text/html')
-        self.assertEqual(response.status_code,302)
+        self.assertEqual(response.status_code,200)
         
