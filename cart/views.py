@@ -26,7 +26,6 @@ def adjust_donation(request, id):
     Adjust the quantity of the specified donation to the specified
     amount
     """
-    print(request.POST)
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
