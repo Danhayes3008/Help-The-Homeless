@@ -39,24 +39,7 @@
   border: solid 1px;
 }
 
-.img {
-  height: 150px;
-  padding-left: 20px;
-  @include mobile {
-    height: 100px;
-    padding-left: 25px;
-  }
-  @include mobile_horizontal {
-    padding-left: 80px;
-  }
-  @include tab {
-    height: 150px;
-    padding-left: 25%;
-  }
-  @include computer {
-    height: 100px;
-  }
-}
+
 .img-1 {
   height: 200px;
   padding-top: 10px;
@@ -124,40 +107,6 @@
   }
   @include computer {
     margin-left: 14.5%;
-  }
-}
-
-.index-3 {
-  height: fit-content;
-  width: 75%;
-  margin-left: 12.5%;
-  margin-bottom: 10%;
-  padding-top: 15px;
-  background-color: #ccc9c9;
-  @include mobile {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 0px;
-    margin-left: 15%;
-  }
-  @include mobile_horizontal {
-    padding-bottom: 20px;
-    margin-bottom: 0px;
-  }
-}
-
-.index-3-text {
-  text-align: center;
-  @include mobile {
-    text-align: justify;
-    width: 80%;
-    padding-left: 20%;
-  }
-  @include mobile_horizontal {
-    text-align: justify;
-    width: 80%;
-    padding-left: 20%;
   }
 }
 
