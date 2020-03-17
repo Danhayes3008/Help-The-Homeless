@@ -11,5 +11,4 @@ urlpatterns = [
     url(r'^register/', registration, name='register'),
     url(r'^update/', update_profile, name='update_profile'),
     url(r'^change_password/', views.change_password, name='change_password'),
-    url(r'^password_reset/', include(url_reset)),
-]
+    url(r'^password_reset/', include(url_reset))]
