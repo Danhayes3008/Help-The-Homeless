@@ -25,6 +25,7 @@ class BaseTest(TestCase):
         self.register_url=reverse('register')
         self.profile_url=reverse('profile')
         self.update_profile_url=reverse('update_profile')
+        self.change_password_url=reverse('change_password')
         
 class RegisterTest(BaseTest):
     def test_can_view_registration_page(self):
@@ -44,5 +45,10 @@ class ProfileTest(BaseTest):
 class UpdateProfileTest(BaseTest):
     def test_if_the_update_profile_page_loads(self):
         response=self.client.get(self.update_profile_url,self.user)
+        self.assertEqual(response.status_code,302 )
+        
+class ChangePasswordTest(BaseTest):
+    def test_if_the_change_password_page_loads(self):
+        response=self.client.get(self.change_password_url,self.user)
         self.assertEqual(response.status_code,302 )
         
