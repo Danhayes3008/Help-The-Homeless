@@ -21,6 +21,6 @@ class RegisterTest(BaseTest):
     def test_can_view_registration_page(self):
         response=self.client.get(reverse("register"))
         self.assertEqual(response.status_code,200)
-        self.assertEqual(form=RegistrationForm)
+        self.assertEqual(registration_form=RegistrationForm)
         self.assertTemplateUsed(response, "registration.html")
         
