@@ -20,11 +20,10 @@ class BaseTest(TestCase):
             'password1': 'password1',
             'password2': 'password2',
             'email': 'testemail@gmail.com',
-            'name': 'fullname'
+            'name': 'name'
             
         }
         self.register_url=reverse('register')
-        self.profile_url=reverse('profile')
         
 class RegisterTest(BaseTest):
     def test_can_view_registration_page(self):
