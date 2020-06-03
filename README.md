@@ -1,4 +1,4 @@
-## Help The Homeless
+ ## Help The Homeless
 ---
 
 project status: <strong>work in progress</strong>
