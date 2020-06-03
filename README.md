@@ -1,4 +1,5 @@
-# Help The Homeless
+## Help The Homeless
+---
 
 project status: <strong>work in progress</strong>
 - [x] <strong>complete</strong>
@@ -22,12 +23,14 @@ to help navigate the README i have added this list of links to the�
 - [Technologies](#Technologies)
 - [contributions](#contributions)
 
-# Site's Purpose:
+## Site's Purpose:
+---
 
 This site is designed to be like a real charity's website. The idea was that it would give people information on what the charity is and what there goals are whilst also providing 
 details on how to get in-touch with them or visit the office.I wanted every user to have the ability to view how much they have donated to the cause and also provide them with a certificate or a plague if they donated a-lot of money.I kept the site as basic as i could so that once it was finish i could add new features and improve on other stuff before submitting it for review but it looks like I may not have the time for that so i have done my best to give it a decent look and flow hoping the site will still be passable even with all the content I wanted to add not being included. 
 
-# UX:
+## UX:
+---
 
 The site is designed so that people can see what the charity aims to do with the money donated and provides a simple method to donate to the charity. With using a cart system for doing the donating I have provided the users a chance to alter there donated amount before submitting the payment in-case they want to donate more or less than originally entered. The payment page has been set up so that the user has to enter there details every time so that no card details are stored on the site. This was done to prevent there card details from being collected if the database was hacked as the database would not hold this information.
 
@@ -35,19 +38,21 @@ The address part requires the users to enter there details every-time,
 
 As an account is needed for them to donate i have made a profile page so that the users can see there donations made, and change there profile details as-well as delete there accounts too.
 
-# Deployed site:
+## Deployed site:
 
 You can find the deployed site with the link below.
 
 [Help The Homeless](https://charity-project-4.herokuapp.com/) 
 
-# Wire-frames:
+## Wire-frames:
+---
 
 I have tried to keep the site as close to the wire-frames as I could, but the site has changed a-lot since they were made. If there is time once the project is finished I will made more for the pages that don't have a wireframe, but I don't think there will be time to do so. 
 
 You can find the wire-frames [here](https://github.com/Danhayes3008/project-4/tree/master/wireframes). The main priority for after the site is finished to make more wire-frames for the pages that dont have one.
 
-# future updates:
+## future updates:
+---
 
 - improved layout
 - total donated to the charity feature so that the public can see how much the charity has managed to raise 
@@ -59,7 +64,8 @@ You can find the wire-frames [here](https://github.com/Danhayes3008/project
 
 [Back To The Top](#Help-The-Homeless)
 
-# Bugs:
+## Bugs:
+---
 
  - Profile images sometimes get squashed or stretched depending on the size of the image. This will be fixed at some point by trying to resize the images on upload
  but right now this is not something i know how to do.
@@ -70,7 +76,8 @@ You can find the wire-frames [here](https://github.com/Danhayes3008/project
 
  [Back To The Top](#Help-The-Homeless) 
 
-# try it you're self:
+## try it you're self:
+---
 
 This project was made using vs code so i recommend if you wish to try out my site download the repository from my Git-Hub page. To do so follow the instructions bellow:
 
@@ -87,7 +94,8 @@ After this all that is left is to create the env.py to hold the hi
 
 [Back To The Top](#Help-The-Homeless)
 
-# Technologies:
+## Technologies:
+---
 
 - HTML:
     - As with all other websites html, there much that can be done using the html tags from making simple paragraphs to writing scripts, styles and even php coding. All that is needed is a imaginative mind toy find a way to use these features to make the site both look and run smoothly.
@@ -108,18 +116,23 @@ by far it is the best one in my current opinion for web site devel
 - AWS:
     - we used aws buckets to store the static content and media files for this project.
 
-# Testing:
+## Testing:
+---
+
 In this project i have done both manual testing of the site and some written testing. All written tests run though the Travis sight for simple testing every-time a file is published. 
 A link to the test plus a indicator displaying if the build is passing or failing has also been placed at the top of this README file. It is my hope to provide evidence that i have a basic understanding of testing however i wont be testing everything in the project with written tests.
 Due to the time restraint and not having the time to write tests for all the site's features most of the testing was done manually whilst simple written tests were done to show I understand how to do them
 
 [Back To The Top](#Help-The-Homeless)
 
-# Credit:
+## Credit:
+---
 
 all code, images, information sourced from other sites and people are used for learning purposes and are not being used for commercial use. If at any time the owner of any content wishes for me to remove stuff sourced from them I will do so.
 
-# contributions:
+## contributions:
+---
+
 - I managed to get some of the donation history section of the profile page working by following the code another student posted on the slack channels. If it wasn't for slack user  r_andy79 i wouldn't have gotten this working so soon. This method that i was using was only working in a limited capacity but after my coding was fixed with the help of Chris Zielinski i was able to get it working correctly.
 
 - Anna_ci on slack channels helped me get my site working on Heroku. With her help i was able to get Heroku to work in the terminal on visual studio code were i am doing my project.
@@ -135,12 +148,14 @@ all code, images, information sourced from other sites and people are�
 
 [Back To The Top](#Help-The-Homeless)
 
-# project restructuring:
+## project restructuring:
+---
 
 Whilst trying to fix my donation history section of the profile page i was made to overhaul a-lot of the coding to make it all work. This was due to naming conflicts, after a few hours of working on it with a fellow student who helped me i was able to get the site working how i wanted it. The credit for this all goes to Chris Zielinski (ckz7880 on slack channels) from code institute slack chat-rooms as he walked me though fixing my site step by step after i made a right mess of it. Luckily not much was needed to be fixed but a rewrite of the carts context file, some models, the forms dealing with the donation and the views that was needed to fix all this. After fixing the problems with my code i was better able to understand how we were able to filter the donations made by the user logged in. I also received help from Faidon Minas Dermesonoglou from code institute slack chat-rooms. Faidon (Feddie_lead on slack channels) tried to explain the problem to me but because my code was a mess i was not able to correctly implement his advice on how to filter donations by user logged in.
 
 [Back To The Top](#Help-The-Homeless)
 
-# Media
+## Media
+---
 
 For the images i used both Google images with the search settings set to display only images that are free to use to find images i can use in my site. I also used a site that allows you to download and use images without where the owners have given permission for others to use them and not to give credit or acknowledgments for there ownership of the images. The site used was [Pixabay](https://www.pixabay.com)
